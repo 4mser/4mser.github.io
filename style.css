@@ -2136,8 +2136,8 @@ body {
 @media  (max-width: 500px){
     
     .inicio .menu {
-    width: 600px;
-    height: 600px;
+    width: 900px;
+    height: 900px;
     background: rgba(109, 15, 152, 0);
     position: absolute;
     z-index: 20;
@@ -2153,6 +2153,14 @@ body {
     transition: .5s ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.203); 
     
+}
+    
+    .inicio .menu:hover {
+    width: 1600px;
+    height: 1600px;
+    border-radius: 50%;
+    bottom: 10vw;
+    animation-name: girar;
 }
     .s2 .wrapper {
         width: 95%;
