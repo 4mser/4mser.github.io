@@ -2136,15 +2136,15 @@ body {
 @media  (max-width: 500px){
     
     .inicio .menu {
-    width: 900px;
-    height: 900px;
+    width: 600px;
+    height: 600px;
     background: rgba(109, 15, 152, 0);
     position: absolute;
     z-index: 20;
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, 90%);
     border-radius: 50%;
@@ -2156,8 +2156,8 @@ body {
 }
     
     .inicio .menu:hover {
-    width: 1600px;
-    height: 1600px;
+    width: 200vw;
+    height: 200vw;
     border-radius: 50%;
     bottom: 10vw;
     animation-name: girar;
