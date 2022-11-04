@@ -59,7 +59,7 @@ new fullpage('#fullpage',  {
 
           t2.fromTo(space, 1, { y: "0", x:"-300", opacity: 0}, { x: '0',y: 0, opacity: 1});
 
-          t2.fromTo(skills, 1, {y: "0", x:"100", opacity: 0}, { x: '0',y: 0, opacity: 1});
+          t2.fromTo(skills, 0.5, {y: "0", x:"100", opacity: 0}, { x: '0',y: 0, opacity: 1});
 
           
 
