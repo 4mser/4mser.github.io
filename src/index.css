@@ -1,0 +1,48 @@
+@import url('https://fonts.cdnfonts.com/css/varino');
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --bg_dark: #131213;
+  --bg_light:rgb(240, 235, 245);
+
+  --menuDark: #141414;
+
+  --whiteColor: #e4e4e4;
+  --blackColor: #1c1b20;
+
+  --Item: #1b1b1b;
+
+  --Neon1: #00d0f5;
+  --Neon2:#bf00ff;
+  --Neon3:#ff068f;
+
+  --TextLight: #9c9c9c;
+
+  --Border: #ffffff53;
+  --BorderLight: rgba(0, 0, 0, 0.101);
+
+  --NavLight: rgba(217, 218, 233, 0.107);
+
+
+}
+
+* {
+  padding: 0;
+  user-select: none;
+  margin: 0;
+  box-sizing: border-box;
+}
