@@ -22,8 +22,7 @@ root.render(
     domain="dev-ltnzm3qn0q82ggc4.us.auth0.com"
     clientId="21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf"
     authorizationParams={{
-      // redirect_uri: window.location.origin,
-      redirect_uri: "https://4mser.github.io/perfil",
+      redirect_uri: window.location.origin,
     }}
   >
     <App />
