@@ -401,7 +401,7 @@ Error generating stack: `+o.message+`
   }
 `,GO=({tema:e})=>U.jsxs(HO,{tema:e,children:[U.jsx("h2",{children:"PsyQuests del día"}),U.jsxs(ef,{effect:"coverflow",centeredSlides:!0,autoplay:{delay:5e3,disableOnInteraction:!1},slidesPerView:2,coverflowEffect:{rotate:60,stretch:0,depth:100,modifier:2,slideShadows:!1},navigation:!0,modules:[hg,VO],className:"mySwiper",children:[U.jsx(Dn,{className:"slider",children:U.jsxs(Ys,{tema:e,children:[U.jsx("h3",{children:"Buena"}),U.jsx("img",{src:"https://image.lexica.art/full_jpg/022b792c-a7a2-4293-8c19-fe55ada2bb44",alt:""})]})}),U.jsx(Dn,{className:"slider",children:U.jsxs(Ys,{tema:e,children:[U.jsx("h3",{children:"Compare"}),U.jsx("img",{src:"https://image.lexica.art/full_jpg/edce22fd-492d-4b85-99a1-016ef42fe431",alt:""})]})}),U.jsx(Dn,{className:"slider",children:U.jsxs(Ys,{tema:e,children:[U.jsx("h3",{children:"Como tamo"}),U.jsx("img",{src:"https://image.lexica.art/full_jpg/380f26dc-c0f3-4d8a-8e8d-adf28e2867ca",alt:""})]})})]})]}),KO=({tema:e})=>U.jsxs("div",{children:[U.jsx(u_,{tema:e}),U.jsx(WO,{tema:e}),U.jsx(GO,{tema:e})]}),YO=J.div`
   position: fixed;
-  width: calc(100% - 3rem);
+  width: calc(100% - 2.3rem);
   height: 4rem;
   bottom: 1rem;
   background: ${e=>e.tema==="dark"?"var(--blackColor)":"var(--NavLight)"};
@@ -413,6 +413,7 @@ Error generating stack: `+o.message+`
   backdrop-filter: blur(10px);
   justify-content: space-around;
   align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.127) 0px 2px 8px 0px;
   border: 1px solid
     ${e=>e.tema==="dark"?"#ffffff2b":"var(--BorderLight)"};
 `,ei=J.div`
