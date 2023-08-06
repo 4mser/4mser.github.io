@@ -404,7 +404,7 @@ Error generating stack: `+o.message+`
   width: calc(100% - 2.3rem);
   height: 4rem;
   bottom: 1rem;
-  background: ${e=>e.tema==="dark"?"var(--blackColor)":"var(--NavLight)"};
+  background: ${e=>e.tema==="dark"?"var(--bg_dark)":"var(--NavLight)"};
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
