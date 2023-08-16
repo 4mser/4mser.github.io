@@ -14,17 +14,22 @@ const BottomNav = ({ tema }) => {
 
       <Button tema={tema}>
         <Icon icon="game-icons:burning-book" height="20" className="Icon" />
-        <p>Colecciones</p>
-      </Button>
-
-      <Button tema={tema}>
-        <Icon
-          icon="game-icons:double-ringed-orb"
-          height="22"
-          className="Icon catalogo"
-        />
         <p>PsyQuests</p>
       </Button>
+      <Link
+        to="/"
+        className="link"
+        style={{ textDecoration: "none", color: "var(--textLight)" }}
+      >
+        <Button tema={tema}>
+          <Icon
+            icon="game-icons:double-ringed-orb"
+            height="24"
+            className="Icon catalogo"
+          />
+          <p>Inicio</p>
+        </Button>
+      </Link>
 
       <Button tema={tema}>
         <Icon icon="game-icons:steelwing-emblem" height="22" className="Icon" />

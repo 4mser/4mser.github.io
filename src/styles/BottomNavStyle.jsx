@@ -1,19 +1,17 @@
 import { styled } from "styled-components";
 
 export const ContainerNav = styled.div`
-  position: fixed;
   width: 100%;
   height: 4rem;
-  bottom: 0;
+  bottom: 1rem;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--NavLight)"};
-  left: 0;
+    props.tema === "dark" ? "var(--bg_dark)" : "var(--NavLight)"};
   z-index: 1000;
   display: flex;
   backdrop-filter: blur(10px);
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid
+  border-bottom: 1px solid
     ${(props) => (props.tema === "dark" ? "#ffffff2b" : "var(--BorderLight)")};
 `;
 
@@ -24,18 +22,4 @@ export const Button = styled.div`
   flex-direction: column;
   color: ${(props) =>
     props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
-
-  p {
-    font-size: 0.5rem;
-    position: absolute;
-    bottom: 13px;
-  }
-
-  .Icon {
-    transform: translateY(-7px);
-  }
-
-  .catalogo {
-    transform: translateY(-6px);
-  }
 `;

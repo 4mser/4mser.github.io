@@ -2,8 +2,11 @@ import React from "react";
 import { styled } from "styled-components";
 import ReactPlayer from "react-player";
 import videoSource from "../assets/bg.mp4";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const VideoComponent = () => {
+  const { user, isAuthenticated, loginWithRedirect, logout, isLoading } =
+    useAuth0();
   return (
     <VideoContainer>
       <VideoPlayer
@@ -84,4 +87,7 @@ const Button = styled.div`
   transform: translateX(-50%);
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  cursor: pointer;
 `;

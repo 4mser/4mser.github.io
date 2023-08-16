@@ -8,7 +8,7 @@ import PsyQuests from "../components/PsyQuests";
 const Home = ({ tema }) => {
   return (
     <div>
-      <SearchBar tema={tema}></SearchBar>
+      {/* <SearchBar tema={tema}></SearchBar> */}
 
       <Avisos tema={tema}></Avisos>
 

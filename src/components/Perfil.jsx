@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import JSONPretty from "react-json-pretty";
 import { styled } from "styled-components";
+import { Icon } from "@iconify/react";
+useState;
 
 const Perfil = ({ tema }) => {
   const { user, isAuthenticated, loginWithRedirect, logout, isLoading } =
     useAuth0();
+
+  const [newUsername, setNewUsername] = useState("");
+
+  const handleChangeUsername = () => {
+    const updatedUsername = prompt("Ingresa tu nuevo nombre de usuario:");
+    if (updatedUsername) {
+      setNewUsername(updatedUsername);
+    }
+  };
 
   if (isLoading) return <h1>Cargando...</h1>;
 
@@ -13,11 +24,20 @@ const Perfil = ({ tema }) => {
     <Container>
       {isAuthenticated && (
         <UserProfile tema={tema}>
-          <img src={user.picture} alt={user.name} />
-          <h2>{user.name}</h2>
+          <UserContainer tema={tema}>
+            <img src={user.picture} alt={user.name} />
+          </UserContainer>
+          <NombreUsuario>
+            <h2>{newUsername || user.name}</h2>
+            <Icon
+              icon="lucide:pen-line"
+              height="19"
+              className="icon"
+              tema={tema}
+              onClick={handleChangeUsername}
+            />
+          </NombreUsuario>
           <p>{user.email}</p>
-
-          {/* <JSONPretty data={user} /> */}
         </UserProfile>
       )}
       {isAuthenticated ? (
@@ -29,14 +49,30 @@ const Perfil = ({ tema }) => {
           Iniciar Sesión
         </Button>
       )}
+      {/* <JSONPretty data={user} /> */}
     </Container>
   );
 };
 
 export default Perfil;
 
+const NombreUsuario = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+
+  .icon {
+    :hover {
+      color: var(--Neon1);
+    }
+  }
+`;
+
 const Container = styled.div`
-  padding-top: 10rem;
+  padding-top: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,11 +100,48 @@ const UserProfile = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
+
   color: ${(props) =>
     props.tema === "dark" ? "var(--whiteColor)" : "var(--Item)"};
 
+  p {
+    opacity: 0.6;
+  }
+`;
+
+const UserContainer = styled.div`
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 8s ease infinite;
+  background-size: 400% 400%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   img {
-    border-radius: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.3s;
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   }
 `;
