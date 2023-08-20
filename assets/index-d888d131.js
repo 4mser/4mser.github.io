@@ -407,7 +407,7 @@ Error generating stack: `+o.message+`
     border-radius: 50%;
     padding: 5px;
   }
-`,tE={Playas:[{id:1,nombre:"Niebla",imagen:"https://app-valdi.s3.amazonaws.com/niebla.jpg"},{id:2,nombre:"Los Molinos",imagen:"https://app-valdi.s3.amazonaws.com/losmolinos.jpg"},{id:3,nombre:"San Ignacio",imagen:"https://app-valdi.s3.amazonaws.com/sanignacio.jpg"},{id:4,nombre:"Playa Rosada",imagen:"https://app-valdi.s3.amazonaws.com/playarosada.jpg"}],Parques:[{id:1,nombre:"Parque Verde",imagen:"parque_verde.jpg"},{id:2,nombre:"Parque Central",imagen:"parque_central.jpg"}],Reservas:[{id:1,nombre:"Reserva Natural El Bosque",imagen:"reserva_el_bosque.jpg"}],Ríos:[{id:1,nombre:"Río Sereno",imagen:"rio_sereno.jpg"}],Lagos:[{id:1,nombre:"Lago Azul",imagen:"lago_azul.jpg"}],Islas:[{id:1,nombre:"Isla Tranquila",imagen:"isla_tranquila.jpg"}]},nE=({tema:e,activeCategory:t})=>{const n=tE[t]||[];return U.jsx(rE,{tema:e,children:U.jsx(Br,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:2.5,freeMode:!0,navigation:!0,modules:[dg],className:"mySwiper",children:n.map(r=>U.jsx(Ft,{className:"slider",tema:e,children:U.jsxs(iE,{tema:e,children:[U.jsx("img",{src:r.imagen,alt:r.nombre}),U.jsx("p",{children:r.nombre})]})},r.id))})})},rE=Z.div`
+`,tE={Playas:[{id:1,nombre:"Niebla",imagen:"https://app-valdi.s3.amazonaws.com/niebla.jpg"},{id:2,nombre:"Los Molinos",imagen:"https://app-valdi.s3.amazonaws.com/losmolinos.jpg"},{id:3,nombre:"San Ignacio",imagen:"https://app-valdi.s3.amazonaws.com/sanignacio.jpg"},{id:4,nombre:"Playa Rosada",imagen:"https://app-valdi.s3.amazonaws.com/playarosada.jpg"}],Parques:[{id:1,nombre:"Parque Verde",imagen:"parque_verde.jpg"},{id:2,nombre:"Parque Central",imagen:"parque_central.jpg"}],Reservas:[{id:1,nombre:"Reserva Natural El Bosque",imagen:"reserva_el_bosque.jpg"}],Ríos:[{id:1,nombre:"Río Sereno",imagen:"rio_sereno.jpg"}],Lagos:[{id:1,nombre:"Lago Azul",imagen:"lago_azul.jpg"}],Islas:[{id:1,nombre:"Isla Tranquila",imagen:"isla_tranquila.jpg"}]},nE=({tema:e,activeCategory:t})=>{const n=tE[t]||[];return U.jsx(rE,{tema:e,children:U.jsx(Br,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2.3,freeMode:!0,navigation:!0,modules:[dg],className:"mySwiper",children:n.map(r=>U.jsx(Ft,{className:"slider",tema:e,children:U.jsxs(iE,{tema:e,children:[U.jsx("p",{children:r.nombre}),U.jsx("div",{className:"degree"}),U.jsx("img",{src:r.imagen,alt:r.nombre})]})},r.id))})})},rE=Z.div`
   width: 100%;
   margin-top: 20px;
   margin-bottom: 5rem;
@@ -442,6 +442,7 @@ Error generating stack: `+o.message+`
     position: absolute;
     text-align: center;
     bottom: 5px;
+    z-index: 2;
     color: var(--whiteColor);
   }
 
@@ -449,6 +450,19 @@ Error generating stack: `+o.message+`
     width: 100%;
     height: 12rem;
     object-fit: cover;
+  }
+
+  .degree {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 46%
+    );
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
   }
 `,oE=[{id:1,nombre:"Playas"},{id:2,nombre:"Parques"},{id:3,nombre:"Reservas"},{id:4,nombre:"Ríos"},{id:5,nombre:"Lagos"},{id:6,nombre:"Islas"}],aE=Z.div`
   width: 100%;
