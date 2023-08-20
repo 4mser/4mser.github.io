@@ -139,7 +139,7 @@ Error generating stack: `+o.message+`
   background: ${e=>e.tema==="dark"?"var(--blackColor)":"var(--white2)"};
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px 10px -3px ${e=>e.tema==="dark"?"var(--blackColor)":"var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--blackColor)":"var(--shadow)"};
   overflow: hidden;
   align-items: center;
 
