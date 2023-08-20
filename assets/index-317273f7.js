@@ -222,11 +222,6 @@ Error generating stack: `+o.message+`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  box-shadow: rgba(99, 99, 99, 0.127) 0px 2px 8px 0px;
 
   h3 {
     position: absolute;
@@ -234,7 +229,6 @@ Error generating stack: `+o.message+`
     font-size: 0.8rem;
     font-weight: 400;
     color: white;
-    filter: drop-shadow(0 1px 2px black);
   }
 
   img {
