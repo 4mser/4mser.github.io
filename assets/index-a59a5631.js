@@ -430,10 +430,9 @@ Error generating stack: `+o.message+`
 `,nE={Playas:[{id:1,nombre:"Niebla",imagen:"https://app-valdi.s3.amazonaws.com/niebla.jpg"},{id:2,nombre:"Los Molinos",imagen:"https://app-valdi.s3.amazonaws.com/losmolinos.jpg"},{id:3,nombre:"San Ignacio",imagen:"https://app-valdi.s3.amazonaws.com/sanignacio.jpg"},{id:4,nombre:"Playa Rosada",imagen:"https://app-valdi.s3.amazonaws.com/playarosada.jpg"}],Parques:[{id:1,nombre:"Parque Oncol",imagen:"https://app-valdi.s3.amazonaws.com/parqueoncol.jpg"},{id:2,nombre:"Parque Saval",imagen:"https://www.rioenlinea.cl/wp-content/uploads/2021/07/parque_saval_municipio.jpeg"},{id:3,nombre:"Parque Nacional Alerce Costero",imagen:"https://storage.googleapis.com/chile-travel-static-content/2021/05/abuelo-alerce-milenario-en-parque-nacional-alerce-costero-1.jpg"},{id:4,nombre:"Arboretum",imagen:"https://app-valdi.s3.amazonaws.com/arboretum.jpg"}],Reservas:[{id:1,nombre:"Reserva Punta Curiñanco",imagen:"https://app-valdi.s3.amazonaws.com/curi%C3%B1anco.jpg"}],Ríos:[{id:1,nombre:"Río Calle Calle",imagen:"https://app-valdi.s3.amazonaws.com/callecalle.jpg"}],Lagos:[{id:1,nombre:"Lago Ranco",imagen:"https://th.bing.com/th/id/R.c4698ec4e65f984aaf3d42f378946c9c?rik=hC3gDMPlMypdUQ&riu=http%3a%2f%2fwww.fmdos.cl%2fwp-content%2fuploads%2f2015%2f02%2fcascadas-lago-ranco.jpg&ehk=66hk%2bzoDpBDOCqkk4TF2C92lr7FYkKGr9H3SnVriGFc%3d&risl=&pid=ImgRaw&r=0"}],Islas:[{id:1,nombre:"Isla Mancera",imagen:"https://live.staticflickr.com/4680/38274087254_ca6e5d4bbf_b.jpg"},{id:2,nombre:"Isla del Rey",imagen:"https://media-cdn.tripadvisor.com/media/photo-s/1a/5f/da/85/isla-del-rey.jpg"}]},rE=({tema:e,activeCategory:t})=>{const n=nE[t]||[];return U.jsx(iE,{tema:e,children:U.jsx(Br,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2.3,freeMode:!0,navigation:!0,modules:[pg],className:"mySwiper",children:n.map(r=>U.jsx(Ft,{className:"slider",tema:e,children:U.jsxs(oE,{tema:e,children:[U.jsx("p",{children:r.nombre}),U.jsx("div",{className:"degree"}),U.jsx("img",{src:r.imagen,alt:r.nombre})]})},r.id))})})},iE=Z.div`
   width: 100%;
   margin-bottom: 5rem;
-  margin-top: 10px;
 
   .mySwiper {
-    padding: 0 1.2rem;
+    padding: 1rem 1.2rem;
   }
 
   h2 {
@@ -451,9 +450,9 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--Item);
   flex-direction: column;
   overflow: hidden;
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"--Item":"var(--shadow)"};
 
   p {
     width: 100%;
@@ -527,7 +526,7 @@ Error generating stack: `+o.message+`
   margin-top: 10px;
 
   .mySwiper {
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.2rem 10px 1.2rem;
   }
 
   h2 {
