@@ -384,7 +384,7 @@ Error generating stack: `+o.message+`
     color: var(--whiteColor);
   }
 `,Qb=Z.div`
-  width: 50%;
+  width: 40%;
   height: 100%;
   overflow: hidden;
 
