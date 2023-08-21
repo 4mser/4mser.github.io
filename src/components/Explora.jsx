@@ -4,13 +4,9 @@ import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 
 import "swiper/css/free-mode";
-// Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-// import required modules
-import { Autoplay, FreeMode } from "swiper/modules";
-import { QuestsBox, QuestsContainer } from "../styles/PsyQuestsStyle";
 import ExploraData from "../data/ExploraData";
 
 const Explora = ({ tema }) => {
@@ -29,7 +25,7 @@ const Explora = ({ tema }) => {
         navigation={true}
         className="mySwiper"
       >
-        {ExploraData.map((explora) => (
+        {ExploraData.slice(0).map((explora) => (
           <SwiperSlide key={explora.id} className="slider" tema={tema}>
             <ExploraCard tema={tema}>
               <ImagenExplora>
@@ -41,8 +37,14 @@ const Explora = ({ tema }) => {
                   <p>{explora.descripcion}</p>
                 </Titulo>
                 <Categorias tema={tema}>
-                  <Icon icon={explora.iconos[0]} height="25" className="Icon" />
-                  <Icon icon={explora.iconos[1]} height="25" className="Icon" />
+                  {explora.iconos.map((icono, index) => (
+                    <Icon
+                      key={index}
+                      icon={icono}
+                      height="25"
+                      className="Icon"
+                    />
+                  ))}
                 </Categorias>
               </Data>
             </ExploraCard>

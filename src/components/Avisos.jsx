@@ -91,6 +91,15 @@ const Avisos = ({ tema }) => {
             />
           </AvisosBox>
         </SwiperSlide>
+
+        <SwiperSlide className="slider">
+          <AvisosBox tema={tema}>
+            <img
+              src="https://th.bing.com/th/id/R.6a36233fdb4902526b0db4845905a16d?rik=HbfRhyW%2bUuoIxw&pid=ImgRaw&r=0"
+              alt=""
+            />
+          </AvisosBox>
+        </SwiperSlide>
       </Swiper>
     </AvisosContainer>
   );

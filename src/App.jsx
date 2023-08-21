@@ -13,6 +13,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import { styled } from "styled-components";
 import Buscar from "./Routes/Buscar";
+import Nada from "./components/Nada";
 function App() {
   //Cambio de tema
   const [tema, setTema] = useState("dark");
@@ -52,6 +53,12 @@ function App() {
           <Route path="/perfil" element={<Perfil tema={tema}></Perfil>}></Route>
 
           <Route path="/buscar" element={<Buscar tema={tema}></Buscar>}></Route>
+
+          <Route path="/explorar" element={<Nada tema={tema}></Nada>}></Route>
+
+          <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
+
+          <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
         </Routes>
       </>
     </BrowserRouter>

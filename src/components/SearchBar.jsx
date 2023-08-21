@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const SearchBarStyled = styled.div`
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 7.8rem;
   height: 3rem;
   border-radius: 10px;
   /* background: ${(props) =>
