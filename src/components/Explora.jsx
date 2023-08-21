@@ -106,7 +106,7 @@ const ExploraCard = styled.div`
   overflow: hidden;
   background: ${(props) =>
     props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
-  box-shadow: 0px 2px 10px -4px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
+  box-shadow: 0px 2px 10px -4px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
 
   p {
     width: 100%;

@@ -40,7 +40,7 @@
   /* --navLight:  linear-gradient(180deg, #fbd4d2 0%, #c9baff 100%); */
 
   --whiteColor: #e4e4e4;
-  --blackColor: #343434;
+  --blackColor: #1e1e1e;
 
   --btnLight: #4c4c4c;
 
@@ -56,6 +56,8 @@
   --TextLight: #9c9c9c;
 
   --shadow: rgb(165, 165, 165);
+
+  --boxShadow:rgb(13, 13, 13);
 
   --Border: #ffffff53;
   --BorderLight: rgba(0, 0, 0, 0.101);

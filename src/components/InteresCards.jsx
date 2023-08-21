@@ -80,7 +80,7 @@ const Categoria = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
+  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
 
   p {
     width: 100%;

@@ -246,10 +246,10 @@ const Buttons = styled.div`
   height: 36px;
   border-radius: 35%;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--blackColor)" : "var(--white2)"};
+    props.tema === "dark" ? "var(--Item)" : "var(--white2)"};
   display: flex;
   justify-content: center;
-  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--blackColor)" : "var(--shadow)")};
+  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
   overflow: hidden;
   align-items: center;
 

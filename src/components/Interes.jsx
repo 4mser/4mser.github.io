@@ -48,7 +48,7 @@ const Categoria = styled.div`
       : props.tema === "dark"
       ? "var(--Item)"
       : "var(--cardsLight)"};
-  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
+  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
   text-align: center;
 
   animation: gradient 8s ease infinite;
