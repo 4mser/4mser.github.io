@@ -25,7 +25,9 @@
 
   /* --bg_light:  linear-gradient(19deg, #fbd4d2 0%, #c9baff 100%); */
   
-  --bg_dark: rgb(32, 32, 32);
+  /* --bg_dark: rgb(32, 32, 32); */
+  --bg_dark: rgb(18, 18, 18);
+
 
 
   --menuDark: #131313;

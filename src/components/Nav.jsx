@@ -196,7 +196,7 @@ const NavStyle = styled.div`
   align-items: center;
 
   background: ${(props) =>
-    props.tema === "dark" ? "var(--navDark)" : "var(--bg_light)"};
+    props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   z-index: 1000;
 
   .link {
