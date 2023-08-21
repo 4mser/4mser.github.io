@@ -80,7 +80,7 @@ Error generating stack: `+o.message+`
   justify-content: space-between;
   align-items: center;
 
-  background: ${e=>e.tema==="dark"?"var(--navDark)":"var(--bg_light)"};
+  background: ${e=>e.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
   z-index: 1000;
 
   .link {
