@@ -80,9 +80,8 @@ Error generating stack: `+o.message+`
   justify-content: space-between;
   align-items: center;
   user-select: none;
-  background: ${e=>e.tema==="dark"?"var(--navDark)":"var(--navLight)"};
+  background: ${e=>e.tema==="dark"?"var(--navDark)":"var(--bg_light)"};
   z-index: 1000;
-  box-shadow: 0 7px 25px -8px ${e=>e.tema==="dark"?"var(--navDark)":""};
 
   .link {
     text-decoration: none;
