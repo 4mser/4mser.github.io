@@ -118,10 +118,10 @@ Error generating stack: `+o.message+`
   width: 36px;
   height: 36px;
   border-radius: 35%;
-  background: ${e=>e.tema==="dark"?"var(--blackColor)":"var(--white2)"};
+  background: ${e=>e.tema==="dark"?"var(--Item)":"var(--white2)"};
   display: flex;
   justify-content: center;
-  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--blackColor)":"var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   overflow: hidden;
   align-items: center;
 
@@ -259,7 +259,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
-  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   flex-direction: column;
   padding: 5px;
   cursor: pointer;
@@ -377,7 +377,7 @@ Error generating stack: `+o.message+`
   flex-direction: row;
   overflow: hidden;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
-  box-shadow: 0px 2px 10px -4px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
+  box-shadow: 0px 2px 10px -4px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
 
   p {
     width: 100%;
@@ -459,7 +459,7 @@ Error generating stack: `+o.message+`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
 
   p {
     width: 100%;
@@ -500,7 +500,7 @@ Error generating stack: `+o.message+`
   align-items: center;
   cursor: pointer;
   background: ${e=>e.id===e.activeCategory?"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)":e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
-  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   text-align: center;
 
   animation: gradient 8s ease infinite;
