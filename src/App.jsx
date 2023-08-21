@@ -14,6 +14,8 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { styled } from "styled-components";
 import Buscar from "./Routes/Buscar";
 import Nada from "./components/Nada";
+import ExploraData from "./data/ExploraData";
+
 function App() {
   //Cambio de tema
   const [tema, setTema] = useState("dark");
@@ -59,6 +61,14 @@ function App() {
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
           <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
+
+          {ExploraData.map((explora) => (
+            <Route
+              key={explora.id}
+              path={`/${explora.url}`}
+              element={<Nada tema={tema} />}
+            />
+          ))}
         </Routes>
       </>
     </BrowserRouter>

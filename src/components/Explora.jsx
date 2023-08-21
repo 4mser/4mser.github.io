@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
 import ExploraData from "../data/ExploraData";
+import { Link } from "react-router-dom";
 
 const Explora = ({ tema }) => {
   return (
@@ -27,27 +28,32 @@ const Explora = ({ tema }) => {
       >
         {ExploraData.slice(0).map((explora) => (
           <SwiperSlide key={explora.id} className="slider" tema={tema}>
-            <ExploraCard tema={tema}>
-              <ImagenExplora>
-                <img src={explora.imagen} alt="" />
-              </ImagenExplora>
-              <Data>
-                <Titulo>
-                  <h3>{explora.nombre}</h3>
-                  <p>{explora.descripcion}</p>
-                </Titulo>
-                <Categorias tema={tema}>
-                  {explora.iconos.map((icono, index) => (
-                    <Icon
-                      key={index}
-                      icon={icono}
-                      height="25"
-                      className="Icon"
-                    />
-                  ))}
-                </Categorias>
-              </Data>
-            </ExploraCard>
+            <Link
+              to={`/explorar/${explora.url}`}
+              style={{ textDecoration: "none" }}
+            >
+              <ExploraCard tema={tema}>
+                <ImagenExplora>
+                  <img src={explora.imagen} alt="" />
+                </ImagenExplora>
+                <Data>
+                  <Titulo>
+                    <h3>{explora.nombre}</h3>
+                    <p>{explora.descripcion}</p>
+                  </Titulo>
+                  <Categorias tema={tema}>
+                    {explora.iconos.map((icono, index) => (
+                      <Icon
+                        key={index}
+                        icon={icono}
+                        height="25"
+                        className="Icon"
+                      />
+                    ))}
+                  </Categorias>
+                </Data>
+              </ExploraCard>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

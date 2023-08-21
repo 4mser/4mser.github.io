@@ -4,6 +4,7 @@ import Categorias from "../components/Categorias";
 import Explora from "../components/Explora";
 import Interes from "../components/Interes";
 import InteresCards from "../components/InteresCards";
+import Footer from "../components/Footer";
 
 const Home = ({ tema }) => {
   return (
@@ -12,7 +13,7 @@ const Home = ({ tema }) => {
       <Categorias tema={tema}></Categorias>
       <Explora tema={tema}></Explora>
       <Interes tema={tema}></Interes>
-      {/* <InteresCards tema={tema}></InteresCards> */}
+      <Footer tema={tema}></Footer>
     </div>
   );
 };

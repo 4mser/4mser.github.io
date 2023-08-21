@@ -6,6 +6,7 @@ const ExploraData = [
     imagen: "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
     categorias: ["Naturaleza"],
     iconos: ["game-icons:grass-mushroom"],
+    url: "aventuras-micologicas",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const ExploraData = [
       "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
     categorias: ["Ciencia & Tecnología", "Naturaleza"],
     iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
+    url: "cielo-nocturno",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const ExploraData = [
       "https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",
     categorias: ["Ciencia & Tecnología", "Naturaleza"],
     iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
+    url: "bajo-las-olas",
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const ExploraData = [
       "https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",
     categorias: ["Naturaleza"],
     iconos: ["game-icons:grass-mushroom"],
+    url: "naturaleza-en-movimiento",
   },
   {
     id: 5,
@@ -41,6 +45,7 @@ const ExploraData = [
     imagen: "https://app-valdi.s3.amazonaws.com/artistas.jpg",
     categorias: ["Talentos Locales"],
     iconos: ["game-icons:guitar-head"],
+    url: "inspiración",
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ const ExploraData = [
       "https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",
     categorias: ["Emprende"],
     iconos: ["game-icons:briefcase"],
+    url: "emprendimientos",
   },
 ];
 
