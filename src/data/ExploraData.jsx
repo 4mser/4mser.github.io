@@ -2,7 +2,7 @@ const ExploraData = [
   {
     id: 1,
     nombre: "Aventuras Micológicas",
-    descripcion: "Explorando el Reino Fulgi Valdiviano",
+    descripcion: "Explorando el Reino Fungi Valdiviano",
     imagen: "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
     categorias: ["Naturaleza"],
     iconos: ["game-icons:grass-mushroom"],
