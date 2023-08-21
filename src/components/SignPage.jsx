@@ -16,14 +16,15 @@ const VideoComponent = () => {
         muted={true}
       />
       <Logo>
-        <img
+        {/* <img
           src="https://appentropia.s3.amazonaws.com/psyquesters.png"
           alt=""
-        />
+        /> */}
+        App Valdivia Beta V0.9.1
       </Logo>
       <Text>
-        "En la penumbra del tiempo, aguarda el vértigo del misterio, donde tus
-        pasos despiertan un mundo oculto y fascinante"
+        {/* "En la penumbra del tiempo, aguarda el vértigo del misterio, donde tus
+        pasos despiertan un mundo oculto y fascinante" */}
       </Text>
       <Button onClick={() => loginWithRedirect()}>Ingresar</Button>
     </VideoContainer>
@@ -51,11 +52,14 @@ const VideoPlayer = styled(ReactPlayer)`
 
 const Logo = styled.div`
   width: 50%;
-  height: 2rem;
   top: 15%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
 
   img {
     width: 100%;

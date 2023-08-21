@@ -18,7 +18,14 @@ const Perfil = ({ tema }) => {
     }
   };
 
-  if (isLoading) return <h1>Cargando...</h1>;
+  if (isLoading) {
+    // Mostrar algo mientras se verifica la autenticación
+    return (
+      <Iniciando>
+        <p>Iniciando Sesión</p>
+      </Iniciando>
+    );
+  }
 
   return (
     <Container>
@@ -72,7 +79,7 @@ const NombreUsuario = styled.div`
 `;
 
 const Container = styled.div`
-  padding-top: 7rem;
+  padding-top: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,5 +150,18 @@ const UserContainer = styled.div`
     transition: 0.3s;
     background: ${(props) =>
       props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
+  }
+`;
+
+const Iniciando = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #101010;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.2rem;
   }
 `;

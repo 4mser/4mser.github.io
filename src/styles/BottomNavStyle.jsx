@@ -5,11 +5,11 @@ export const ContainerNav = styled.div`
   height: 4rem;
   bottom: 1rem;
   background: ${(props) =>
-    props.tema === "dark" ? "var(--bg_dark)" : "var(--NavLight)"};
+    props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
   z-index: 1000;
   display: flex;
-  backdrop-filter: blur(10px);
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1.2rem;
   align-items: center;
   border-bottom: 1px solid
     ${(props) => (props.tema === "dark" ? "#ffffff2b" : "var(--BorderLight)")};

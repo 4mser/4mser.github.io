@@ -1,5 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/varino');
 
+* {
+  user-select: none;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,15 +19,28 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --bg_dark: #131213;
-  --bg_light:rgb(240, 235, 245);
+  /* --bg_light:  linear-gradient(19deg, #fbd4d2 0%, #c9baff 100%); */
+  
+  --bg_dark: rgb(32, 32, 32);
 
-  --menuDark: #141414;
+  --menuDark: #131313;
+
+  --navDark:rgb(32, 32, 32); 
+
+  --bg_light:rgb(245, 240, 249);
+  
+
+  /* --navLight:  linear-gradient(180deg, #fbd4d2 0%, #c9baff 100%); */
 
   --whiteColor: #e4e4e4;
-  --blackColor: #1c1b20;
+  --blackColor: #343434;
+
+  --btnLight: #4c4c4c;
 
   --Item: #1b1b1b;
+
+  --white2: rgba(132, 132, 132, 0.138);
+
 
   --Neon1: #00d0f5;
   --Neon2:#bf00ff;
@@ -32,12 +48,18 @@
 
   --TextLight: #9c9c9c;
 
+  --shadow: rgb(165, 165, 165);
+
   --Border: #ffffff53;
   --BorderLight: rgba(0, 0, 0, 0.101);
 
-  --NavLight: rgba(217, 218, 233, 0.107);
 
-  --Blue: #1984B2;
+  --Blue: #23a6d5;
+
+  --cardsLight: rgba(220, 215, 231, 0.179);
+
+  --fontDark: #f2f2f2;
+  --fontLight: rgb(44, 44, 44);
 
 
 }

@@ -2,15 +2,19 @@ import { styled } from "styled-components";
 
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 8.5rem;
-  left: 0;
+  padding-top: 7.6rem;
 
   .slider {
-    height: 10rem;
+    height: 220px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.2rem 2.5rem 1.2rem;
+    padding-bottom: 20px;
+  }
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    transform: translate(-1.2rem, 8px);
   }
 
   .swiper-pagination-bullet {
@@ -18,24 +22,23 @@ export const AvisosContainer = styled.div`
   }
 
   .swiper-pagination-bullet-active {
-    background-color: ${(props) => (props.tema === "dark" ? "white" : "black")};
+    animation: pagination forwards 0.3s ease;
+
+    @keyframes pagination {
+      from {
+      }
+      to {
+        width: 20px;
+        border-radius: 5px;
+      }
+    }
   }
 `;
 
 export const AvisosBox = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  /* box-shadow: 0 2px 5px -2px var(--Item); */
-  border: 1px solid
-    ${(props) =>
-      props.tema === "dark" ? "var(--Border)" : "var(--BorderLight)"};
-  padding: 7px;
-  justify-content: center;
-  box-shadow: rgba(99, 99, 99, 0.127) 0px 2px 8px 0px;
 
   h3 {
     position: absolute;
@@ -43,16 +46,11 @@ export const AvisosBox = styled.div`
     font-size: 0.8rem;
     font-weight: 400;
     color: white;
-    filter: drop-shadow(0 1px 2px black);
   }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px;
-    border: 1px solid
-      ${(props) =>
-        props.tema === "dark" ? "var(--Border)" : "var(--BorderLight)"};
   }
 `;
