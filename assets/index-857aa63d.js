@@ -642,7 +642,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding: 1.2rem;
 `,fO=K.div`
   width: 100%;
-  margin-top: 7.8rem;
+  margin-top: 3.5rem;
   height: 3rem;
   border-radius: 10px;
   /* background: ${e=>e.tema==="dark"?"var(--Item)":"var(--whiteColor)"}; */
