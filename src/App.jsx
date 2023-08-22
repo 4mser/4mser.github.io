@@ -15,6 +15,7 @@ import { styled } from "styled-components";
 import Buscar from "./Routes/Buscar";
 import Nada from "./components/Nada";
 import ExploraData from "./data/ExploraData";
+import Aves from "./components/Aves";
 
 function App() {
   //Cambio de tema
@@ -56,7 +57,7 @@ function App() {
 
           <Route path="/buscar" element={<Buscar tema={tema}></Buscar>}></Route>
 
-          <Route path="/explorar" element={<Nada tema={tema}></Nada>}></Route>
+          <Route path="/explorar" element={<Aves tema={tema}></Aves>}></Route>
 
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
