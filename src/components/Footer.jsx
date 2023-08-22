@@ -7,7 +7,7 @@ const Footer = ({ tema }) => {
         src="https://appentropia.s3.amazonaws.com/EOA-PNG.png"
         alt="EOA-LOGO"
       />
-      <p>©2023 DESARROLLADO POR ENTROPÍA - TODOS LOS DERECHOS RESERVADOS</p>
+      <p>©2023 - DESARROLLADO POR ENTROPÍA</p>
     </Container>
   );
 };
@@ -16,7 +16,7 @@ export default Footer;
 
 export const Container = styled.div`
   width: 100%;
-  height: 5rem;
+  height: 6.1rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   img {
-    height: 50%;
+    height: 40%;
     object-fit: cover;
     opacity: 0.7;
     filter: ${(props) => (props.tema === "dark" ? "" : "invert(1)")};

@@ -19,7 +19,7 @@ const InteresCards = ({ tema, activeCategory }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={2.3}
+        slidesPerView={1.8}
         freeMode={true}
         navigation={true}
         modules={[FreeMode]}
