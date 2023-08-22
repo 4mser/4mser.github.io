@@ -726,7 +726,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
-`,SO=({tema:e})=>{const[t,n]=U.useState("Todo"),r=Gg.snippet[t.toLowerCase()]||[];return j.jsxs(PO,{tema:e,children:[j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:4.2,freeMode:!0,navigation:!0,modules:[hg],className:"mySwiper",children:mg.map(i=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(_O,{tema:e,id:i.snippet,activeCategory:t,onClick:()=>n(i.snippet),children:[j.jsx(De,{icon:i.icono,height:i.height,className:"Icon"}),j.jsx("p",{children:i.nombre})]})},i.id))}),j.jsx(dO,{entradas:r,tema:e,activeCategory:t})]})},PO=K.div`
+`,SO=({tema:e})=>{const[t,n]=U.useState("todo"),r=Gg.snippet[t.toLowerCase()]||[];return j.jsxs(PO,{tema:e,children:[j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:4.2,freeMode:!0,navigation:!0,modules:[hg],className:"mySwiper",children:mg.map(i=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(_O,{tema:e,id:i.snippet,activeCategory:t,onClick:()=>n(i.snippet),children:[j.jsx(De,{icon:i.icono,height:i.height,className:"Icon"}),j.jsx("p",{children:i.nombre})]})},i.id))}),j.jsx(dO,{entradas:r,tema:e,activeCategory:t})]})},PO=K.div`
   width: 100%;
 
   .mySwiper {
