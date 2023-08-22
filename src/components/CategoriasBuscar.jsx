@@ -1,63 +1,3 @@
-/* import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { styled } from "styled-components";
-import { Icon } from "@iconify/react";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-import "swiper/css/effect-coverflow";
-import { FreeMode } from "swiper/modules";
-import CategoriasData from "../data/CategoriasData";
-import AllExploraData from "../data/AllExploraData"; // Importar el objeto de entradas y categorías
-import ExploraAll from "./ExploraAll"; // Importar el componente Explora o ExploraAll
-
-const CategoriasBuscar = ({ tema }) => {
-  const [activeCategory, setActiveCategory] = useState("Todo");
-
-  // Filtrar las entradas basadas en la categoría activa
-  const filteredEntries =
-    AllExploraData.snippet[activeCategory.toLowerCase()] || [];
-
-  return (
-    <CategoriasContainer tema={tema}>
-      <Swiper
-        tema={tema}
-        centeredSlides={false}
-        spaceBetween={10}
-        slidesPerView={4.2}
-        freeMode={true}
-        navigation={true}
-        modules={[FreeMode]}
-        className="mySwiper"
-      >
-        {CategoriasData.map((categoria) => (
-          <SwiperSlide key={categoria.id} className="slider" tema={tema}>
-            <Categoria
-              tema={tema}
-              id={categoria.nombre}
-              activeCategory={activeCategory}
-              onClick={() => setActiveCategory(categoria.nombre)}
-            >
-              <Icon
-                icon={categoria.icono}
-                height={categoria.height}
-                className="Icon"
-              />
-              <p>{categoria.nombre}</p>
-            </Categoria>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
-      <ExploraAll
-        entradas={filteredEntries}
-        tema={tema}
-        activeCategory={activeCategory}
-      />
-    </CategoriasContainer>
-  );
-}; */
-
-// ... Resto del código ...
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { styled } from "styled-components";
@@ -71,7 +11,7 @@ import AllExploraData from "../data/AllExploraData"; // Importar el objeto de en
 import ExploraAll from "./ExploraAll"; // Importar el componente Explora o ExploraAll
 
 const CategoriasBuscar = ({ tema }) => {
-  const [activeCategory, setActiveCategory] = useState("Todo");
+  const [activeCategory, setActiveCategory] = useState("todo");
 
   // Filtrar las entradas basadas en la categoría activa
   const filteredEntries =
