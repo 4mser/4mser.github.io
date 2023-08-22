@@ -182,6 +182,7 @@ Error generating stack: `+o.message+`
   height: 4rem;
   bottom: 1rem;
   z-index: 1000;
+  user-select: none;
   display: flex;
   user-select: none;
   justify-content: space-between;
@@ -192,6 +193,7 @@ Error generating stack: `+o.message+`
 `,oi=K.div`
   display: flex;
   align-items: center;
+  user-select: none;
   user-select: none;
   justify-content: space-between;
   flex-direction: column;
@@ -249,9 +251,11 @@ Error generating stack: `+o.message+`
   }
 `,Gb=({tema:e})=>j.jsx(Hb,{tema:e,children:j.jsxs(bn,{spaceBetween:0,centeredSlides:!0,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{clickable:!0},navigation:!0,modules:[Wb,Bb],className:"mySwiper",children:[j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://chileestuyo.cl/wp-content/uploads/2020/07/Valdivia-urbana.jpg",alt:""})})}),j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://th.bing.com/th/id/R.7df58af2598271fcd936a65ece5bec91?rik=2Kw5eWJk30yHeg&pid=ImgRaw&r=0",alt:""})})}),j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://th.bing.com/th/id/R.338a9c651a1c3b1a61119a411a789884?rik=w4yADvwLOa4rqA&pid=ImgRaw&r=0",alt:""})})}),j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://wallpapercave.com/wp/wp9021403.jpg",alt:""})})}),j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://th.bing.com/th/id/R.a52eb1b11fd78e4db53f79e38755a51e?rik=3lhewFk87iyKkA&pid=ImgRaw&r=0",alt:""})})}),j.jsx(ut,{className:"slider",children:j.jsx(nr,{tema:e,children:j.jsx("img",{src:"https://th.bing.com/th/id/R.6a36233fdb4902526b0db4845905a16d?rik=HbfRhyW%2bUuoIxw&pid=ImgRaw&r=0",alt:""})})})]})});const mg=[{id:0,nombre:"Todo",icono:"game-icons:abstract-061",height:"35",snippet:"todo"},{id:1,nombre:"Ciencia & Tecnología",icono:"game-icons:microscope",descripcion:"",height:"30",snippet:"ciencia"},{id:2,nombre:"Salud & Bienestar",icono:"game-icons:health-capsule",descripcion:"",height:"30",snippet:"salud"},{id:3,nombre:"Naturaleza",icono:"game-icons:grass-mushroom",descripcion:"",height:"30",snippet:"naturaleza"},{id:4,nombre:"Gastronomía",icono:"game-icons:knife-fork",descripcion:"",height:"30",snippet:"gastronomia"},{id:5,nombre:"Talentos Locales",icono:"game-icons:guitar-head",descripcion:"",height:"30",snippet:"talentos"},{id:6,nombre:"Deporte",icono:"game-icons:cycling",descripcion:"",height:"30",snippet:"deporte"},{id:7,nombre:"Actividades al aire libre",icono:"game-icons:surf-board",descripcion:"",height:"30",snippet:"airelibre"},{id:8,nombre:"Cafeterías & Cowork",icono:"game-icons:coffee-cup",descripcion:"",height:"30",snippet:"cafeterias"},{id:9,nombre:"Mascotas",icono:"game-icons:labrador-head",descripcion:"",height:"30",snippet:"mascotas"},{id:10,nombre:"Campings",icono:"game-icons:camping-tent",descripcion:"",height:"30",snippet:"campings"},{id:11,nombre:"Rutas & Aventuras",icono:"game-icons:summits",descripcion:"",height:"30",snippet:"rutas"},{id:12,nombre:"Juegos & Eventos",icono:"game-icons:dice-twenty-faces-twenty",descripcion:"",height:"30",snippet:"juegos"},{id:13,nombre:"Belleza & Estilo",icono:"game-icons:scissors",descripcion:"",height:"30",snippet:"belleza"},{id:14,nombre:"Ecología",icono:"game-icons:earth-america",descripcion:"",height:"30",snippet:"ecologia"},{id:15,nombre:"Talleres & Cursos",icono:"game-icons:teacher",descripcion:"",height:"30",snippet:"talleres"},{id:16,nombre:"Vida Nocturna",icono:"game-icons:martini",descripcion:"",height:"30",snippet:"nocturna"},{id:17,nombre:"Historias, Mitos & Leyendas",icono:"game-icons:spell-book",descripcion:"",height:"30",snippet:"historias"},{id:18,nombre:"Emprende",icono:"game-icons:briefcase",descripcion:"",height:"30",snippet:"emprende"},{id:19,nombre:"Entretenimiento",icono:"game-icons:film-projector",descripcion:"",height:"30",snippet:"entretenimiento"}],Kb=({tema:e})=>{const t=mg.slice(1);return j.jsxs(Yb,{tema:e,children:[j.jsx("h2",{children:"Categorías"}),j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:4.2,freeMode:!0,navigation:!0,modules:[hg],className:"mySwiper",children:t.map(n=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(Xb,{tema:e,children:[j.jsx(De,{icon:n.icono,height:"30",className:"Icon"}),j.jsx("p",{children:n.nombre})]})},n.id))})]})},Yb=K.div`
   width: 100%;
+  user-select: none;
 
   .mySwiper {
     padding: 1rem 1.2rem;
+    user-select: none;
   }
 
   h2 {
@@ -269,6 +273,7 @@ Error generating stack: `+o.message+`
   gap: 5px;
   justify-content: center;
   align-items: center;
+  user-select: none;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
   box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   flex-direction: column;
@@ -285,6 +290,7 @@ Error generating stack: `+o.message+`
 
   .Icon {
     color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
+    user-select: none;
   }
 `,yg=[{id:1,nombre:"Aventuras Micológicas",descripcion:"Explorando el Reino Fungi Valdiviano",imagen:"https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"aventuras-micologicas"},{id:2,nombre:"Valdivia y el cielo nocturno",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:3,nombre:"Valdivia bajo las olas",descripcion:"Maravillas ocultas de la Costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"},{id:4,nombre:"Naturaleza en movimiento",descripcion:"Descubre la fauna de Valdivia",imagen:"https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"naturaleza-en-movimiento"},{id:5,nombre:"Valdivia Inspiradora",descripcion:"Conoce a los artistas que dan vida a la ciudad",imagen:"https://app-valdi.s3.amazonaws.com/artistas.jpg",categorias:["Talentos Locales"],iconos:["game-icons:guitar-head"],url:"inspiración"},{id:6,nombre:"Valdivia Emprende",descripcion:"Descubre los negocios locales",imagen:"https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",categorias:["Emprende"],iconos:["game-icons:briefcase"],url:"emprendimientos"}],qb=({tema:e})=>j.jsxs(Zb,{tema:e,children:[j.jsxs(Qb,{tema:e,children:[j.jsx("h2",{children:"Explora"}),j.jsx(Ut,{to:"/buscar",style:{textDecoration:"none",color:e==="dark"?"var(--whiteColor)":"var(--fontLight)"},children:j.jsx("p",{children:"Ver Todo"})})]}),j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:1.1,freeMode:!0,navigation:!0,className:"mySwiper",children:yg.slice(0).map(t=>j.jsx(ut,{className:"slider",tema:e,children:j.jsx(Ut,{to:`/explorar/${t.url}`,style:{textDecoration:"none"},children:j.jsxs(Jb,{tema:e,children:[j.jsx(ex,{children:j.jsx("img",{src:t.imagen,alt:""})}),j.jsxs(rx,{children:[j.jsxs(tx,{children:[j.jsx("h3",{children:t.nombre}),j.jsx("p",{children:t.descripcion})]}),j.jsx(nx,{tema:e,children:t.iconos.map((n,r)=>j.jsx(De,{icon:n,height:"25",className:"Icon"},r))})]})]})})},t.id))})]}),Zb=K.div`
   width: 100%;
@@ -376,14 +382,16 @@ Error generating stack: `+o.message+`
   padding: 10px;
 `,ix={Playas:[{id:1,nombre:"Niebla",imagen:"https://app-valdi.s3.amazonaws.com/niebla.jpg"},{id:2,nombre:"Los Molinos",imagen:"https://app-valdi.s3.amazonaws.com/losmolinos.jpg"},{id:3,nombre:"San Ignacio",imagen:"https://app-valdi.s3.amazonaws.com/sanignacio.jpg"},{id:4,nombre:"Playa Rosada",imagen:"https://app-valdi.s3.amazonaws.com/playarosada.jpg"},{id:5,nombre:"Loncoyen",imagen:"https://th.bing.com/th/id/OIP.9TgEnSlRvOZw4tFFb4gjKAHaE8?pid=ImgDet&rs=1"},{id:6,nombre:"Centenilla",imagen:"https://i.pinimg.com/originals/8e/ab/01/8eab01a6fde8f7f7339e4879ea6ec6d9.jpg"},{id:7,nombre:"La Misión",imagen:"https://i.pinimg.com/736x/1d/ae/6d/1dae6dffed5c6f0838121446905e3d4e--romantic.jpg"},{id:8,nombre:"Calfuco",imagen:"https://th.bing.com/th/id/R.1f0906613f2ea59f398b7074850d44b3?rik=8TelC2U%2b4e7gnw&riu=http%3a%2f%2fwww.calfuco.cl%2f2017%2fwp-content%2fuploads%2fsites%2f2685%2f2016%2f07%2fVista-1-playa3-1024x461.jpg&ehk=ZQaCGKNLapYdBc%2brGi4hZHbybIs7oI59Vf%2fboMbi2TI%3d&risl=&pid=ImgRaw&r=0"},{id:9,nombre:"Curiñanco",imagen:"https://th.bing.com/th/id/R.15afe66ca41d3da9c91d5a4c8619ad71?rik=Qv554G6vYDI3lA&pid=ImgRaw&r=0&sres=1&sresct=1"},{id:10,nombre:"Pilolcura",imagen:"https://i.pinimg.com/736x/f6/15/af/f615af7160ef19a37c0a467cb830fc0c.jpg"}],Parques:[{id:1,nombre:"Parque Oncol",imagen:"https://app-valdi.s3.amazonaws.com/parqueoncol.jpg"},{id:2,nombre:"Parque Saval",imagen:"https://www.rioenlinea.cl/wp-content/uploads/2021/07/parque_saval_municipio.jpeg"},{id:3,nombre:"Parque Nacional Alerce Costero",imagen:"https://storage.googleapis.com/chile-travel-static-content/2021/05/abuelo-alerce-milenario-en-parque-nacional-alerce-costero-1.jpg"},{id:4,nombre:"Arboretum",imagen:"https://app-valdi.s3.amazonaws.com/arboretum2.jpg"}],Reservas:[{id:1,nombre:"Reserva Punta Curiñanco",imagen:"https://app-valdi.s3.amazonaws.com/curi%C3%B1anco.jpg"}],Ríos:[{id:1,nombre:"Río Calle Calle",imagen:"https://app-valdi.s3.amazonaws.com/callecalle.jpg"}],Lagos:[{id:1,nombre:"Lago Ranco",imagen:"https://th.bing.com/th/id/R.c4698ec4e65f984aaf3d42f378946c9c?rik=hC3gDMPlMypdUQ&riu=http%3a%2f%2fwww.fmdos.cl%2fwp-content%2fuploads%2f2015%2f02%2fcascadas-lago-ranco.jpg&ehk=66hk%2bzoDpBDOCqkk4TF2C92lr7FYkKGr9H3SnVriGFc%3d&risl=&pid=ImgRaw&r=0"}],Islas:[{id:1,nombre:"Isla Mancera",imagen:"https://live.staticflickr.com/4680/38274087254_ca6e5d4bbf_b.jpg"},{id:2,nombre:"Isla del Rey",imagen:"https://media-cdn.tripadvisor.com/media/photo-s/1a/5f/da/85/isla-del-rey.jpg"}]},ox=({tema:e,activeCategory:t})=>{const n=ix[t]||[];return j.jsx(ax,{tema:e,children:j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!0,className:"mySwiper",children:n.map(r=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(sx,{tema:e,children:[j.jsx("p",{children:r.nombre}),j.jsx("div",{className:"degree"}),j.jsx("img",{src:r.imagen,alt:r.nombre})]})},r.id))})})},ax=K.div`
   width: 100%;
-
+  user-select: none;
   .mySwiper {
     padding: 1rem 1.2rem;
+    user-select: none;
   }
 
   .slider {
     border-radius: 10px;
     overflow: hidden;
+    user-select: none;
     box-shadow: 0 3px 7px -3px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
     cursor: pointer;
   }
@@ -399,6 +407,7 @@ Error generating stack: `+o.message+`
 `,sx=K.div`
   width: 100%;
   height: 100%;
+  user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -443,6 +452,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  user-select: none;
   background: ${e=>e.id===e.activeCategory?"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)":e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
   box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   text-align: center;
@@ -473,9 +483,10 @@ Error generating stack: `+o.message+`
 `,cx=K.div`
   width: 100%;
   margin-top: 10px;
-
+  user-select: none;
   .mySwiper {
     padding: 1rem 1.2rem 10px 1.2rem;
+    user-select: none;
   }
 
   h2 {
