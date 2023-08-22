@@ -191,6 +191,7 @@ const NavStyle = styled.div`
   top: 0;
   left: 0;
   display: flex;
+  user-select: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -201,12 +202,14 @@ const NavStyle = styled.div`
 
   .link {
     text-decoration: none;
+    user-select: none;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
 
   .Icon {
     font-weight: 800;
+    user-select: none;
   }
 `;
 
@@ -214,12 +217,14 @@ const Header = styled.div`
   flex-direction: row;
   display: flex;
   width: 100%;
+  user-select: none;
   justify-content: space-between;
   padding: 1.2rem 1.2rem 0 1.2rem;
 `;
 
 const HeaderButtons = styled.div`
   flex-direction: row;
+  user-select: none;
   display: flex;
   width: ${(props) => (props.isAuthenticated ? "140px" : "85px")};
   justify-content: space-between;
@@ -228,6 +233,7 @@ const HeaderButtons = styled.div`
 const HelloSection = styled.div`
   h2 {
     font-size: 12px;
+    user-select: none;
     font-weight: 400;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
@@ -236,6 +242,7 @@ const HelloSection = styled.div`
   p {
     font-size: 15px;
     font-weight: 700;
+    user-select: none;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
@@ -244,6 +251,7 @@ const HelloSection = styled.div`
 const Buttons = styled.div`
   width: 36px;
   height: 36px;
+  user-select: none;
   border-radius: 35%;
   background: ${(props) =>
     props.tema === "dark" ? "var(--Item)" : "var(--white2)"};
@@ -256,11 +264,13 @@ const Buttons = styled.div`
   :hover {
     cursor: pointer;
     user-select: none;
+    user-select: none;
   }
 
   img {
     width: 100%;
     height: 100%;
+    user-select: none;
     object-fit: cover;
   }
 
@@ -302,7 +312,9 @@ export const ContainerNav = styled.div`
   height: 4rem;
   bottom: 1rem;
   z-index: 1000;
+  user-select: none;
   display: flex;
+  user-select: none;
   justify-content: space-between;
   padding: 0 1.2rem;
   align-items: center;
@@ -313,6 +325,8 @@ export const ContainerNav = styled.div`
 export const Button = styled.div`
   display: flex;
   align-items: center;
+  user-select: none;
+  user-select: none;
   justify-content: space-between;
   flex-direction: column;
   color: ${(props) =>

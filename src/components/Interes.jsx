@@ -42,6 +42,7 @@ const Categoria = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  user-select: none;
   background: ${(props) =>
     props.id === props.activeCategory
       ? "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
@@ -84,9 +85,10 @@ const Categoria = styled.div`
 const InteresContainer = styled.div`
   width: 100%;
   margin-top: 10px;
-
+  user-select: none;
   .mySwiper {
     padding: 1rem 1.2rem 10px 1.2rem;
+    user-select: none;
   }
 
   h2 {

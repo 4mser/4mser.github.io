@@ -44,9 +44,11 @@ export default Categorias;
 
 const CategoriasContainer = styled.div`
   width: 100%;
+  user-select: none;
 
   .mySwiper {
     padding: 1rem 1.2rem;
+    user-select: none;
   }
 
   h2 {
@@ -67,6 +69,7 @@ const Categoria = styled.div`
   gap: 5px;
   justify-content: center;
   align-items: center;
+  user-select: none;
   background: ${(props) =>
     props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
   box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
@@ -86,5 +89,6 @@ const Categoria = styled.div`
   .Icon {
     color: ${(props) =>
       props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
+    user-select: none;
   }
 `;

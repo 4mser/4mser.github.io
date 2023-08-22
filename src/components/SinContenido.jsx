@@ -5,7 +5,7 @@ const SinContenido = ({ tema }) => {
   return (
     <Container tema={tema}>
       <img src="https://app-valdi.s3.amazonaws.com/hormiga.png" alt="" />
-      <h3>Aún no se sube contenido relacionado</h3>
+      <h3>Sin contenido relacionado...aún</h3>
     </Container>
   );
 };
@@ -21,7 +21,6 @@ const Container = styled.div`
   flex-direction: column;
   padding: 20%;
   text-align: center;
-  gap: 1rem;
 
   h3 {
     color: ${(props) =>

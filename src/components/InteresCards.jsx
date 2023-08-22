@@ -42,14 +42,16 @@ export default InteresCards;
 
 const CategoriasContainer = styled.div`
   width: 100%;
-
+  user-select: none;
   .mySwiper {
     padding: 1rem 1.2rem;
+    user-select: none;
   }
 
   .slider {
     border-radius: 10px;
     overflow: hidden;
+    user-select: none;
     box-shadow: 0 3px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
     cursor: pointer;
   }
@@ -68,6 +70,7 @@ const CategoriasContainer = styled.div`
 const Categoria = styled.div`
   width: 100%;
   height: 100%;
+  user-select: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
