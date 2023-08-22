@@ -870,22 +870,25 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border: 1px solid #dddddd4a;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
-  align-items: center;
   padding-bottom: 10px;
 
   h3 {
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 500;
+    padding-left: 10px;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
 
   p {
-    margin-top: 4px;
-    font-size: 12px;
-    color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    color: ${e=>e.tema==="dark"?"var(--shadow)":"var(--Item)"};
   }
 `,IO=G.img`
   width: 100%;
@@ -893,4 +896,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   object-fit: cover;
   margin-bottom: 10px;
   border-bottom: 1px solid #dddddd4a;
-`,RO=({tema:e})=>A.jsxs(TO,{tema:e,children:[A.jsx("h2",{children:"Aves que encontrarás en Valdivia"}),kO.map(t=>A.jsxs(CO,{tema:e,children:[A.jsx(IO,{src:t.imagen,alt:t.nombre}),A.jsx("h3",{children:t.nombre}),A.jsx("p",{children:t.nombre_cientifico})]},t.id))]});function LO(){const[e,t]=U.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=U.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return A.jsxs(J1,{children:[A.jsx(hb,{}),A.jsx(rS,{tema:e}),A.jsxs(A.Fragment,{children:[A.jsx(ub,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),A.jsxs(K1,{children:[A.jsx(Zt,{path:"/",element:A.jsx(hx,{tema:e})}),A.jsx(Zt,{path:"/perfil",element:A.jsx(xx,{tema:e})}),A.jsx(Zt,{path:"/buscar",element:A.jsx(OO,{tema:e})}),A.jsx(Zt,{path:"/explorar",element:A.jsx(RO,{tema:e})}),A.jsx(Zt,{path:"/guardado",element:A.jsx(gl,{tema:e})}),A.jsx(Zt,{path:"/tienda",element:A.jsx(gl,{tema:e})}),yg.map(a=>A.jsx(Zt,{path:`/${a.url}`,element:A.jsx(gl,{tema:e})},a.id))]})]})]})}const MO=Xm(document.getElementById("root"));MO.render(A.jsx(i1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:A.jsx(LO,{})}));
+`,RO=({tema:e})=>A.jsxs(TO,{tema:e,children:[A.jsx("h2",{children:"Aves que encontrarás en Valdivia"}),kO.map(t=>A.jsxs(CO,{tema:e,children:[A.jsx(IO,{src:t.imagen,alt:t.nombre}),A.jsx("h3",{children:t.nombre}),A.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id))]});function LO(){const[e,t]=U.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=U.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return A.jsxs(J1,{children:[A.jsx(hb,{}),A.jsx(rS,{tema:e}),A.jsxs(A.Fragment,{children:[A.jsx(ub,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),A.jsxs(K1,{children:[A.jsx(Zt,{path:"/",element:A.jsx(hx,{tema:e})}),A.jsx(Zt,{path:"/perfil",element:A.jsx(xx,{tema:e})}),A.jsx(Zt,{path:"/buscar",element:A.jsx(OO,{tema:e})}),A.jsx(Zt,{path:"/explorar",element:A.jsx(RO,{tema:e})}),A.jsx(Zt,{path:"/guardado",element:A.jsx(gl,{tema:e})}),A.jsx(Zt,{path:"/tienda",element:A.jsx(gl,{tema:e})}),yg.map(a=>A.jsx(Zt,{path:`/${a.url}`,element:A.jsx(gl,{tema:e})},a.id))]})]})]})}const MO=Xm(document.getElementById("root"));MO.render(A.jsx(i1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:A.jsx(LO,{})}));
