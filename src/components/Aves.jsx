@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import AvesData from "../data/AvesData";
 
@@ -56,18 +56,72 @@ const AveImage = styled.img`
   border-bottom: 1px solid #dddddd4a;
 `;
 
+const LoadingIndicator = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+`;
+
 const Aves = ({ tema }) => {
+  const pageSize = 10; // Cantidad de elementos a cargar por página
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(false);
+  const [avesToShow, setAvesToShow] = useState([]);
+
+  const loadMoreAves = () => {
+    if (loading) return;
+    setLoading(true);
+
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
+
+    setTimeout(() => {
+      setAvesToShow([...avesToShow, ...AvesData.slice(startIndex, endIndex)]);
+      setCurrentPage(currentPage + 1);
+      setLoading(false);
+    }, 1000); // Simula una demora en la carga
+  };
+
+  useEffect(() => {
+    loadMoreAves();
+  }, []); // Carga inicial
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [avesToShow]);
+
+  const handleScroll = () => {
+    const scrolled = window.scrollY;
+    const viewportHeight = window.innerHeight;
+    const contentHeight = document.documentElement.scrollHeight;
+
+    if (!loading && scrolled + viewportHeight + 100 >= contentHeight) {
+      loadMoreAves();
+    }
+  };
+
   return (
-    <AvesContainer tema={tema}>
-      <h2>Aves que encontrarás en Valdivia</h2>
-      {AvesData.map((ave) => (
-        <AveCard key={ave.id} tema={tema}>
-          <AveImage src={ave.imagen} alt={ave.nombre} />
-          <h3>{ave.nombre}</h3>
-          <p>({ave.nombre_cientifico})</p>
-        </AveCard>
-      ))}
-    </AvesContainer>
+    <div>
+      <AvesContainer tema={tema}>
+        <h2>Aves que encontrarás en Valdivia</h2>
+        {avesToShow.map((ave) => (
+          <AveCard key={ave.id} tema={tema}>
+            <AveImage src={ave.imagen} alt={ave.nombre} />
+            <h3>{ave.nombre}</h3>
+            <p>({ave.nombre_cientifico})</p>
+          </AveCard>
+        ))}
+        {loading && (
+          <LoadingIndicator>
+            <span>Cargando...</span>
+          </LoadingIndicator>
+        )}
+      </AvesContainer>
+    </div>
   );
 };
 
