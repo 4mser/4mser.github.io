@@ -57,19 +57,16 @@ function App() {
 
           <Route path="/buscar" element={<Buscar tema={tema}></Buscar>}></Route>
 
-          <Route path="/explorar" element={<Aves tema={tema}></Aves>}></Route>
+          <Route path="/explorar" element={<Nada tema={tema}></Nada>}></Route>
 
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
           <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
 
-          {ExploraData.map((explora) => (
-            <Route
-              key={explora.id}
-              path={`/${explora.url}`}
-              element={<Nada tema={tema} />}
-            />
-          ))}
+          <Route
+            path="/explorar/aves-en-valdivia"
+            element={<Aves tema={tema}></Aves>}
+          ></Route>
         </Routes>
       </>
     </BrowserRouter>

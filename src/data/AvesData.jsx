@@ -400,6 +400,564 @@ const AvesData = [
     nombre_cientifico: "Leucophaeus modestus",
     imagen: "https://static.inaturalist.org/photos/15185085/large.jpg",
   },
+  {
+    id: 61,
+    nombre: "Pidén",
+    nombre_cientifico: "Pardirallus sanguinolentus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/247574/large.jpg",
+  },
+  {
+    id: 62,
+    nombre: "Piquero",
+    nombre_cientifico: "Sula variegata",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/660314/large.jpg",
+  },
+  {
+    id: 63,
+    nombre: "Pingüino de Magallanes",
+    nombre_cientifico: "Spheniscus magellanicus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/172295470/large.jpg",
+  },
+  {
+    id: 64,
+    nombre: "Chirihue",
+    nombre_cientifico: "Sicalis luteola",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/33491763/large.jpeg",
+  },
+  {
+    id: 65,
+    nombre: "Carpintero Negro",
+    nombre_cientifico: "Campephilus magellanicus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/48405/large.jpg",
+  },
+  {
+    id: 66,
+    nombre: "Gaviota de Franklin",
+    nombre_cientifico: "Leucophaeus pipixcan",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/67118059/large.jpg",
+  },
+  {
+    id: 67,
+    nombre: "Golondrina Chilena",
+    nombre_cientifico: "Tachycineta leucopyga",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70927/large.jpg",
+  },
+  {
+    id: 68,
+    nombre: "Carpinterito ",
+    nombre_cientifico: "Dryobates lignarius",
+    imagen: "https://static.inaturalist.org/photos/23283624/large.jpg",
+  },
+  {
+    id: 69,
+    nombre: "Paloma Asiática Doméstica",
+    nombre_cientifico: "Columba livia",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/96934693/large.jpg",
+  },
+  {
+    id: 70,
+    nombre: "Pitotoy Grande",
+    nombre_cientifico: "Tringa melanoleuca",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/48630238/large.jpeg",
+  },
+  {
+    id: 71,
+    nombre: "Pato Jergón Grande",
+    nombre_cientifico: "Anas georgica",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/177332894/large.jpeg",
+  },
+  {
+    id: 72,
+    nombre: "Colegial",
+    nombre_cientifico: "Lessonia rufa",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/238983904/large.jpg",
+  },
+
+  {
+    id: 73,
+    nombre: "Nuco",
+    nombre_cientifico: "Asio flammeus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/262787956/large.jpg",
+  },
+  {
+    id: 74,
+    nombre: "Cormorán Imperial",
+    nombre_cientifico: "Leucocarbo atriceps",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/53269181/large.jpg",
+  },
+  {
+    id: 75,
+    nombre: "Tórtola",
+    nombre_cientifico: "Zenaida auriculata",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/85633474/large.jpeg",
+  },
+  {
+    id: 76,
+    nombre: "Pingüino de Humboldt",
+    nombre_cientifico: "Spheniscus humboldti",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/161759810/large.jpg",
+  },
+  {
+    id: 77,
+    nombre: "Playero de Baird",
+    nombre_cientifico: "Calidris bairdii",
+    imagen: "https://static.inaturalist.org/photos/92748723/large.jpg",
+  },
+  {
+    id: 78,
+    nombre: "Chercán de Las Vegas",
+    nombre_cientifico: "Cistothorus platensis",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/107287092/large.jpeg",
+  },
+  {
+    id: 79,
+    nombre: "Churrín de la Mocha",
+    nombre_cientifico: "Eugralla paradoxa",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/207267611/large.jpeg",
+  },
+  {
+    id: 80,
+    nombre: "Albatros de Ceja Negra",
+    nombre_cientifico: "Thalassarche melanophris",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/171871704/large.jpg",
+  },
+  {
+    id: 81,
+    nombre: "Tagua",
+    nombre_cientifico: "Fulica armillata",
+    imagen: "https://static.inaturalist.org/photos/97562325/large.jpg",
+  },
+  {
+    id: 82,
+    nombre: "Gaviotín Sudamericano",
+    nombre_cientifico: "Sterna hirundinacea",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2019765/large.JPG",
+  },
+  {
+    id: 83,
+    nombre: "Rayador",
+    nombre_cientifico: "Rynchops niger",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/4806/large.jpg",
+  },
+  {
+    id: 84,
+    nombre: "Aguilucho de Cola Rojiza",
+    nombre_cientifico: "Buteo ventralis",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/222644904/large.jpeg",
+  },
+  {
+    id: 85,
+    nombre: "Bailarín",
+    nombre_cientifico: "Elanus leucurus",
+    imagen: "https://static.inaturalist.org/photos/114637752/large.jpeg",
+  },
+  {
+    id: 86,
+    nombre: "Churrete Chico",
+    nombre_cientifico: "Cinclodes oustaleti",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70918/large.jpg",
+  },
+  {
+    id: 87,
+    nombre: "Churrete Acanelado",
+    nombre_cientifico: "Cinclodes fuscus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/60334012/large.jpg",
+  },
+  {
+    id: 88,
+    nombre: "Colilarga",
+    nombre_cientifico: "Sylviorthorhynchus desmursii",
+    imagen: "https://static.inaturalist.org/photos/225280102/large.jpg",
+  },
+  {
+    id: 89,
+    nombre: "Dormilona Tontito",
+    nombre_cientifico: "Muscisaxicola maclovianus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/1107387/large.jpg",
+  },
+  {
+    id: 90,
+    nombre: "Playero de Las Rompientes",
+    nombre_cientifico: "Calidris virgata",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28440005/large.jpg",
+  },
+  {
+    id: 91,
+    nombre: "Peuquito",
+    nombre_cientifico: "Accipiter chilensis",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/82961087/large.jpg",
+  },
+  {
+    id: 92,
+    nombre: "Codorniz",
+    nombre_cientifico: "Callipepla californica",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/252273183/large.jpg",
+  },
+  {
+    id: 93,
+    nombre: "Pitotoy Chico",
+    nombre_cientifico: "Tringa flavipes",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13184983/large.jpg",
+  },
+  {
+    id: 94,
+    nombre: "Pimpollo",
+    nombre_cientifico: "Rollandia rolland",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/13258944/large.jpg",
+  },
+  {
+    id: 95,
+    nombre: "Gaviotín Monja",
+    nombre_cientifico: "Larosterna inca",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12945797/large.jpeg",
+  },
+  {
+    id: 96,
+    nombre: "Chorlo de Collar",
+    nombre_cientifico: "Charadrius collaris",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/95051106/large.jpeg",
+  },
+  {
+    id: 97,
+    nombre: "Aguilucho Chico",
+    nombre_cientifico: "Buteo albigula",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/165648956/large.jpeg",
+  },
+  {
+    id: 98,
+    nombre: "Diuca",
+    nombre_cientifico: "Diuca diuca",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/1812584/large.jpg",
+  },
+  {
+    id: 98,
+    nombre: "Golondrina Bermeja",
+    nombre_cientifico: "Hirundo rustica",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/193101149/large.jpg",
+  },
+  {
+    id: 99,
+    nombre: "Churrín del Sur",
+    nombre_cientifico: "Scytalopus magellanicus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/23635316/large.jpg",
+  },
+  {
+    id: 100,
+    nombre: "Cazamoscas Tijereta",
+    nombre_cientifico: "Tyrannus savana",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/169149459/large.jpg",
+  },
+  {
+    id: 101,
+    nombre: "Concón",
+    nombre_cientifico: "Strix rufipes",
+    imagen: "https://static.inaturalist.org/photos/175326700/large.jpeg",
+  },
+  {
+    id: 102,
+    nombre: "Perdiz",
+    nombre_cientifico: "Nothoprocta perdicaria",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/77194815/large.jpg",
+  },
+  {
+    id: 103,
+    nombre: "Golondrina de Dorso Negro",
+    nombre_cientifico: "Pygochelidon cyanoleuca",
+    imagen: "https://static.inaturalist.org/photos/20340117/large.jpg",
+  },
+  {
+    id: 104,
+    nombre: "Gaviotín Elegante",
+    nombre_cientifico: "Thalasseus elegans",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/184077990/large.jpg",
+  },
+  {
+    id: 105,
+    nombre: "Fardela Blanca",
+    nombre_cientifico: "Ardenna creatopus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/5937/large.jpg",
+  },
+  {
+    id: 106,
+    nombre: "Fardela Negra",
+    nombre_cientifico: "Ardenna grisea",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/180460944/large.jpeg",
+  },
+  {
+    id: 107,
+    nombre: "Guanay",
+    nombre_cientifico: "Leucocarbo bougainvillii",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/50902078/large.jpg",
+  },
+  {
+    id: 108,
+    nombre: "Playero Blanco",
+    nombre_cientifico: "Calidris alba",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/55826082/large.jpeg",
+  },
+  {
+    id: 109,
+    nombre: "Fardela Negra Grande",
+    nombre_cientifico: "Procellaria aequinoctialis",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/3873747/large.jpg",
+  },
+  {
+    id: 110,
+    nombre: "Petrel Gigante Antártico",
+    nombre_cientifico: "Macronectes giganteus",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/112193825/large.jpg",
+  },
+  {
+    id: 111,
+    nombre: "Picurio",
+    nombre_cientifico: "Podilymbus podiceps",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/181028073/large.jpg",
+  },
+  {
+    id: 112,
+    nombre: "Cisne Coscoroba",
+    nombre_cientifico: "Coscoroba coscoroba",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/160405251/large.jpg",
+  },
+  {
+    id: 113,
+    nombre: "Tijeral",
+    nombre_cientifico: "Leptasthenura aegithaloides",
+    imagen: "https://static.inaturalist.org/photos/136441316/large.jpeg",
+  },
+  {
+    id: 114,
+    nombre: "Lechuza",
+    nombre_cientifico: "Tyto alba",
+    imagen: "https://static.inaturalist.org/photos/112741269/large.jpg",
+  },
+  {
+    id: 115,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 116,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 117,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 118,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 120,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 121,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 122,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 123,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 124,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 125,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 126,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 127,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 128,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 129,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 130,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 131,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 132,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 133,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 134,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 135,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 136,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 137,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 138,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 139,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 140,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 141,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 142,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 143,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 144,
+    nombre: "",
+    nombre_cientifico: "",
+    imagen: "",
+  },
+  {
+    id: 145,
+    nombre: "Viudita",
+    nombre_cientifico: "Colorhamphus parvirostris",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2827172/large.jpg",
+  },
 ];
 
 export default AvesData;

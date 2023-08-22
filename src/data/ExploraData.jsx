@@ -20,6 +20,16 @@ const ExploraData = [
   },
   {
     id: 3,
+    nombre: "Emplumados",
+    descripcion: "Descubre las aves avistadas en Valdivia",
+    imagen:
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
+    categorias: ["Naturaleza"],
+    iconos: ["game-icons:grass-mushroom"],
+    url: "aves-en-valdivia",
+  },
+  {
+    id: 4,
     nombre: "Valdivia bajo las olas",
     descripcion: "Maravillas ocultas de la Costa",
     imagen:
@@ -29,7 +39,7 @@ const ExploraData = [
     url: "bajo-las-olas",
   },
   {
-    id: 4,
+    id: 5,
     nombre: "Naturaleza en movimiento",
     descripcion: "Descubre la fauna de Valdivia",
     imagen:
@@ -39,7 +49,7 @@ const ExploraData = [
     url: "naturaleza-en-movimiento",
   },
   {
-    id: 5,
+    id: 6,
     nombre: "Valdivia Inspiradora",
     descripcion: "Conoce a los artistas que dan vida a la ciudad",
     imagen: "https://app-valdi.s3.amazonaws.com/artistas.jpg",
@@ -48,7 +58,7 @@ const ExploraData = [
     url: "inspiración",
   },
   {
-    id: 6,
+    id: 7,
     nombre: "Valdivia Emprende",
     descripcion: "Descubre los negocios locales",
     imagen:
