@@ -44,7 +44,6 @@ export default Categorias;
 
 const CategoriasContainer = styled.div`
   width: 100%;
-  margin-top: 10px;
 
   .mySwiper {
     padding: 1rem 1.2rem;

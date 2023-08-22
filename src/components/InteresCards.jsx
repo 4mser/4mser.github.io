@@ -43,7 +43,6 @@ export default InteresCards;
 
 const CategoriasContainer = styled.div`
   width: 100%;
-  margin-bottom: 5rem;
 
   .mySwiper {
     padding: 1rem 1.2rem;

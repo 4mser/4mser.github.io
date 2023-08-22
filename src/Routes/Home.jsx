@@ -10,9 +10,9 @@ const Home = ({ tema }) => {
   return (
     <div>
       <Avisos tema={tema}></Avisos>
+      <Interes tema={tema}></Interes>
       <Categorias tema={tema}></Categorias>
       <Explora tema={tema}></Explora>
-      <Interes tema={tema}></Interes>
       <Footer tema={tema}></Footer>
     </div>
   );
