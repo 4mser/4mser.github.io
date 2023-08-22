@@ -45,7 +45,7 @@ const AllExploraData = {
           "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
-        url: "aventuras-micologicas",
+        url: "hongos-en-valdivia",
       },
       {
         id: 2,
@@ -138,7 +138,7 @@ const AllExploraData = {
           "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
-        url: "aventuras-micologicas",
+        url: "hongos-en-valdivia",
       },
       {
         id: 2,

@@ -16,6 +16,7 @@ import Buscar from "./Routes/Buscar";
 import Nada from "./components/Nada";
 import ExploraData from "./data/ExploraData";
 import Aves from "./components/Aves";
+import Hongos from "./components/Hongos";
 
 function App() {
   //Cambio de tema
@@ -66,6 +67,11 @@ function App() {
           <Route
             path="/explorar/aves-en-valdivia"
             element={<Aves tema={tema}></Aves>}
+          ></Route>
+
+          <Route
+            path="/explorar/hongos-en-valdivia"
+            element={<Hongos tema={tema}></Hongos>}
           ></Route>
         </Routes>
       </>
