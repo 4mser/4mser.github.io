@@ -7,8 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { FreeMode } from "swiper/modules";
 import CategoriasData from "../data/CategoriasData";
-import AllExploraData from "../data/AllExploraData"; // Importar el objeto de entradas y categorías
-import ExploraAll from "./ExploraAll"; // Importar el componente Explora o ExploraAll
+import AllExploraData from "../data/AllExploraData";
+import ExploraAll from "./ExploraAll";
+import Nada from "./Nada"; // Importa el componente Nada
+import SinContenido from "./SinContenido";
 
 const CategoriasBuscar = ({ tema }) => {
   const [activeCategory, setActiveCategory] = useState("todo");
@@ -48,11 +50,15 @@ const CategoriasBuscar = ({ tema }) => {
         ))}
       </Swiper>
 
-      <ExploraAll
-        entradas={filteredEntries}
-        tema={tema}
-        activeCategory={activeCategory}
-      />
+      {filteredEntries.length === 0 ? ( // Si no hay coincidencias, renderiza Nada
+        <SinContenido tema={tema} />
+      ) : (
+        <ExploraAll
+          entradas={filteredEntries}
+          tema={tema}
+          activeCategory={activeCategory}
+        />
+      )}
     </CategoriasContainer>
   );
 };
