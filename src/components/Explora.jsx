@@ -15,7 +15,15 @@ const Explora = ({ tema }) => {
     <CategoriasContainer tema={tema}>
       <VerTodo tema={tema}>
         <h2>Explora</h2>
-        <p>Ver Todo</p>
+        <Link
+          to={"/buscar"}
+          style={{
+            textDecoration: "none",
+            color: tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)",
+          }}
+        >
+          <p>Ver Todo</p>
+        </Link>
       </VerTodo>
       <Swiper
         tema={tema}

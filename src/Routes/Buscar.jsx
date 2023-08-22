@@ -10,7 +10,6 @@ const Buscar = ({ tema }) => {
     <div>
       <SearchBar tema={tema}></SearchBar>
       <CategoriasBuscar tema={tema}></CategoriasBuscar>
-      {/* <ExploraAll tema={tema}></ExploraAll> */}
     </div>
   );
 };
