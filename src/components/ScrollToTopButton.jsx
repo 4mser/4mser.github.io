@@ -5,23 +5,17 @@ import { Icon } from "@iconify/react";
 const BackToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  background-color: var(--Blue);
+  right: ${(props) => (props.isVisible ? "20px" : "-100%")};
+  background: var(--Blue);
   color: white;
   border: none;
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
-  display: ${(props) => (props.isVisible ? "block" : "none")};
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
-  transition: opacity 0.3s ease-in-out;
-  box-shadow: 0px 1px 7px 0px
-    ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
-
-  &:hover {
-    background-color: #555;
-  }
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999; // Asegurarse de que el botón esté por encima del contenido
 `;
 
 const ScrollToTopButton = () => {
@@ -51,7 +45,7 @@ const ScrollToTopButton = () => {
 
   return (
     <BackToTopButton isVisible={showButton} onClick={scrollToTop}>
-      <Icon icon="bx:up-arrow" height="20" className="Icon" />
+      <Icon icon="bx:up-arrow" height="25" className="Icon" />
     </BackToTopButton>
   );
 };
