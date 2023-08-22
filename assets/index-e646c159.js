@@ -726,7 +726,53 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
-`,SO=({tema:e})=>{const[t,n]=U.useState("todo"),r=Gg.snippet[t.toLowerCase()]||[];return j.jsxs(PO,{tema:e,children:[j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:4.2,freeMode:!0,navigation:!0,modules:[hg],className:"mySwiper",children:mg.map(i=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(_O,{tema:e,id:i.snippet,activeCategory:t,onClick:()=>n(i.snippet),children:[j.jsx(De,{icon:i.icono,height:i.height,className:"Icon"}),j.jsx("p",{children:i.nombre})]})},i.id))}),j.jsx(dO,{entradas:r,tema:e,activeCategory:t})]})},PO=K.div`
+`,Lo=({tema:e})=>j.jsxs(SO,{tema:e,children:[j.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/hormiga.png",alt:""}),j.jsx("h2",{children:"SECCIÓN EN CONSTRUCCIÓN"})]}),SO=K.div`
+  width: 100%;
+  height: 100%;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20%;
+  text-align: center;
+  gap: 1rem;
+
+  h2 {
+    color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
+    font-weight: 600;
+  }
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+`,PO=({tema:e})=>j.jsxs(_O,{tema:e,children:[j.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/hormiga.png",alt:""}),j.jsx("h3",{children:"Aún no se sube contenido relacionado"})]}),_O=K.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20%;
+  text-align: center;
+  gap: 1rem;
+
+  h3 {
+    color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+`,bO=({tema:e})=>{const[t,n]=U.useState("todo"),r=Gg.snippet[t.toLowerCase()]||[];return j.jsxs(xO,{tema:e,children:[j.jsx(bn,{tema:e,centeredSlides:!1,spaceBetween:10,slidesPerView:4.2,freeMode:!0,navigation:!0,modules:[hg],className:"mySwiper",children:mg.map(i=>j.jsx(ut,{className:"slider",tema:e,children:j.jsxs(EO,{tema:e,id:i.snippet,activeCategory:t,onClick:()=>n(i.snippet),children:[j.jsx(De,{icon:i.icono,height:i.height,className:"Icon"}),j.jsx("p",{children:i.nombre})]})},i.id))}),r.length===0?j.jsx(PO,{tema:e}):j.jsx(dO,{entradas:r,tema:e,activeCategory:t})]})},xO=K.div`
   width: 100%;
 
   .mySwiper {
@@ -740,7 +786,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,_O=K.div`
+`,EO=K.div`
   width: 100%;
   height: 75px;
   display: flex;
@@ -783,27 +829,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     /* color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"}; */
     color: ${e=>e.id===e.activeCategory?"white":e.tema==="dark"?"var(--whiteColor)":"var(--Item)"};
   }
-`,bO=({tema:e})=>j.jsxs("div",{children:[j.jsx(uO,{tema:e}),j.jsx(SO,{tema:e})]}),Lo=({tema:e})=>j.jsxs(xO,{tema:e,children:[j.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/hormiga.png",alt:""}),j.jsx("h2",{children:"SECCIÓN EN CONSTRUCCIÓN"})]}),xO=K.div`
-  width: 100%;
-  height: 100%;
-  margin-top: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20%;
-  text-align: center;
-  gap: 1rem;
-
-  h2 {
-    color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
-    font-weight: 600;
-  }
-
-  img {
-    width: 90%;
-    height: 90%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-`;function EO(){const[e,t]=U.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=U.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(J1,{children:[j.jsx(h_,{}),j.jsx(rS,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(u_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(K1,{children:[j.jsx(Zt,{path:"/",element:j.jsx(hx,{tema:e})}),j.jsx(Zt,{path:"/perfil",element:j.jsx(xx,{tema:e})}),j.jsx(Zt,{path:"/buscar",element:j.jsx(bO,{tema:e})}),j.jsx(Zt,{path:"/explorar",element:j.jsx(Lo,{tema:e})}),j.jsx(Zt,{path:"/guardado",element:j.jsx(Lo,{tema:e})}),j.jsx(Zt,{path:"/tienda",element:j.jsx(Lo,{tema:e})}),yg.map(a=>j.jsx(Zt,{path:`/${a.url}`,element:j.jsx(Lo,{tema:e})},a.id))]})]})]})}const OO=Xm(document.getElementById("root"));OO.render(j.jsx(i1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(EO,{})}));
+`,OO=({tema:e})=>j.jsxs("div",{children:[j.jsx(uO,{tema:e}),j.jsx(bO,{tema:e})]});function kO(){const[e,t]=U.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=U.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(J1,{children:[j.jsx(h_,{}),j.jsx(rS,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(u_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(K1,{children:[j.jsx(Zt,{path:"/",element:j.jsx(hx,{tema:e})}),j.jsx(Zt,{path:"/perfil",element:j.jsx(xx,{tema:e})}),j.jsx(Zt,{path:"/buscar",element:j.jsx(OO,{tema:e})}),j.jsx(Zt,{path:"/explorar",element:j.jsx(Lo,{tema:e})}),j.jsx(Zt,{path:"/guardado",element:j.jsx(Lo,{tema:e})}),j.jsx(Zt,{path:"/tienda",element:j.jsx(Lo,{tema:e})}),yg.map(a=>j.jsx(Zt,{path:`/${a.url}`,element:j.jsx(Lo,{tema:e})},a.id))]})]})]})}const TO=Xm(document.getElementById("root"));TO.render(j.jsx(i1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(kO,{})}));
