@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AvesData from "../data/AvesData";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 const AvesContainer = styled.div`
   display: flex;
@@ -11,8 +12,8 @@ const AvesContainer = styled.div`
 
   h2 {
     font-size: 1.2rem;
+    width: 100%;
     font-weight: 500;
-    margin-bottom: 1rem;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
@@ -56,10 +57,17 @@ const AveImage = styled.img`
   border-bottom: 1px solid #dddddd4a;
 `;
 
+const Blog = styled.div`
+  width: 100%;
+  margin-bottom: 1rem;
+`;
+
 const Aves = ({ tema }) => {
   return (
     <AvesContainer tema={tema}>
-      <h2>Aves que encontrarás en Valdivia</h2>
+      <Blog tema={tema}>
+        <h2>Aves avistadas en Valdivia</h2>
+      </Blog>
       {AvesData.map((ave) => (
         <AveCard key={ave.id} tema={tema}>
           <AveImage src={ave.imagen} alt={ave.nombre} />
@@ -67,6 +75,7 @@ const Aves = ({ tema }) => {
           <p>({ave.nombre_cientifico})</p>
         </AveCard>
       ))}
+      <ScrollToTopButton tema={tema}></ScrollToTopButton>
     </AvesContainer>
   );
 };
