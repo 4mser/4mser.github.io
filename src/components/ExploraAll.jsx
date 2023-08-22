@@ -7,14 +7,16 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 
-import ExploraData from "../data/ExploraData";
+import AllExploraData from "../data/AllExploraData"; // Importar el objeto de entradas y categorías
 import { Link } from "react-router-dom";
 
-const ExploraAll = ({ tema }) => {
+const ExploraAll = ({ tema, activeCategory }) => {
+  const categoryData = AllExploraData.snippet[activeCategory] || [];
+
   return (
     <CategoriasContainer tema={tema}>
       <Swiper tema={tema} className="mySwiper">
-        {ExploraData.slice(0).map((explora) => (
+        {categoryData.map((explora) => (
           <Container key={explora.id} className="slider" tema={tema}>
             <Link
               to={`/explorar/${explora.url}`}
@@ -49,7 +51,10 @@ const ExploraAll = ({ tema }) => {
   );
 };
 
+// ... Resto del código ...
+
 export default ExploraAll;
+
 const Container = styled.div``;
 
 const CategoriasContainer = styled.div`

@@ -19,10 +19,9 @@ const InteresCards = ({ tema, activeCategory }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={1.8}
+        slidesPerView={2}
         freeMode={true}
         navigation={true}
-        modules={[FreeMode]}
         className="mySwiper"
       >
         {categoryData.map((item) => (
@@ -53,12 +52,6 @@ const CategoriasContainer = styled.div`
     overflow: hidden;
     box-shadow: 0 3px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
     cursor: pointer;
-  }
-
-  .slider:hover {
-    img {
-      transform: scale(1.2);
-    }
   }
 
   h2 {
@@ -94,7 +87,7 @@ const Categoria = styled.div`
 
   img {
     width: 100%;
-    height: 12rem;
+    height: 9rem;
     transition: 0.3s ease-in-out;
     object-fit: cover;
   }

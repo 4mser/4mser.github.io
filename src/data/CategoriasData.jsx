@@ -4,6 +4,7 @@ const CategoriasData = [
     nombre: "Todo",
     icono: "game-icons:abstract-061",
     height: "35",
+    snippet: "todo",
   },
   {
     id: 1,
@@ -11,6 +12,7 @@ const CategoriasData = [
     icono: "game-icons:microscope",
     descripcion: "",
     height: "30",
+    snippet: "ciencia",
   },
   {
     id: 2,
@@ -18,6 +20,7 @@ const CategoriasData = [
     icono: "game-icons:health-capsule",
     descripcion: "",
     height: "30",
+    snippet: "salud",
   },
   {
     id: 3,
@@ -25,6 +28,7 @@ const CategoriasData = [
     icono: "game-icons:grass-mushroom",
     descripcion: "",
     height: "30",
+    snippet: "naturaleza",
   },
   {
     id: 4,
@@ -32,6 +36,7 @@ const CategoriasData = [
     icono: "game-icons:knife-fork",
     descripcion: "",
     height: "30",
+    snippet: "gastronomia",
   },
   {
     id: 5,
@@ -39,6 +44,7 @@ const CategoriasData = [
     icono: "game-icons:guitar-head",
     descripcion: "",
     height: "30",
+    snippet: "talentos",
   },
   {
     id: 6,
@@ -46,6 +52,7 @@ const CategoriasData = [
     icono: "game-icons:cycling",
     descripcion: "",
     height: "30",
+    snippet: "deporte",
   },
   {
     id: 7,
@@ -53,6 +60,7 @@ const CategoriasData = [
     icono: "game-icons:surf-board",
     descripcion: "",
     height: "30",
+    snippet: "airelibre",
   },
   {
     id: 8,
@@ -60,6 +68,7 @@ const CategoriasData = [
     icono: "game-icons:coffee-cup",
     descripcion: "",
     height: "30",
+    snippet: "cafeterias",
   },
   {
     id: 9,
@@ -67,6 +76,7 @@ const CategoriasData = [
     icono: "game-icons:labrador-head",
     descripcion: "",
     height: "30",
+    snippet: "mascotas",
   },
   {
     id: 10,
@@ -74,6 +84,7 @@ const CategoriasData = [
     icono: "game-icons:camping-tent",
     descripcion: "",
     height: "30",
+    snippet: "campings",
   },
   {
     id: 11,
@@ -81,6 +92,7 @@ const CategoriasData = [
     icono: "game-icons:summits",
     descripcion: "",
     height: "30",
+    snippet: "rutas",
   },
   {
     id: 12,
@@ -88,6 +100,7 @@ const CategoriasData = [
     icono: "game-icons:dice-twenty-faces-twenty",
     descripcion: "",
     height: "30",
+    snippet: "juegos",
   },
   {
     id: 13,
@@ -95,6 +108,7 @@ const CategoriasData = [
     icono: "game-icons:scissors",
     descripcion: "",
     height: "30",
+    snippet: "belleza",
   },
   {
     id: 14,
@@ -102,6 +116,7 @@ const CategoriasData = [
     icono: "game-icons:earth-america",
     descripcion: "",
     height: "30",
+    snippet: "ecologia",
   },
   {
     id: 15,
@@ -109,6 +124,7 @@ const CategoriasData = [
     icono: "game-icons:teacher",
     descripcion: "",
     height: "30",
+    snippet: "talleres",
   },
   {
     id: 16,
@@ -116,6 +132,7 @@ const CategoriasData = [
     icono: "game-icons:martini",
     descripcion: "",
     height: "30",
+    snippet: "nocturna",
   },
   {
     id: 17,
@@ -123,6 +140,7 @@ const CategoriasData = [
     icono: "game-icons:spell-book",
     descripcion: "",
     height: "30",
+    snippet: "historias",
   },
   {
     id: 18,
@@ -130,6 +148,7 @@ const CategoriasData = [
     icono: "game-icons:briefcase",
     descripcion: "",
     height: "30",
+    snippet: "emprende",
   },
   {
     id: 19,
@@ -137,6 +156,7 @@ const CategoriasData = [
     icono: "game-icons:film-projector",
     descripcion: "",
     height: "30",
+    snippet: "entretenimiento",
   },
 ];
 

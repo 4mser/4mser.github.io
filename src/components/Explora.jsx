@@ -63,7 +63,7 @@ const Explora = ({ tema }) => {
 
 export default Explora;
 
-const CategoriasContainer = styled.div`
+export const CategoriasContainer = styled.div`
   width: 100%;
 
   .mySwiper {
@@ -81,7 +81,7 @@ const CategoriasContainer = styled.div`
   }
 `;
 
-const VerTodo = styled.div`
+export const VerTodo = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,7 +102,7 @@ const VerTodo = styled.div`
   }
 `;
 
-const ExploraCard = styled.div`
+export const ExploraCard = styled.div`
   width: 100%;
   height: 7rem;
   margin-top: 1rem;
@@ -137,7 +137,7 @@ const ExploraCard = styled.div`
   }
 `;
 
-const ImagenExplora = styled.div`
+export const ImagenExplora = styled.div`
   width: 40%;
   height: 100%;
   overflow: hidden;
@@ -149,9 +149,9 @@ const ImagenExplora = styled.div`
   }
 `;
 
-const Titulo = styled.div``;
+export const Titulo = styled.div``;
 
-const Categorias = styled.div`
+export const Categorias = styled.div`
   width: 100%;
   display: flex;
   gap: 10px;
@@ -167,7 +167,7 @@ const Categorias = styled.div`
   }
 `;
 
-const Data = styled.div`
+export const Data = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
