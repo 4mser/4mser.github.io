@@ -24,24 +24,27 @@ const AveCard = styled.div`
   border: 1px solid #dddddd4a;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
-  align-items: center;
   padding-bottom: 10px;
 
   h3 {
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 500;
+    padding-left: 10px;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
 
   p {
-    margin-top: 4px;
-    font-size: 12px;
+    padding-left: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
     color: ${(props) =>
-      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
+      props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
   }
 `;
 
@@ -61,7 +64,7 @@ const Aves = ({ tema }) => {
         <AveCard key={ave.id} tema={tema}>
           <AveImage src={ave.imagen} alt={ave.nombre} />
           <h3>{ave.nombre}</h3>
-          <p>{ave.nombre_cientifico}</p>
+          <p>({ave.nombre_cientifico})</p>
         </AveCard>
       ))}
     </AvesContainer>
