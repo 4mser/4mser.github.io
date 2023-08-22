@@ -76,6 +76,7 @@ Error generating stack: `+o.message+`
   top: 0;
   left: 0;
   display: flex;
+  user-select: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -85,26 +86,31 @@ Error generating stack: `+o.message+`
 
   .link {
     text-decoration: none;
+    user-select: none;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
 
   .Icon {
     font-weight: 800;
+    user-select: none;
   }
 `,f_=K.div`
   flex-direction: row;
   display: flex;
   width: 100%;
+  user-select: none;
   justify-content: space-between;
   padding: 1.2rem 1.2rem 0 1.2rem;
 `,d_=K.div`
   flex-direction: row;
+  user-select: none;
   display: flex;
   width: ${e=>e.isAuthenticated?"140px":"85px"};
   justify-content: space-between;
 `,rp=K.div`
   h2 {
     font-size: 12px;
+    user-select: none;
     font-weight: 400;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
@@ -112,11 +118,13 @@ Error generating stack: `+o.message+`
   p {
     font-size: 15px;
     font-weight: 700;
+    user-select: none;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
 `,Gs=K.div`
   width: 36px;
   height: 36px;
+  user-select: none;
   border-radius: 35%;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--white2)"};
   display: flex;
@@ -128,11 +136,13 @@ Error generating stack: `+o.message+`
   :hover {
     cursor: pointer;
     user-select: none;
+    user-select: none;
   }
 
   img {
     width: 100%;
     height: 100%;
+    user-select: none;
     object-fit: cover;
   }
 
@@ -173,6 +183,7 @@ Error generating stack: `+o.message+`
   bottom: 1rem;
   z-index: 1000;
   display: flex;
+  user-select: none;
   justify-content: space-between;
   padding: 0 1.2rem;
   align-items: center;
@@ -181,6 +192,7 @@ Error generating stack: `+o.message+`
 `,oi=K.div`
   display: flex;
   align-items: center;
+  user-select: none;
   justify-content: space-between;
   flex-direction: column;
   color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
@@ -749,7 +761,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     object-fit: cover;
     border-radius: 10px;
   }
-`,PO=({tema:e})=>j.jsxs(_O,{tema:e,children:[j.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/hormiga.png",alt:""}),j.jsx("h3",{children:"Aún no se sube contenido relacionado"})]}),_O=K.div`
+`,PO=({tema:e})=>j.jsxs(_O,{tema:e,children:[j.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/hormiga.png",alt:""}),j.jsx("h3",{children:"Sin contenido relacionado...aún"})]}),_O=K.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -758,7 +770,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-direction: column;
   padding: 20%;
   text-align: center;
-  gap: 1rem;
 
   h3 {
     color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
