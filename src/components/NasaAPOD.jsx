@@ -36,7 +36,7 @@ const NasaAPOD = ({ tema }) => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
           alt=""
         />
-        <p>IMAGENES DE LA SEMANA</p>
+        <p>Imagenes de la semana</p>
       </Nasa>
       <Swiper
         spaceBetween={0}
@@ -153,11 +153,13 @@ const Nasa = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  border-bottom: 1px solid var(--borderDark);
+  gap: 2px;
   position: absolute;
   z-index: 2;
   animation: gradient 8s ease infinite;
   background-size: 300% 300%;
+  box-shadow: 0 2px 15px -5px var(--boxShadow);
 
   @keyframes gradient {
     0% {
@@ -178,8 +180,8 @@ const Nasa = styled.div`
 
   p {
     width: 100%;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
     /* color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"}; */
     color: var(--textLight);
