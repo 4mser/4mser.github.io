@@ -102,7 +102,7 @@ const AllExploraData = {
         descripcion: "Descubre los negocios locales",
         imagen:
           "https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",
-        categorias: ["Emprende"],
+        categorias: ["Emprendimientos"],
         iconos: ["game-icons:briefcase"],
         url: "emprendimientos",
       },
@@ -188,9 +188,9 @@ const AllExploraData = {
         descripcion: "Descubre los negocios locales",
         imagen:
           "https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",
-        categorias: ["Emprende"],
+        categorias: ["Emprendimientos"],
         iconos: ["game-icons:briefcase"],
-        url: "emprende",
+        url: "emprendimientos",
       },
     ],
     talentos: [

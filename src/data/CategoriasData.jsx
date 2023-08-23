@@ -144,7 +144,7 @@ const CategoriasData = [
   },
   {
     id: 18,
-    nombre: "Emprende",
+    nombre: "Emprendimientos",
     icono: "game-icons:briefcase",
     descripcion: "",
     height: "30",

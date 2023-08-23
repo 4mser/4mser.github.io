@@ -52,13 +52,11 @@ const CategoriasContainer = styled.div`
     border-radius: 5px;
     overflow: hidden;
     user-select: none;
-    box-shadow: 0 3px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
+    box-shadow: 0 3px 8px -4px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
     background: ${(props) =>
       props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
     /* border: 1px solid #dddddd4a; */
     cursor: pointer;
-    background: ${(props) =>
-      props.tema === "dark" ? "" : "var(--cardsLight)"};
   }
 
   h2 {
