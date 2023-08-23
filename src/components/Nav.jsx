@@ -319,7 +319,8 @@ export const ContainerNav = styled.div`
   padding: 0 1.2rem;
   align-items: center;
   border-bottom: 1px solid
-    ${(props) => (props.tema === "dark" ? "#ffffff2b" : "var(--BorderLight)")};
+    ${(props) =>
+      props.tema === "dark" ? "var(--borderDark)" : "var(--BorderLight)"};
 `;
 
 export const Button = styled.div`

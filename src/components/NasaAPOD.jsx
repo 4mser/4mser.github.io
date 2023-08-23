@@ -31,6 +31,13 @@ const NasaAPOD = ({ tema }) => {
 
   return (
     <AvisosContainer tema={tema}>
+      <Nasa tema={tema}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+          alt=""
+        />
+        <p>IMAGENES DE LA SEMANA</p>
+      </Nasa>
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -47,13 +54,6 @@ const NasaAPOD = ({ tema }) => {
       >
         {apodData.map(renderCard)}
       </Swiper>
-      <Nasa tema={tema}>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
-          alt=""
-        />
-        <p>Imagenes de la semana</p>
-      </Nasa>
     </AvisosContainer>
   );
 };
@@ -67,7 +67,12 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 7.6rem;
+  padding-top: 8.5rem;
+
+  .mySwiper {
+    margin-top: 2.6rem;
+    border-top: 1px solid var(--borderDark);
+  }
 
   h3 {
     padding: 0 1.2rem;
@@ -114,6 +119,7 @@ export const AvisosBox = styled.div`
   img {
     width: 100%;
     height: 100%;
+    border-bottom: 1px solid var(--borderDark);
     object-fit: cover;
   }
 `;
@@ -126,25 +132,26 @@ const Info = styled.div`
   padding: 1rem 1.4rem;
 
   h2 {
-    font-size: 1rem;
+    font-size: 12px;
     font-weight: 400;
     filter: drop-shadow(1px 1px 2px black);
   }
 
   p {
     filter: drop-shadow(1px 1px 1px black);
-    font-size: 12px;
+    font-size: 10px;
     opacity: 0.8;
   }
 `;
 
 const Nasa = styled.div`
-  height: 3rem;
+  height: 2rem;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 1rem;
+  gap: 5px;
   position: absolute;
   z-index: 2;
   img {
@@ -154,6 +161,8 @@ const Nasa = styled.div`
 
   p {
     width: 100%;
+    font-size: 12px;
+    font-weight: 500;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
