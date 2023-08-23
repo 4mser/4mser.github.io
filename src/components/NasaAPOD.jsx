@@ -47,7 +47,13 @@ const NasaAPOD = ({ tema }) => {
       >
         {apodData.map(renderCard)}
       </Swiper>
-      <h3>Fotos de la semana - NASA</h3>
+      <Nasa tema={tema}>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+          alt=""
+        />
+        <p>Imagenes de la semana</p>
+      </Nasa>
     </AvisosContainer>
   );
 };
@@ -64,7 +70,9 @@ export const AvisosContainer = styled.div`
   padding-top: 7.6rem;
 
   h3 {
-    padding: 1.2rem;
+    padding: 0 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .slider {
@@ -113,10 +121,13 @@ export const AvisosBox = styled.div`
 const Info = styled.div`
   position: absolute;
   bottom: 1rem;
-  padding: 1rem;
+  right: 0;
+  text-align: end;
+  padding: 1rem 1.4rem;
 
   h2 {
     font-size: 1rem;
+    font-weight: 400;
     filter: drop-shadow(1px 1px 2px black);
   }
 
@@ -124,5 +135,26 @@ const Info = styled.div`
     filter: drop-shadow(1px 1px 1px black);
     font-size: 12px;
     opacity: 0.8;
+  }
+`;
+
+const Nasa = styled.div`
+  height: 3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  position: absolute;
+  z-index: 2;
+  img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  p {
+    width: 100%;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
 `;

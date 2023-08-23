@@ -28,7 +28,7 @@ const useNasaAPI = () => {
   };
 
   useEffect(() => {
-    const previousDates = getPreviousDates(8);
+    const previousDates = getPreviousDates(7);
 
     Promise.all(previousDates.map((date) => fetchAPOD(date))).then(
       (dataArray) => {
