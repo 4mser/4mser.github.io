@@ -67,7 +67,7 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 7.7rem;
+  padding-top: 7.75rem;
 
   .mySwiper {
     margin-top: 2.9rem;
@@ -148,7 +148,6 @@ const Nasa = styled.div`
   height: 3rem;
   padding: 6px 1rem;
   width: 100%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   overflow: hidden;
   display: flex;
   justify-content: space-between;
@@ -157,9 +156,17 @@ const Nasa = styled.div`
   gap: 2px;
   position: absolute;
   z-index: 2;
-  animation: gradient 8s ease infinite;
-  background-size: 300% 300%;
   box-shadow: 0 2px 15px -5px var(--boxShadow);
+  background: linear-gradient(
+    -45deg,
+    #556576 20%,
+    #707f8e 40%,
+    #425972 60%,
+    #273647 90%,
+    #151d27 100%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 700% 100%;
 
   @keyframes gradient {
     0% {
@@ -176,6 +183,7 @@ const Nasa = styled.div`
   img {
     height: 100%;
     object-fit: contain;
+    margin-top: 2px;
   }
 
   p {
