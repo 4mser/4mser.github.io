@@ -6,7 +6,26 @@ const BackToTopButton = styled.button`
   position: fixed;
   bottom: 20px;
   right: ${(props) => (props.isVisible ? "20px" : "-100%")};
-  background: var(--Blue);
+  background: ${(props) =>
+    props.id === props.activeCategory
+      ? "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
+      : props.tema === "dark"
+      ? "var(--Item)"
+      : "var(--cardsLight)"};
+  animation: gradient 8s ease infinite;
+  background-size: 200% 200%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
   color: white;
   border: none;
   border-radius: 50%;

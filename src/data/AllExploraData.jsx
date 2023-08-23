@@ -85,7 +85,7 @@ const AllExploraData = {
           "https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
-        url: "naturaleza-en-movimiento",
+        url: "mamiferos-en-valdivia",
       },
       {
         id: 6,
@@ -178,7 +178,7 @@ const AllExploraData = {
           "https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
-        url: "naturaleza-en-movimiento",
+        url: "mamiferos-en-valdivia",
       },
     ],
     emprende: [
@@ -199,6 +199,7 @@ const AllExploraData = {
         nombre: "Talentos Locales",
         descripcion: "Conoce a lxs artistas que dan vida a la ciudad",
         imagen: "https://app-valdi.s3.amazonaws.com/artistas.jpg",
+        categorias: ["Talentos Locales"],
         iconos: ["game-icons:guitar-head"],
         url: "inspiración",
       },

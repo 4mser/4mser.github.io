@@ -17,6 +17,8 @@ import Nada from "./components/Nada";
 import ExploraData from "./data/ExploraData";
 import Aves from "./components/Aves";
 import Hongos from "./components/Hongos";
+import Mamiferos from "./components/Mamiferos";
+import NasaAPOD from "./components/NasaAPOD";
 
 function App() {
   //Cambio de tema
@@ -72,6 +74,16 @@ function App() {
           <Route
             path="/explorar/hongos-en-valdivia"
             element={<Hongos tema={tema}></Hongos>}
+          ></Route>
+
+          <Route
+            path="/explorar/mamiferos-en-valdivia"
+            element={<Mamiferos tema={tema}></Mamiferos>}
+          ></Route>
+
+          <Route
+            path="/explorar/cielo-nocturno"
+            element={<NasaAPOD tema={tema}></NasaAPOD>}
           ></Route>
         </Routes>
       </>

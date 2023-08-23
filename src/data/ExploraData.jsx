@@ -46,7 +46,7 @@ const ExploraData = [
       "https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",
     categorias: ["Naturaleza"],
     iconos: ["game-icons:grass-mushroom"],
-    url: "naturaleza-en-movimiento",
+    url: "mamiferos-en-valdivia",
   },
   {
     id: 6,
