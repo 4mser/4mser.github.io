@@ -71,6 +71,8 @@
   --fontLight: rgb(44, 44, 44);
 
 
+  --borderDark: #dddddd4a;
+  --borderLight: #5959594a;
 }
 
 * {

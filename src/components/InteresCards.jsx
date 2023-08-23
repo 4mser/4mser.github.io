@@ -19,7 +19,7 @@ const InteresCards = ({ tema, activeCategory }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={2}
+        slidesPerView={2.1}
         freeMode={true}
         navigation={true}
         className="mySwiper"
@@ -27,9 +27,9 @@ const InteresCards = ({ tema, activeCategory }) => {
         {categoryData.map((item) => (
           <SwiperSlide key={item.id} className="slider" tema={tema}>
             <Categoria tema={tema}>
-              <p>{item.nombre}</p>
-              <div className="degree"></div>
+              {/* <div className="degree"></div> */}
               <img src={item.imagen} alt={item.nombre} />
+              <p>{item.nombre}</p>
             </Categoria>
           </SwiperSlide>
         ))}
@@ -49,11 +49,16 @@ const CategoriasContainer = styled.div`
   }
 
   .slider {
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     user-select: none;
     box-shadow: 0 3px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
+    background: ${(props) =>
+      props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
+    /* border: 1px solid #dddddd4a; */
     cursor: pointer;
+    background: ${(props) =>
+      props.tema === "dark" ? "" : "var(--cardsLight)"};
   }
 
   h2 {
@@ -75,23 +80,23 @@ const Categoria = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
 
   p {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 10px;
     font-weight: 400;
-    position: absolute;
-    padding: 0 10px;
+    padding: 10px;
     bottom: 5px;
     z-index: 2;
-    color: var(--whiteColor);
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--Item)"};
   }
 
   img {
     width: 100%;
-    height: 9rem;
+    height: 12rem;
     transition: 0.3s ease-in-out;
+    /* border-bottom: 1px solid #dddddd4a; */
     object-fit: cover;
   }
 
