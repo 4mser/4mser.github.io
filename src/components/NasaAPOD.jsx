@@ -67,10 +67,10 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 8.5rem;
+  padding-top: 7.7rem;
 
   .mySwiper {
-    margin-top: 2.6rem;
+    margin-top: 2.9rem;
     border-top: 1px solid var(--borderDark);
   }
 
@@ -119,7 +119,7 @@ export const AvisosBox = styled.div`
   img {
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid var(--borderDark);
+    /* border-bottom: 1px solid var(--borderDark); */
     object-fit: cover;
   }
 `;
@@ -145,15 +145,32 @@ const Info = styled.div`
 `;
 
 const Nasa = styled.div`
-  height: 2rem;
+  height: 3rem;
+  padding: 6px 1rem;
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 1rem;
   gap: 5px;
   position: absolute;
   z-index: 2;
+  animation: gradient 8s ease infinite;
+  background-size: 300% 300%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   img {
     height: 100%;
     object-fit: contain;
@@ -163,7 +180,8 @@ const Nasa = styled.div`
     width: 100%;
     font-size: 12px;
     font-weight: 500;
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
+    /* color: ${(props) =>
+      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"}; */
+    color: var(--textLight);
   }
 `;
