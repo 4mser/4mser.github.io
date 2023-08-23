@@ -69,7 +69,7 @@ const CategoriasContainer = styled.div`
   width: 100%;
 
   .mySwiper {
-    padding: 0.2rem 1.2rem 1rem 1.2rem;
+    padding: 0.2rem 1.2rem 3px 1.2rem;
   }
 
   h2 {

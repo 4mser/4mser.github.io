@@ -15,38 +15,36 @@ const ExploraAll = ({ tema, activeCategory }) => {
 
   return (
     <CategoriasContainer tema={tema}>
-      <Swiper tema={tema} className="mySwiper">
-        {categoryData.map((explora) => (
-          <Container key={explora.id} className="slider" tema={tema}>
-            <Link
-              to={`/explorar/${explora.url}`}
-              style={{ textDecoration: "none" }}
-            >
-              <ExploraCard tema={tema}>
-                <ImagenExplora>
-                  <img src={explora.imagen} alt="" />
-                </ImagenExplora>
-                <Data>
-                  <Titulo>
-                    <h3>{explora.nombre}</h3>
-                    <p>{explora.descripcion}</p>
-                  </Titulo>
-                  <Categorias tema={tema}>
-                    {explora.iconos.map((icono, index) => (
-                      <Icon
-                        key={index}
-                        icon={icono}
-                        height="25"
-                        className="Icon"
-                      />
-                    ))}
-                  </Categorias>
-                </Data>
-              </ExploraCard>
-            </Link>
-          </Container>
-        ))}
-      </Swiper>
+      {categoryData.map((explora) => (
+        <Container key={explora.id} className="slider" tema={tema}>
+          <Link
+            to={`/explorar/${explora.url}`}
+            style={{ textDecoration: "none" }}
+          >
+            <ExploraCard tema={tema}>
+              <ImagenExplora>
+                <img src={explora.imagen} alt="" />
+              </ImagenExplora>
+              <Data>
+                <Titulo>
+                  <h3>{explora.nombre}</h3>
+                  <p>{explora.descripcion}</p>
+                </Titulo>
+                <Categorias tema={tema}>
+                  {explora.iconos.map((icono, index) => (
+                    <Icon
+                      key={index}
+                      icon={icono}
+                      height="25"
+                      className="Icon"
+                    />
+                  ))}
+                </Categorias>
+              </Data>
+            </ExploraCard>
+          </Link>
+        </Container>
+      ))}
     </CategoriasContainer>
   );
 };
@@ -59,20 +57,7 @@ const Container = styled.div``;
 
 const CategoriasContainer = styled.div`
   width: 100%;
-
-  .mySwiper {
-    padding: 0 1.2rem 1rem 1.2rem;
-  }
-
-  .swiper-pagination-bullet {
-    background-color: ${(props) =>
-      props.tema === "dark" ? "white" : "var(--Blue)"};
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: ${(props) =>
-      props.tema === "dark" ? "white" : "var(--Blue)"};
-  }
+  padding: 0 1.2rem 2rem 1.2rem;
 `;
 
 const ExploraCard = styled.div`
