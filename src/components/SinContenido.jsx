@@ -5,7 +5,7 @@ const SinContenido = ({ tema }) => {
   return (
     <Container tema={tema}>
       <img src="https://app-valdi.s3.amazonaws.com/hormiga.png" alt="" />
-      <h3>Sin contenido relacionado...aún</h3>
+      <h3>Contenido en camino 💫 </h3>
     </Container>
   );
 };

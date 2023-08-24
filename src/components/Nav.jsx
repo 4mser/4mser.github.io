@@ -123,7 +123,8 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             <Icon icon="basil:home-outline" height="27" className="Icon" />
           </Button>
         </Link>
-        <Link to="/buscar" className="link" style={{ textDecoration: "none" }}>
+
+        {/* <Link to="/buscar" className="link" style={{ textDecoration: "none" }}>
           <Button
             tema={tema}
             style={{
@@ -131,6 +132,17 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             }}
           >
             <Icon icon="basil:search-solid" height="27" className="Icon" />
+          </Button>
+        </Link> */}
+
+        <Link to="/buscar" className="link" style={{ textDecoration: "none" }}>
+          <Button
+            tema={tema}
+            style={{
+              color: location.pathname === "/buscar" ? "var(--Blue)" : "",
+            }}
+          >
+            <Icon icon="basil:apps-outline" height="25" className="Icon" />
           </Button>
         </Link>
 

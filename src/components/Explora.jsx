@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
@@ -11,6 +11,10 @@ import ExploraData from "../data/ExploraData";
 import { Link } from "react-router-dom";
 
 const Explora = ({ tema }) => {
+  const renderIcon = (icono, index) => (
+    <Icon key={index} icon={icono} height="25" className="Icon" />
+  );
+
   return (
     <CategoriasContainer tema={tema}>
       <VerTodo tema={tema}>
@@ -34,7 +38,7 @@ const Explora = ({ tema }) => {
         navigation={true}
         className="mySwiper"
       >
-        {ExploraData.slice(0).map((explora) => (
+        {ExploraData.map((explora) => (
           <SwiperSlide key={explora.id} className="slider" tema={tema}>
             <Link
               to={`/explorar/${explora.url}`}
@@ -42,7 +46,7 @@ const Explora = ({ tema }) => {
             >
               <ExploraCard tema={tema}>
                 <ImagenExplora>
-                  <img src={explora.imagen} alt="" />
+                  <img src={explora.imagen} alt="" loading="lazy" />
                 </ImagenExplora>
                 <Data>
                   <Titulo>
@@ -50,14 +54,7 @@ const Explora = ({ tema }) => {
                     <p>{explora.descripcion}</p>
                   </Titulo>
                   <Categorias tema={tema}>
-                    {explora.iconos.map((icono, index) => (
-                      <Icon
-                        key={index}
-                        icon={icono}
-                        height="25"
-                        className="Icon"
-                      />
-                    ))}
+                    {explora.iconos.map(renderIcon)}
                   </Categorias>
                 </Data>
               </ExploraCard>
@@ -68,6 +65,8 @@ const Explora = ({ tema }) => {
     </CategoriasContainer>
   );
 };
+
+// Resto del código de estilos y exportaciones...
 
 export default Explora;
 

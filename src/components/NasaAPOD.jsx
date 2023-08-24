@@ -72,9 +72,9 @@ export const AvisosContainer = styled.div`
   }
 
   .slider {
-    height: 220px;
+    height: 300px;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
 
   .swiper-pagination {
@@ -117,7 +117,7 @@ export const AvisosBox = styled.div`
 
 const Info = styled.div`
   position: absolute;
-  bottom: 1rem;
+  bottom: 4rem;
   right: 0;
   text-align: end;
   padding: 1rem 1.4rem;

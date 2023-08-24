@@ -21,7 +21,7 @@ const Categorias = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={10}
-        slidesPerView={4.2}
+        slidesPerView={4}
         freeMode={true}
         navigation={true}
         modules={[FreeMode]}

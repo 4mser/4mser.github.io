@@ -11,7 +11,7 @@ const Astronomia = ({ tema }) => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
           alt=""
         />
-        <p>Data from Nasa</p>
+        <p>Fotos de la semana</p>
       </Nasa>
     </div>
   );
@@ -20,25 +20,25 @@ const Astronomia = ({ tema }) => {
 export default Astronomia;
 
 const Nasa = styled.div`
-  height: 3rem;
+  height: 2.5rem;
   padding: 6px 1rem;
   width: 100%;
   overflow: hidden;
-  position: fixed;
-  bottom: 0;
+  top: 22rem;
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--borderDark);
+  border-bottom: 1px solid var(--borderDark);
   gap: 2px;
   z-index: 2;
   box-shadow: 0 2px 15px -5px var(--boxShadow);
   background: linear-gradient(
     -45deg,
-    rgb(11, 11, 11) 20%,
+    #0b0b0b 20%,
     #273647 60%,
     #151d27 80%,
-    rgb(11, 11, 11) 100%
+    #0b0b0b 100%
   );
   animation: gradient 10s ease infinite;
   background-size: 700% 100%;
@@ -63,8 +63,8 @@ const Nasa = styled.div`
 
   p {
     width: 100%;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 400;
     /* color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"}; */
     color: var(--textLight);

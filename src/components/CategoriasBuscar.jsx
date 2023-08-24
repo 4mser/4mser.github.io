@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
@@ -9,15 +9,18 @@ import { FreeMode } from "swiper/modules";
 import CategoriasData from "../data/CategoriasData";
 import AllExploraData from "../data/AllExploraData";
 import ExploraAll from "./ExploraAll";
-import Nada from "./Nada"; // Importa el componente Nada
 import SinContenido from "./SinContenido";
 
 const CategoriasBuscar = ({ tema }) => {
-  const [activeCategory, setActiveCategory] = useState("todo");
+  const [activeCategory, setActiveCategory] = useState("ciencia");
 
-  // Filtrar las entradas basadas en la categoría activa
-  const filteredEntries =
-    AllExploraData.snippet[activeCategory.toLowerCase()] || [];
+  const filteredEntries = useMemo(() => {
+    return AllExploraData.snippet[activeCategory.toLowerCase()] || [];
+  }, [activeCategory]);
+
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+  };
 
   return (
     <CategoriasContainer tema={tema}>
@@ -25,7 +28,7 @@ const CategoriasBuscar = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={10}
-        slidesPerView={4.2}
+        slidesPerView={4}
         freeMode={true}
         navigation={true}
         modules={[FreeMode]}
@@ -37,7 +40,7 @@ const CategoriasBuscar = ({ tema }) => {
               tema={tema}
               id={categoria.snippet}
               activeCategory={activeCategory}
-              onClick={() => setActiveCategory(categoria.snippet)}
+              onClick={() => handleCategoryClick(categoria.snippet)}
             >
               <Icon
                 icon={categoria.icono}
@@ -50,7 +53,7 @@ const CategoriasBuscar = ({ tema }) => {
         ))}
       </Swiper>
 
-      {filteredEntries.length === 0 ? ( // Si no hay coincidencias, renderiza Nada
+      {filteredEntries.length === 0 ? (
         <SinContenido tema={tema} />
       ) : (
         <ExploraAll
@@ -63,8 +66,6 @@ const CategoriasBuscar = ({ tema }) => {
   );
 };
 
-export default CategoriasBuscar;
-
 const CategoriasContainer = styled.div`
   width: 100%;
 
@@ -76,7 +77,6 @@ const CategoriasContainer = styled.div`
     font-size: 1rem;
     padding: 0 1.2rem;
     font-weight: 500;
-
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
@@ -92,15 +92,12 @@ const Categoria = styled.div`
   box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
   justify-content: center;
   align-items: center;
-  /* background: ${(props) =>
-    props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"}; */
   background: ${(props) =>
     props.id === props.activeCategory
       ? "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
       : props.tema === "dark"
       ? "var(--Item)"
       : "var(--cardsLight)"};
-
   flex-direction: column;
   padding: 5px;
   cursor: pointer;
@@ -133,8 +130,6 @@ const Categoria = styled.div`
   }
 
   .Icon {
-    /* color: ${(props) =>
-      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"}; */
     color: ${(props) =>
       props.id === props.activeCategory
         ? "white"
@@ -143,3 +138,5 @@ const Categoria = styled.div`
         : "var(--Item)"};
   }
 `;
+
+export default CategoriasBuscar;
