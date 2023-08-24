@@ -135,17 +135,6 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
           </Button>
         </Link> */}
 
-        <Link to="/buscar" className="link" style={{ textDecoration: "none" }}>
-          <Button
-            tema={tema}
-            style={{
-              color: location.pathname === "/buscar" ? "var(--Blue)" : "",
-            }}
-          >
-            <Icon icon="basil:apps-outline" height="25" className="Icon" />
-          </Button>
-        </Link>
-
         <Link
           to="/explorar"
           className="link"
@@ -155,6 +144,21 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             tema={tema}
             style={{
               color: location.pathname === "/explorar" ? "var(--Blue)" : "",
+            }}
+          >
+            <Icon icon="basil:apps-outline" height="24" className="Icon" />
+          </Button>
+        </Link>
+
+        <Link
+          to="/ubicaciones"
+          className="link"
+          style={{ textDecoration: "none" }}
+        >
+          <Button
+            tema={tema}
+            style={{
+              color: location.pathname === "/ubicaciones" ? "var(--Blue)" : "",
             }}
           >
             <Icon icon="heroicons:map-pin" height="27" className="Icon" />

@@ -1,15 +1,6 @@
 const ExploraData = [
   {
     id: 1,
-    nombre: "Aventuras Micológicas",
-    descripcion: "Explorando el Reino Fungi",
-    imagen: "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
-    categorias: ["Naturaleza"],
-    iconos: ["game-icons:grass-mushroom"],
-    url: "hongos-en-valdivia",
-  },
-  {
-    id: 2,
     nombre: "Bajo el cielo nocturno",
     descripcion: "Un encuentro espacial inolvidable",
     imagen:
@@ -17,6 +8,15 @@ const ExploraData = [
     categorias: ["Ciencia & Tecnología", "Naturaleza"],
     iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
     url: "cielo-nocturno",
+  },
+  {
+    id: 2,
+    nombre: "Aventuras Micológicas",
+    descripcion: "Explorando el Reino Fungi",
+    imagen: "https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",
+    categorias: ["Naturaleza"],
+    iconos: ["game-icons:grass-mushroom"],
+    url: "hongos-en-valdivia",
   },
   {
     id: 3,

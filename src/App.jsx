@@ -59,13 +59,19 @@ function App() {
           <Route path="/" element={<Home tema={tema}></Home>}></Route>
           <Route path="/perfil" element={<Perfil tema={tema}></Perfil>}></Route>
 
-          <Route path="/buscar" element={<Buscar tema={tema}></Buscar>}></Route>
-
-          <Route path="/explorar" element={<Nada tema={tema}></Nada>}></Route>
+          <Route
+            path="/ubicaciones"
+            element={<Nada tema={tema}></Nada>}
+          ></Route>
 
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
           <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
+
+          <Route
+            path="/explorar"
+            element={<Buscar tema={tema}></Buscar>}
+          ></Route>
 
           <Route
             path="/explorar/aves-en-valdivia"

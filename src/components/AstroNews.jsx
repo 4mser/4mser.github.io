@@ -14,7 +14,7 @@ const News = ({ tema }) => {
     const fetchNewsData = async () => {
       try {
         const response = await fetch(
-          "https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=5"
+          "https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7"
         );
         const data = await response.json();
         setNewsData(data);
@@ -38,7 +38,7 @@ const News = ({ tema }) => {
 
   return (
     <NewsContainer tema={tema}>
-      <h1>News</h1>
+      <h1>Random Info</h1>
       <Swiper
         tema={tema}
         centeredSlides={false}
@@ -48,22 +48,23 @@ const News = ({ tema }) => {
         navigation={false}
         className="mySwiper"
       >
-        {newsData.map((news) => (
-          <SwiperSlide key={news.id} className="slider" tema={tema}>
-            <NewsCard tema={tema}>
-              <NewsImage src={news.url} alt={news.title} />
-              <h3>{news.title}</h3>
-              <p>
-                {news.explanation.slice(0, 100)}{" "}
-                {news.explanation.length > 100 && (
-                  <ReadMoreButton tema={tema} onClick={() => openModal(news)}>
-                    ... <span>Ver más</span>
-                  </ReadMoreButton>
-                )}
-              </p>
-            </NewsCard>
-          </SwiperSlide>
-        ))}
+        {Array.isArray(newsData) &&
+          newsData.map((news) => (
+            <SwiperSlide key={news.id} className="slider" tema={tema}>
+              <NewsCard tema={tema}>
+                <NewsImage src={news.url} alt={news.title} />
+                <h3>{news.title}</h3>
+                <p>
+                  {news.explanation.slice(0, 100)}{" "}
+                  {news.explanation.length > 100 && (
+                    <ReadMoreButton tema={tema} onClick={() => openModal(news)}>
+                      ... <span>Ver más</span>
+                    </ReadMoreButton>
+                  )}
+                </p>
+              </NewsCard>
+            </SwiperSlide>
+          ))}
       </Swiper>
       {showModal && (
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
@@ -78,6 +79,7 @@ const News = ({ tema }) => {
               <Icon icon="basil:login-outline" height="25" rotate={1} />
             </DownloadButton>
             <p>{selectedNews.explanation}</p>
+            <span>{selectedNews.date}</span>
           </ModalContent>
         </ModalBackground>
       )}
@@ -87,9 +89,11 @@ const News = ({ tema }) => {
 
 export default News;
 
+// Resto del código de estilos y componentes aquí...
+
 const NewsContainer = styled.div`
   h1 {
-    font-size: 1.2rem;
+    font-size: 15px;
     font-weight: 500;
     padding: 0 1.2rem;
     color: ${(props) =>
@@ -218,6 +222,11 @@ const ModalContent = styled.div`
 
   img {
     border-radius: 3px;
+  }
+
+  span {
+    font-size: 10px;
+    opacity: 0.6;
   }
 `;
 
