@@ -555,7 +555,7 @@ Error generating stack: `+o.message+`
     font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,gx=({tema:e})=>{const[t,n]=$.useState("Playas");return I.jsxs(mx,{tema:e,children:[I.jsx("h2",{children:"Puntos de Interés"}),I.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:px.map(r=>I.jsx(Ge,{className:"slider",children:I.jsx(hx,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:I.jsx("p",{children:r.nombre})})},r.id))}),I.jsx(sx,{tema:e,activeCategory:t})]})},yx=({tema:e})=>I.jsxs(vx,{tema:e,children:[I.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/newlogo-08.png",alt:"EOA-LOGO"}),I.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),vx=V.div`
+`,gx=({tema:e})=>{const[t,n]=$.useState("Playas");return I.jsxs(mx,{tema:e,children:[I.jsx("h2",{children:"Puntos de Interés"}),I.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:px.map(r=>I.jsx(Ge,{className:"slider",children:I.jsx(hx,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:I.jsx("p",{children:r.nombre})})},r.id))}),I.jsx(sx,{tema:e,activeCategory:t})]})},yx=({tema:e})=>I.jsxs(vx,{tema:e,children:[I.jsx("img",{src:e==="dark"?"https://app-valdi.s3.amazonaws.com/newlogo-08.png":"https://app-valdi.s3.amazonaws.com/newlogolight-08.png",alt:"EOA-LOGO"}),I.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),vx=V.div`
   width: 100%;
   height: 7rem;
   overflow: hidden;
@@ -569,7 +569,6 @@ Error generating stack: `+o.message+`
     object-fit: cover;
     opacity: 1;
     margin-bottom: 10px;
-    filter: ${e=>e.tema==="dark"?"":"invert(1)"};
   }
 
   p {
@@ -1248,6 +1247,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   position: fixed;
   top: 50%;
   width: 80%;
+  max-height: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--borderDark);
