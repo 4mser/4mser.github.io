@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import useNasaAPI from "../apis/NasaAPI";
+import { Icon } from "@iconify/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -21,6 +22,13 @@ const NasaAPOD = ({ tema }) => {
           <h2>{item.title}</h2>
           <p>{item.date}</p>
         </Info>
+        <DownloadButton
+          href={item.url}
+          target="_blank"
+          download={`${item.title}.jpg`}
+        >
+          <Icon icon="basil:login-outline" height="25" rotate={1} />
+        </DownloadButton>
       </AvisosBox>
     </SwiperSlide>
   );
@@ -131,5 +139,23 @@ const Info = styled.div`
     filter: drop-shadow(1px 1px 1px black);
     font-size: 10px;
     opacity: 0.8;
+  }
+`;
+
+const DownloadButton = styled.a`
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  right: 10px;
+  top: 5px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
   }
 `;

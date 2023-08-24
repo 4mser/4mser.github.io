@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Icon } from "@iconify/react";
 
 const News = ({ tema }) => {
   const [newsData, setNewsData] = useState([]);
@@ -74,7 +75,7 @@ const News = ({ tema }) => {
               target="_blank"
               download={`${selectedNews.title}.jpg`}
             >
-              Descargar imagen
+              <Icon icon="basil:login-outline" height="25" rotate={1} />
             </DownloadButton>
             <p>{selectedNews.explanation}</p>
           </ModalContent>
@@ -212,19 +213,19 @@ const ModalContent = styled.div`
 `;
 
 const DownloadButton = styled.a`
-  background-color: var(--Blue);
-  color: white;
-  padding: 8px 12px;
+  color: #ffffff;
+  padding: 8px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  right: 1.5rem;
+  top: 13rem;
+  position: absolute;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  opacity: 0.7;
 
   &:hover {
-    background-color: var(--BlueHover);
+    opacity: 1;
   }
 `;
