@@ -16,7 +16,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
       <Header>
         {isAuthenticated ? (
           <HelloSection tema={tema}>
-            <h2>Hola, {user.name}!</h2>
+            <h2>Hola, {user.name.split(" ")[0]}!</h2>
             <div
               style={{
                 display: "flex",
@@ -146,7 +146,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
               color: location.pathname === "/explorar" ? "var(--Blue)" : "",
             }}
           >
-            <Icon icon="basil:apps-outline" height="24" className="Icon" />
+            <Icon icon="basil:copy-outline" height="27" className="Icon" />
           </Button>
         </Link>
 
@@ -273,8 +273,7 @@ const Buttons = styled.div`
     props.tema === "dark" ? "var(--Item)" : "var(--white2)"};
   display: flex;
   justify-content: center;
-  box-shadow: 0 1px 7px -3px ${(props) =>
-    props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)"};
+  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
   overflow: hidden;
   align-items: center;
 

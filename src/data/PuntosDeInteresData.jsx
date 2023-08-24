@@ -25,7 +25,7 @@ const InteresData = {
       id: 4,
       nombre: "Playa Rosada",
       imagen: "https://app-valdi.s3.amazonaws.com/playarosada.jpg",
-      descripcion: "",
+      descripcion: "Tarro Zen",
     },
     {
       id: 5,
