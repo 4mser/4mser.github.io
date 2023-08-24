@@ -4,7 +4,11 @@ const Footer = ({ tema }) => {
   return (
     <Container tema={tema}>
       <img
-        src="https://app-valdi.s3.amazonaws.com/newlogo-08.png"
+        src={
+          tema === "dark"
+            ? "https://app-valdi.s3.amazonaws.com/newlogo-08.png"
+            : "https://app-valdi.s3.amazonaws.com/newlogolight-08.png"
+        }
         alt="EOA-LOGO"
       />
       <p>©2023 - DESARROLLADO POR ENTROPÍA</p>
@@ -28,7 +32,6 @@ export const Container = styled.div`
     object-fit: cover;
     opacity: 1;
     margin-bottom: 10px;
-    filter: ${(props) => (props.tema === "dark" ? "" : "invert(1)")};
   }
 
   p {
