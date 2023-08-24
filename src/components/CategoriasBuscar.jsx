@@ -99,7 +99,6 @@ const Categoria = styled.div`
       : "var(--cardsLight)"};
   flex-direction: column;
   padding: 5px;
-  cursor: pointer;
   animation: gradient 8s ease infinite;
   background-size: 200% 200%;
 

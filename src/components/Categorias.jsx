@@ -75,7 +75,6 @@ const Categoria = styled.div`
   box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
   flex-direction: column;
   padding: 5px;
-  cursor: pointer;
 
   p {
     width: 100%;

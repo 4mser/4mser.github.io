@@ -273,15 +273,10 @@ const Buttons = styled.div`
     props.tema === "dark" ? "var(--Item)" : "var(--white2)"};
   display: flex;
   justify-content: center;
-  box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
+  box-shadow: 0 1px 7px -3px ${(props) =>
+    props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)"};
   overflow: hidden;
   align-items: center;
-
-  :hover {
-    cursor: pointer;
-    user-select: none;
-    user-select: none;
-  }
 
   img {
     width: 100%;

@@ -41,7 +41,6 @@ const Categoria = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   user-select: none;
   background: ${(props) =>
     props.id === props.activeCategory

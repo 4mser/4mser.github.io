@@ -48,25 +48,6 @@ const ExploraData = [
     iconos: ["game-icons:grass-mushroom"],
     url: "mamiferos-en-valdivia",
   },
-  {
-    id: 6,
-    nombre: "Inspírate",
-    descripcion: "Conoce a los artistas que dan vida a la ciudad",
-    imagen: "https://app-valdi.s3.amazonaws.com/artistas.jpg",
-    categorias: ["Talentos Locales"],
-    iconos: ["game-icons:guitar-head"],
-    url: "inspiración",
-  },
-  {
-    id: 7,
-    nombre: "Emprendimientos",
-    descripcion: "Descubre los negocios locales",
-    imagen:
-      "https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",
-    categorias: ["Emprende"],
-    iconos: ["game-icons:briefcase"],
-    url: "emprendimientos",
-  },
 ];
 
 export default ExploraData;

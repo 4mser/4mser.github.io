@@ -152,7 +152,6 @@ const NewsImage = styled.img`
 const ReadMoreButton = styled.button`
   background: none;
   border: none;
-  cursor: pointer;
   font-size: 12px;
   color: ${(props) =>
     props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};

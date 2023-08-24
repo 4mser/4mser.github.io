@@ -87,7 +87,6 @@ const CategoriasContainer = styled.div`
     background: ${(props) =>
       props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
     /* border: 1px solid #dddddd4a; */
-    cursor: pointer;
   }
 
   h2 {

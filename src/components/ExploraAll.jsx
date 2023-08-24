@@ -66,7 +66,6 @@ const ExploraCard = styled.div`
   margin-top: 1rem;
   border-radius: 12px;
   display: flex;
-  cursor: pointer;
   user-select: none;
   flex-direction: row;
   overflow: hidden;

@@ -31,7 +31,6 @@ const BackToTopButton = styled.button`
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  cursor: pointer;
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999; // Asegurarse de que el botón esté por encima del contenido
