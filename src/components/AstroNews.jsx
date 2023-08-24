@@ -197,6 +197,7 @@ const ModalContent = styled.div`
   position: fixed;
   top: 50%;
   width: 80%;
+  max-height: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--borderDark);
