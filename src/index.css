@@ -26,7 +26,7 @@
   /* --bg_light:  linear-gradient(19deg, #fbd4d2 0%, #c9baff 100%); */
   
   /* --bg_dark: rgb(32, 32, 32); */
-  --bg_dark: rgb(18, 18, 18);
+  --bg_dark: rgb(11, 11, 11);
 
 
 
@@ -44,7 +44,7 @@
 
   --btnLight: #4c4c4c;
 
-  --Item: #1b1b1b;
+  --Item: rgb(18, 18, 18);
 
   --white2: rgba(132, 132, 132, 0.138);
 
@@ -72,6 +72,7 @@
 
 
   --borderDark: #dddddd4a;
+  --borderDarkNasa: #dddddd29;
   --borderLight: #5959594a;
 }
 

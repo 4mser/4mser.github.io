@@ -67,11 +67,10 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 7.75rem;
+  padding-top: 7.7rem;
 
   .mySwiper {
-    margin-top: 2.9rem;
-    border-top: 1px solid var(--borderDark);
+    margin-top: 3rem;
   }
 
   h3 {
@@ -159,13 +158,12 @@ const Nasa = styled.div`
   box-shadow: 0 2px 15px -5px var(--boxShadow);
   background: linear-gradient(
     -45deg,
-    #556576 20%,
-    #707f8e 40%,
-    #425972 60%,
-    #273647 90%,
-    #151d27 100%
+    rgb(11, 11, 11) 20%,
+    #273647 60%,
+    #151d27 80%,
+    rgb(11, 11, 11) 100%
   );
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   background-size: 700% 100%;
 
   @keyframes gradient {
