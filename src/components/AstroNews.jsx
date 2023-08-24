@@ -38,12 +38,12 @@ const News = ({ tema }) => {
 
   return (
     <NewsContainer tema={tema}>
-      <h2>News</h2>
+      <h1>News</h1>
       <Swiper
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={1.8}
+        slidesPerView={2}
         freeMode={true}
         navigation={false}
         className="mySwiper"
@@ -88,7 +88,7 @@ const News = ({ tema }) => {
 export default News;
 
 const NewsContainer = styled.div`
-  h2 {
+  h1 {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0 1.2rem;
@@ -131,6 +131,10 @@ const NewsCard = styled.div`
     font-style: italic;
     color: ${(props) =>
       props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; // Limita a 3 líneas
+    overflow: hidden;
   }
 `;
 
@@ -197,6 +201,7 @@ const ModalContent = styled.div`
   z-index: 1001;
   border-radius: 5px;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   gap: 15px;
@@ -209,6 +214,10 @@ const ModalContent = styled.div`
 
   p {
     font-size: 12px;
+  }
+
+  img {
+    border-radius: 3px;
   }
 `;
 
