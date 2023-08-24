@@ -25,17 +25,16 @@ const CategoriasBuscar = ({ tema }) => {
   return (
     <CategoriasContainer tema={tema}>
       <Swiper
-        tema={tema}
         centeredSlides={false}
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
-        navigation={true}
+        navigation={false}
         modules={[FreeMode]}
         className="mySwiper"
       >
         {CategoriasData.map((categoria) => (
-          <SwiperSlide key={categoria.id} className="slider" tema={tema}>
+          <SwiperSlide key={categoria.id} tema={tema}>
             <Categoria
               tema={tema}
               id={categoria.snippet}

@@ -1,6 +1,7 @@
 import React from "react";
 import NasaAPOD from "../../components/NasaAPOD";
 import { styled } from "styled-components";
+import News from "../../components/AstroNews";
 
 const Astronomia = ({ tema }) => {
   return (
@@ -13,6 +14,7 @@ const Astronomia = ({ tema }) => {
         />
         <p>Fotos de la semana</p>
       </Nasa>
+      <News tema={tema}></News>
     </div>
   );
 };
@@ -30,6 +32,7 @@ const Nasa = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--borderDark);
+  border-top: 1px solid var(--borderDark);
   gap: 2px;
   z-index: 2;
   box-shadow: 0 2px 15px -5px var(--boxShadow);

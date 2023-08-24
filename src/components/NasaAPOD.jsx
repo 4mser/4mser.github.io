@@ -41,7 +41,7 @@ const NasaAPOD = ({ tema }) => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
@@ -110,7 +110,6 @@ export const AvisosBox = styled.div`
   img {
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid var(--borderDark);
     object-fit: cover;
   }
 `;

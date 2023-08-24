@@ -23,7 +23,7 @@ const Avisos = ({ tema }) => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >

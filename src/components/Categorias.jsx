@@ -23,7 +23,7 @@ const Categorias = ({ tema }) => {
         spaceBetween={10}
         slidesPerView={4}
         freeMode={true}
-        navigation={true}
+        navigation={false}
         modules={[FreeMode]}
         className="mySwiper"
       >

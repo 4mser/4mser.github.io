@@ -110,7 +110,7 @@ const Interes = ({ tema }) => {
         spaceBetween={10}
         slidesPerView={4.3}
         freeMode={true}
-        navigation={true}
+        navigation={false}
         className="mySwiper"
       >
         {PuntosInteres.map((interes) => (

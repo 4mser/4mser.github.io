@@ -21,7 +21,7 @@ const InteresCards = ({ tema, activeCategory }) => {
         spaceBetween={15}
         slidesPerView={2.1}
         freeMode={true}
-        navigation={true}
+        navigation={false}
         className="mySwiper"
       >
         {categoryData.map((item) => (
