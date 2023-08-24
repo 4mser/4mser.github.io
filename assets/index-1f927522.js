@@ -555,9 +555,9 @@ Error generating stack: `+o.message+`
     font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,gx=({tema:e})=>{const[t,n]=$.useState("Playas");return I.jsxs(mx,{tema:e,children:[I.jsx("h2",{children:"Puntos de Interés"}),I.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:px.map(r=>I.jsx(Ge,{className:"slider",children:I.jsx(hx,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:I.jsx("p",{children:r.nombre})})},r.id))}),I.jsx(sx,{tema:e,activeCategory:t})]})},yx=({tema:e})=>I.jsxs(vx,{tema:e,children:[I.jsx("img",{src:"https://appentropia.s3.amazonaws.com/EOA-PNG.png",alt:"EOA-LOGO"}),I.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),vx=V.div`
+`,gx=({tema:e})=>{const[t,n]=$.useState("Playas");return I.jsxs(mx,{tema:e,children:[I.jsx("h2",{children:"Puntos de Interés"}),I.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:px.map(r=>I.jsx(Ge,{className:"slider",children:I.jsx(hx,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:I.jsx("p",{children:r.nombre})})},r.id))}),I.jsx(sx,{tema:e,activeCategory:t})]})},yx=({tema:e})=>I.jsxs(vx,{tema:e,children:[I.jsx("img",{src:"https://app-valdi.s3.amazonaws.com/newlogo-08.png",alt:"EOA-LOGO"}),I.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),vx=V.div`
   width: 100%;
-  height: 6.1rem;
+  height: 7rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -565,9 +565,10 @@ Error generating stack: `+o.message+`
   flex-direction: column;
 
   img {
-    height: 40%;
+    height: 50%;
     object-fit: cover;
-    opacity: 0.7;
+    opacity: 1;
+    margin-bottom: 10px;
     filter: ${e=>e.tema==="dark"?"":"invert(1)"};
   }
 
