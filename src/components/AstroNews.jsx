@@ -43,7 +43,7 @@ const News = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={2}
+        slidesPerView={1.2}
         freeMode={true}
         navigation={false}
         className="mySwiper"
