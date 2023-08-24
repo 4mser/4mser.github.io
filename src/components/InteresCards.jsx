@@ -61,6 +61,7 @@ const InteresCards = ({ tema, activeCategory }) => {
           <ModalContent tema={tema}>
             <h3>{selectedNews.nombre}</h3>
             <NewsImage src={selectedNews.imagen} alt={selectedNews.imagen} />
+            <p>{selectedNews.descripcion}</p>
           </ModalContent>
         </ModalBackground>
       )}
@@ -197,6 +198,7 @@ const ModalContent = styled.div`
   }
 
   p {
+    text-align: justify;
     font-size: 12px;
   }
 
@@ -212,7 +214,6 @@ const ModalContent = styled.div`
 
 const NewsImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: 20rem;
   object-fit: cover;
-  border-bottom: 1px solid #dddddd4a;
 `;

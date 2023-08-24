@@ -133,6 +133,7 @@ const NewsCard = styled.div`
     font-size: 10px;
     font-weight: 400;
     font-style: italic;
+
     color: ${(props) =>
       props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
     display: -webkit-box;
@@ -146,7 +147,6 @@ const NewsImage = styled.img`
   width: 100%;
   height: 12rem;
   object-fit: cover;
-  border-bottom: 1px solid #dddddd4a;
 `;
 
 const ReadMoreButton = styled.button`
@@ -218,6 +218,7 @@ const ModalContent = styled.div`
 
   p {
     font-size: 12px;
+    text-align: justify;
   }
 
   img {
