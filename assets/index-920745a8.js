@@ -527,7 +527,6 @@ Error generating stack: `+o.message+`
 
   .mySwiper {
     margin-top: 2.9rem;
-    border-top: 1px solid var(--borderDark);
   }
 
   h3 {
