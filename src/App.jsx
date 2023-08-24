@@ -19,6 +19,7 @@ import Aves from "./components/Aves";
 import Hongos from "./components/Hongos";
 import Mamiferos from "./components/Mamiferos";
 import NasaAPOD from "./components/NasaAPOD";
+import Astronomia from "./Routes/explorar/Astronomia";
 
 function App() {
   //Cambio de tema
@@ -83,7 +84,7 @@ function App() {
 
           <Route
             path="/explorar/cielo-nocturno"
-            element={<NasaAPOD tema={tema}></NasaAPOD>}
+            element={<Astronomia tema={tema}></Astronomia>}
           ></Route>
         </Routes>
       </>
