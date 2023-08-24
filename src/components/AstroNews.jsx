@@ -42,7 +42,7 @@ const News = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={2}
+        slidesPerView={1.8}
         freeMode={true}
         navigation={false}
         className="mySwiper"
@@ -69,6 +69,13 @@ const News = ({ tema }) => {
           <ModalContent tema={tema}>
             <h2>{selectedNews.title}</h2>
             <NewsImage src={selectedNews.url} alt={selectedNews.title} />
+            <DownloadButton
+              href={selectedNews.url}
+              target="_blank"
+              download={`${selectedNews.title}.jpg`}
+            >
+              Descargar imagen
+            </DownloadButton>
             <p>{selectedNews.explanation}</p>
           </ModalContent>
         </ModalBackground>
@@ -80,16 +87,16 @@ const News = ({ tema }) => {
 export default News;
 
 const NewsContainer = styled.div`
-  padding: 0 1.2rem;
-
   h2 {
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 0 1.2rem;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
 
   .mySwiper {
+    padding: 0 1.2rem;
     padding-bottom: 1rem;
   }
 `;
@@ -201,5 +208,23 @@ const ModalContent = styled.div`
 
   p {
     font-size: 12px;
+  }
+`;
+
+const DownloadButton = styled.a`
+  background-color: var(--Blue);
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--BlueHover);
   }
 `;
