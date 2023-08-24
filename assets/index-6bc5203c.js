@@ -523,10 +523,10 @@ Error generating stack: `+o.message+`
   margin-top: 20px;
 `,vx=H.div`
   width: 100%;
-  padding-top: 7.75rem;
+  padding-top: 7.7rem;
 
   .mySwiper {
-    margin-top: 2.9rem;
+    margin-top: 3rem;
   }
 
   h3 {
@@ -601,7 +601,7 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--borderDark);
+  border-bottom: 1px solid var(--borderDarkNasa);
   gap: 2px;
   position: absolute;
   z-index: 2;
