@@ -1099,8 +1099,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,JE=V.div`
   width: 100%;
   margin-bottom: 1rem;
-`,eO=({tema:e})=>j.jsxs(XE,{tema:e,children:[j.jsx(JE,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),qE.map(t=>j.jsxs(ZE,{tema:e,children:[j.jsx(QE,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(rd,{tema:e})]});const tO=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=5")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=c=>{i(c),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(nO,{tema:e,children:[j.jsx("h2",{children:"News"}),j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:1.8,freeMode:!0,navigation:!1,className:"mySwiper",children:t.map(c=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(rO,{tema:e,children:[j.jsx(Dp,{src:c.url,alt:c.title}),j.jsx("h3",{children:c.title}),j.jsxs("p",{children:[c.explanation.slice(0,100)," ",c.explanation.length>100&&j.jsxs(iO,{tema:e,onClick:()=>l(c),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},c.id))}),o&&j.jsx(oO,{tema:e,show:o,onClick:s,children:j.jsxs(aO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsx(Dp,{src:r.url,alt:r.title}),j.jsx(sO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(be,{icon:"basil:login-outline",height:"25",rotate:1})}),j.jsx("p",{children:r.explanation})]})})]})},nO=V.div`
-  h2 {
+`,eO=({tema:e})=>j.jsxs(XE,{tema:e,children:[j.jsx(JE,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),qE.map(t=>j.jsxs(ZE,{tema:e,children:[j.jsx(QE,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(rd,{tema:e})]});const tO=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=5")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=c=>{i(c),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(nO,{tema:e,children:[j.jsx("h1",{children:"News"}),j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!1,className:"mySwiper",children:t.map(c=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(rO,{tema:e,children:[j.jsx(Dp,{src:c.url,alt:c.title}),j.jsx("h3",{children:c.title}),j.jsxs("p",{children:[c.explanation.slice(0,100)," ",c.explanation.length>100&&j.jsxs(iO,{tema:e,onClick:()=>l(c),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},c.id))}),o&&j.jsx(oO,{tema:e,show:o,onClick:s,children:j.jsxs(aO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsx(Dp,{src:r.url,alt:r.title}),j.jsx(sO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(be,{icon:"basil:login-outline",height:"25",rotate:1})}),j.jsx("p",{children:r.explanation})]})})]})},nO=V.div`
+  h1 {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0 1.2rem;
@@ -1138,6 +1138,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: 400;
     font-style: italic;
     color: ${e=>e.tema==="dark"?"var(--shadow)":"var(--Item)"};
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; // Limita a 3 líneas
+    overflow: hidden;
   }
 `,Dp=V.img`
   width: 100%;
@@ -1195,6 +1199,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   z-index: 1001;
   border-radius: 5px;
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   gap: 15px;
@@ -1207,6 +1212,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   p {
     font-size: 12px;
+  }
+
+  img {
+    border-radius: 3px;
   }
 `,sO=V.a`
   color: #ffffff;
