@@ -133,12 +133,6 @@ Error generating stack: `+o.message+`
   overflow: hidden;
   align-items: center;
 
-  :hover {
-    cursor: pointer;
-    user-select: none;
-    user-select: none;
-  }
-
   img {
     width: 100%;
     height: 100%;
@@ -278,7 +272,6 @@ Error generating stack: `+o.message+`
   box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
   flex-direction: column;
   padding: 5px;
-  cursor: pointer;
 
   p {
     width: 100%;
@@ -292,7 +285,7 @@ Error generating stack: `+o.message+`
     color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
     user-select: none;
   }
-`,ZP=[{id:1,nombre:"Bajo el cielo nocturno",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:2,nombre:"Aventuras Micológicas",descripcion:"Explorando el Reino Fungi",imagen:"https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"hongos-en-valdivia"},{id:3,nombre:"Emplumados",descripcion:"Descubre las aves avistadas en la zona",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"aves-en-valdivia"},{id:4,nombre:"Bajo las olas",descripcion:"Maravillas ocultas de la Costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"},{id:5,nombre:"Naturaleza en movimiento",descripcion:"Mamíferos en acción",imagen:"https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"mamiferos-en-valdivia"},{id:6,nombre:"Inspírate",descripcion:"Conoce a los artistas que dan vida a la ciudad",imagen:"https://app-valdi.s3.amazonaws.com/artistas.jpg",categorias:["Talentos Locales"],iconos:["game-icons:guitar-head"],url:"inspiración"},{id:7,nombre:"Emprendimientos",descripcion:"Descubre los negocios locales",imagen:"https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",categorias:["Emprende"],iconos:["game-icons:briefcase"],url:"emprendimientos"}],QP=({tema:e})=>{const t=(n,r)=>I.jsx(be,{icon:n,height:"25",className:"Icon"},r);return I.jsxs(JP,{tema:e,children:[I.jsxs(ex,{tema:e,children:[I.jsx("h2",{children:"Explora"}),I.jsx(Bt,{to:"/buscar",style:{textDecoration:"none",color:e==="dark"?"var(--whiteColor)":"var(--fontLight)"},children:I.jsx("p",{children:"Ver Todo"})})]}),I.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:1.1,freeMode:!0,navigation:!1,className:"mySwiper",children:ZP.map(n=>I.jsx(Ge,{className:"slider",tema:e,children:I.jsx(Bt,{to:`/explorar/${n.url}`,style:{textDecoration:"none"},children:I.jsxs(tx,{tema:e,children:[I.jsx(nx,{children:I.jsx("img",{src:n.imagen,alt:"",loading:"lazy"})}),I.jsxs(ox,{children:[I.jsxs(rx,{children:[I.jsx("h3",{children:n.nombre}),I.jsx("p",{children:n.descripcion})]}),I.jsx(ix,{tema:e,children:n.iconos.map(t)})]})]})})},n.id))})]})},JP=V.div`
+`,ZP=[{id:1,nombre:"Bajo el cielo nocturno",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:2,nombre:"Aventuras Micológicas",descripcion:"Explorando el Reino Fungi",imagen:"https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"hongos-en-valdivia"},{id:3,nombre:"Emplumados",descripcion:"Descubre las aves avistadas en la zona",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"aves-en-valdivia"},{id:4,nombre:"Bajo las olas",descripcion:"Maravillas ocultas de la Costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"},{id:5,nombre:"Naturaleza en movimiento",descripcion:"Mamíferos en acción",imagen:"https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"mamiferos-en-valdivia"}],QP=({tema:e})=>{const t=(n,r)=>I.jsx(be,{icon:n,height:"25",className:"Icon"},r);return I.jsxs(JP,{tema:e,children:[I.jsxs(ex,{tema:e,children:[I.jsx("h2",{children:"Explora"}),I.jsx(Bt,{to:"/buscar",style:{textDecoration:"none",color:e==="dark"?"var(--whiteColor)":"var(--fontLight)"},children:I.jsx("p",{children:"Ver Todo"})})]}),I.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:1.1,freeMode:!0,navigation:!1,className:"mySwiper",children:ZP.map(n=>I.jsx(Ge,{className:"slider",tema:e,children:I.jsx(Bt,{to:`/explorar/${n.url}`,style:{textDecoration:"none"},children:I.jsxs(tx,{tema:e,children:[I.jsx(nx,{children:I.jsx("img",{src:n.imagen})}),I.jsxs(ox,{children:[I.jsxs(rx,{children:[I.jsx("h3",{children:n.nombre}),I.jsx("p",{children:n.descripcion})]}),I.jsx(ix,{tema:e,children:n.iconos.map(t)})]})]})})},n.id))})]})},JP=V.div`
   width: 100%;
 
   .mySwiper {
@@ -329,7 +322,6 @@ Error generating stack: `+o.message+`
   margin-top: 1rem;
   border-radius: 12px;
   display: flex;
-  cursor: pointer;
   user-select: none;
   flex-direction: row;
   overflow: hidden;
@@ -395,7 +387,6 @@ Error generating stack: `+o.message+`
     box-shadow: 0 3px 8px -4px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
     background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
     /* border: 1px solid #dddddd4a; */
-    cursor: pointer;
   }
 
   h2 {
@@ -521,7 +512,6 @@ Error generating stack: `+o.message+`
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   user-select: none;
   background: ${e=>e.id===e.activeCategory?"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)":e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
   box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
@@ -847,7 +837,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   margin-top: 1rem;
   border-radius: 12px;
   display: flex;
-  cursor: pointer;
   user-select: none;
   flex-direction: row;
   overflow: hidden;
@@ -946,7 +935,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background: ${e=>e.id===e.activeCategory?"linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)":e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
   flex-direction: column;
   padding: 5px;
-  cursor: pointer;
   animation: gradient 8s ease infinite;
   background-size: 200% 200%;
 
@@ -1020,7 +1008,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  cursor: pointer;
   opacity: ${e=>e.isVisible?1:0};
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999; // Asegurarse de que el botón esté por encima del contenido
@@ -1220,7 +1207,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,sO=V.button`
   background: none;
   border: none;
-  cursor: pointer;
   font-size: 12px;
   color: ${e=>e.tema==="dark"?"var(--shadow)":"var(--Item)"};
   span {
