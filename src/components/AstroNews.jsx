@@ -49,27 +49,31 @@ const News = ({ tema }) => {
         className="mySwiper"
       >
         {Array.isArray(newsData) &&
-          newsData.map((news) => (
-            <SwiperSlide
-              onClick={() => openModal(news)}
-              key={news.id}
-              className="slider"
-              tema={tema}
-            >
-              <NewsCard tema={tema}>
-                <NewsImage src={news.url} alt={news.title} />
-                <h3>{news.title}</h3>
-                <p>
-                  {news.explanation.slice(0, 50)}{" "}
-                  {news.explanation.length > 50 && (
-                    <ReadMoreButton tema={tema}>
-                      ... <span>Ver más</span>
-                    </ReadMoreButton>
-                  )}
-                </p>
-              </NewsCard>
-            </SwiperSlide>
-          ))}
+          newsData.map(
+            (news) =>
+              // Verifica si el tipo de media es "image"
+              news.media_type === "image" && (
+                <SwiperSlide
+                  onClick={() => openModal(news)}
+                  key={news.id}
+                  className="slider"
+                  tema={tema}
+                >
+                  <NewsCard tema={tema}>
+                    <NewsImage src={news.url} alt={news.title} />
+                    <h3>{news.title}</h3>
+                    <p>
+                      {news.explanation.slice(0, 50)}{" "}
+                      {news.explanation.length > 50 && (
+                        <ReadMoreButton tema={tema}>
+                          ... <span>Ver más</span>
+                        </ReadMoreButton>
+                      )}
+                    </p>
+                  </NewsCard>
+                </SwiperSlide>
+              )
+          )}
       </Swiper>
       {showModal && (
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
