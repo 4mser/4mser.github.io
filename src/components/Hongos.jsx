@@ -7,8 +7,9 @@ const HongosContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.2rem;
+  padding: 0 1.2rem;
   padding-top: 9rem;
+  gap: 20px;
 
   h2 {
     font-size: 1.2rem;
@@ -21,45 +22,54 @@ const HongosContainer = styled.div`
 
 const HongoCard = styled.div`
   width: calc(50% - 10px);
-  margin-bottom: 20px;
-  border: 1px solid #dddddd4a;
+  height: 14rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-
   flex-direction: column;
-  border-radius: 3px;
+  justify-content: space-between;
+  border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 10px;
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
+`;
 
-  h3 {
-    font-size: 12px;
-    font-weight: 500;
-    padding-left: 10px;
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
-  }
-
-  p {
-    padding-left: 10px;
-    font-size: 10px;
-    font-weight: 400;
-    font-style: italic;
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
-  }
+const ImagenContainer = styled.div`
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
 `;
 
 const HongoImage = styled.img`
   width: 100%;
-  height: 12rem;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #dddddd4a;
 `;
 
 const Blog = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
+`;
+
+const Data = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+
+  p {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
+    opacity: 0.7;
+    display: flex;
+  }
+
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
+  }
 `;
 
 const Hongos = ({ tema }) => {
@@ -70,9 +80,13 @@ const Hongos = ({ tema }) => {
       </Blog>
       {HongosData.map((hongo) => (
         <HongoCard key={hongo.id} tema={tema}>
-          <HongoImage src={hongo.imagen} alt={hongo.nombre} />
-          <h3>{hongo.nombre}</h3>
-          <p>({hongo.nombre_cientifico})</p>
+          <ImagenContainer>
+            <HongoImage src={hongo.imagen} alt={hongo.nombre} />
+          </ImagenContainer>
+          <Data tema={tema}>
+            <h3>{hongo.nombre}</h3>
+            <p>({hongo.nombre_cientifico})</p>
+          </Data>
         </HongoCard>
       ))}
       <ScrollToTopButton tema={tema}></ScrollToTopButton>
