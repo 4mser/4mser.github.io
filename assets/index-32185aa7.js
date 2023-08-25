@@ -1185,7 +1185,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,iO=V.div`
   width: 100%;
   margin-bottom: 1rem;
-`,oO=({tema:e})=>j.jsxs(tO,{tema:e,children:[j.jsx(iO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),eO.map(t=>j.jsxs(nO,{tema:e,children:[j.jsx(rO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(id,{tema:e})]});const vl=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(aO,{tema:e,children:[j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(sO,{tema:e,children:[j.jsx(lO,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,50)," ",u.explanation.length>50&&j.jsxs(cO,{tema:e,onClick:()=>l(u),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(dO,{tema:e,show:o,onClick:s,children:j.jsxs(fO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsx(uO,{src:r.url,alt:r.title}),j.jsx(pO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})}),j.jsx(hO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},aO=V.div`
+`,oO=({tema:e})=>j.jsxs(tO,{tema:e,children:[j.jsx(iO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),eO.map(t=>j.jsxs(nO,{tema:e,children:[j.jsx(rO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(id,{tema:e})]});const vl=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(aO,{tema:e,children:[j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(sO,{tema:e,children:[j.jsx(cO,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,50)," ",u.explanation.length>50&&j.jsxs(fO,{tema:e,onClick:()=>l(u),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(pO,{tema:e,show:o,onClick:s,children:j.jsxs(hO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsxs(lO,{children:[j.jsx(dO,{src:r.url,alt:r.title}),j.jsx(uO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})})]}),j.jsx(mO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},aO=V.div`
   h1 {
     font-size: 15px;
     font-weight: 500;
@@ -1232,15 +1232,35 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     -webkit-line-clamp: 3; // Limita a 3 líneas
     overflow: hidden;
   }
-`,lO=V.img`
+`,lO=V.div`
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
+`,uO=V.a`
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+`,cO=V.img`
   width: 100%;
   height: 8rem;
   object-fit: cover;
-`,uO=V.img`
+`,dO=V.img`
   width: 100%;
-  height: 12rem;
+  height: 100%;
   object-fit: cover;
-`,cO=V.button`
+`,fO=V.button`
   background: none;
   border: none;
   font-size: 12px;
@@ -1249,7 +1269,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: var(--Blue);
     font-weight: 700;
   }
-`,dO=V.div`
+`,pO=V.div`
   background-color: rgba(0, 0, 0, 0.764);
   position: fixed;
   top: 0;
@@ -1258,7 +1278,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   height: 100%;
   display: ${e=>e.show?"block":"none"};
-`,fO=V.div`
+`,hO=V.div`
   background: linear-gradient(
     -45deg,
     #0b0b0b 20%,
@@ -1311,27 +1331,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 10px;
     opacity: 0.6;
   }
-`,pO=V.a`
-  color: #ffffff;
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  right: 1.5rem;
-  top: 3.5rem;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  opacity: 0.7;
-
-  &:hover {
-    opacity: 1;
-  }
-`,hO=V.div`
+`,mO=V.div`
   width: 100%;
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-`,mO=({tema:e})=>j.jsxs("div",{style:{paddingBottom:"5rem"},children:[j.jsx(kP,{tema:e}),j.jsxs(gO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),gO=V.div`
+`,gO=({tema:e})=>j.jsxs("div",{style:{paddingBottom:"5rem"},children:[j.jsx(kP,{tema:e}),j.jsxs(yO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),yO=V.div`
   height: 2.5rem;
   padding: 6px 1rem;
   width: 100%;
@@ -1443,4 +1447,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       display: none;
     }
   }
-`;function yO(){const[e,t]=$.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=$.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(nb,{children:[j.jsx(y_,{}),j.jsx(ab,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(f_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(X1,{children:[j.jsx(gt,{path:"/",element:j.jsx(jP,{tema:e})}),j.jsx(gt,{path:"/perfil",element:j.jsx(BP,{tema:e})}),j.jsx(gt,{path:"/ubicaciones",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/guardado",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/tienda",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/explorar",element:j.jsx($E,{tema:e})}),j.jsx(gt,{path:"/explorar/aves-en-valdivia",element:j.jsx(KE,{tema:e})}),j.jsx(gt,{path:"/explorar/hongos-en-valdivia",element:j.jsx(JE,{tema:e})}),j.jsx(gt,{path:"/explorar/mamiferos-en-valdivia",element:j.jsx(oO,{tema:e})}),j.jsx(gt,{path:"/explorar/cielo-nocturno",element:j.jsx(mO,{tema:e})})]})]})]})}const vO=Zm(document.getElementById("root"));vO.render(j.jsx(s1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(yO,{})}));
+`;function vO(){const[e,t]=$.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=$.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(nb,{children:[j.jsx(y_,{}),j.jsx(ab,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(f_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(X1,{children:[j.jsx(gt,{path:"/",element:j.jsx(jP,{tema:e})}),j.jsx(gt,{path:"/perfil",element:j.jsx(BP,{tema:e})}),j.jsx(gt,{path:"/ubicaciones",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/guardado",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/tienda",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/explorar",element:j.jsx($E,{tema:e})}),j.jsx(gt,{path:"/explorar/aves-en-valdivia",element:j.jsx(KE,{tema:e})}),j.jsx(gt,{path:"/explorar/hongos-en-valdivia",element:j.jsx(JE,{tema:e})}),j.jsx(gt,{path:"/explorar/mamiferos-en-valdivia",element:j.jsx(oO,{tema:e})}),j.jsx(gt,{path:"/explorar/cielo-nocturno",element:j.jsx(gO,{tema:e})})]})]})]})}const wO=Zm(document.getElementById("root"));wO.render(j.jsx(s1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(vO,{})}));
