@@ -830,7 +830,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
 `;const Yy={snippet:{todo:[{id:1,nombre:"Aventuras Micológicas",descripcion:"Explorando el Reino Fungi",imagen:"https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"hongos-en-valdivia"},{id:2,nombre:"Astronomía en Valdivia",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:3,nombre:"Emplumados",descripcion:"Guía de campo",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"aves-en-valdivia"},{id:4,nombre:"Bajo las olas",descripcion:"Maravillas ocultas de la costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"},{id:5,nombre:"Mamíferos en acción",descripcion:"Guía de campo",imagen:"https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"mamiferos-en-valdivia"},{id:6,nombre:"Inspírate",descripcion:"Conoce a lxs artistas locales",imagen:"https://app-valdi.s3.amazonaws.com/artistas.jpg",categorias:["Talentos Locales"],iconos:["game-icons:guitar-head"],url:"inspiración"},{id:7,nombre:"Emprendimientos",descripcion:"Descubre los negocios locales",imagen:"https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",categorias:["Emprendimientos"],iconos:["game-icons:briefcase"],url:"emprendimientos"}],ciencia:[{id:1,nombre:"Astronomía en Valdivia",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:2,nombre:"Bajo las olas",descripcion:"Maravillas ocultas de la Costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"}],naturaleza:[{id:1,nombre:"Aventuras Micológicas",descripcion:"Explorando el Reino Fungi",imagen:"https://s3.amazonaws.com/skybar.database.teset.1/psilocibina.png",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"hongos-en-valdivia"},{id:2,nombre:"Bajo el cielo nocturno",descripcion:"Un encuentro espacial inolvidable",imagen:"https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"cielo-nocturno"},{id:3,nombre:"Emplumados",descripcion:"Guía de campo",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"aves-en-valdivia"},{id:4,nombre:"Bajo las olas",descripcion:"Maravillas ocultas de la costa",imagen:"https://laraza.com/wp-content/uploads/sites/5/2020/02/selective-focus-photography-of-octopus-3046629.jpg?quality=80&strip=all",categorias:["Ciencia & Tecnología","Naturaleza"],iconos:["game-icons:microscope","game-icons:grass-mushroom"],url:"bajo-las-olas"},{id:5,nombre:"Mamíferos en acción",descripcion:"Guía de campo",imagen:"https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",categorias:["Naturaleza"],iconos:["game-icons:grass-mushroom"],url:"mamiferos-en-valdivia"}],emprende:[{id:1,nombre:"Emprendimientos",descripcion:"Descubre los negocios locales",imagen:"https://1.bp.blogspot.com/-rDZUiWILyFU/Xd02V7cRtpI/AAAAAAAAIz8/ps1crGuITPss_i14OLXx0V60eojMW1bIACLcBGAsYHQ/s1600/4.jpg",categorias:["Emprendimientos"],iconos:["game-icons:briefcase"],url:"emprendimientos"}],talentos:[{id:1,nombre:"Talentos Locales",descripcion:"Conoce a lxs artistas locales",imagen:"https://app-valdi.s3.amazonaws.com/artistas.jpg",categorias:["Talentos Locales"],iconos:["game-icons:guitar-head"],url:"inspiración"}]}},EE=({tema:e,activeCategory:t})=>{const n=Yy.snippet[t]||[];return j.jsx(OE,{tema:e,children:n.map(r=>j.jsx(Bt,{className:"slider",tema:e,to:`/explorar/${r.url}`,style:{textDecoration:"none"},children:j.jsxs(CE,{tema:e,children:[j.jsx(TE,{children:j.jsx("img",{src:r.imagen,alt:""})}),j.jsxs(LE,{tema:e,children:[j.jsxs(IE,{children:[j.jsx("h3",{children:r.nombre}),j.jsx("p",{children:r.descripcion})]}),j.jsx(jE,{tema:e,children:r.iconos.map((i,o)=>j.jsx(Pe,{icon:i,height:"22",className:"Icon"},o))})]})]})},r.id))})},OE=F.div`
   width: 100%;
-  padding: 0rem 1.2rem 5rem 1.2rem;
+  padding: 0rem 1.2rem 6rem 1.2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -1044,7 +1044,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 0 1.2rem 2rem 1.2rem;
   padding-top: 9rem;
   gap: 20px;
 
@@ -1093,11 +1093,81 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   object-fit: cover;
 `,qE=F.div`
   width: 100%;
-`,YE=({tema:e})=>j.jsxs(VE,{tema:e,children:[j.jsx(qE,{tema:e,children:j.jsx("h2",{children:"Aves avistadas en Valdivia"})}),BE.map(t=>j.jsxs(HE,{tema:e,children:[j.jsx(GE,{children:j.jsx(KE,{src:t.imagen,alt:t.nombre})}),j.jsxs(WE,{tema:e,children:[j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]})]},t.id)),j.jsx(id,{tema:e})]}),XE=[{id:1,nombre:"Plectania chilensis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/92508849/large.jpg"},{id:2,nombre:"Hongo Matamoscas",nombre_cientifico:"Amanita muscaria",imagen:"https://static.inaturalist.org/photos/26555709/large.jpg"},{id:3,nombre:"Sombrero Violeta",nombre_cientifico:"Cortinarius magellanicus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/141717206/large.jpg"},{id:4,nombre:"Bondarzewia guaitecasensis",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196376424/large.jpeg"},{id:5,nombre:"Podoserpula aliweni",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/88487391/large.jpg"},{id:6,nombre:"Leotia lubrica",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/254164000/large.jpg"},{id:7,nombre:"género Phellodon",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1103125/large.jpg"},{id:8,nombre:"Mycena cyanocephala",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/140319766/large.jpeg"},{id:9,nombre:"Pichiloyo",nombre_cientifico:"Boletus loyita",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/114471007/large.jpeg"},{id:10,nombre:"Stereum greslebiniae",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/48300737/large.jpeg"},{id:11,nombre:"Amanita aurantiovelata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/285087883/large.jpg"},{id:12,nombre:"Loyo",nombre_cientifico:"Butyriboletus loyo",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/141102480/large.jpeg"},{id:13,nombre:"Hericium coralloides",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/38854175/large.jpg"},{id:14,nombre:"Hongo de la Risa",nombre_cientifico:"Gymnopilus junonius",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/63859016/large.jpeg"},{id:15,nombre:"Gomita del Bosque",nombre_cientifico:"Guepiniopsis alpina",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/40184816/large.jpg"},{id:16,nombre:"Hongo Gelatina Blanca",nombre_cientifico:"Ductifera pululahuana",imagen:"https://static.inaturalist.org/photos/19331789/large.jpg"},{id:17,nombre:"Laternea pusilla",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/452486/large.jpg"},{id:18,nombre:"Hongos Laminares",nombre_cientifico:"género Cora",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/29494116/large.jpg"},{id:19,nombre:"Oreja Gelatinosa",nombre_cientifico:"Aleurodiscus vitellinus",imagen:"https://static.inaturalist.org/photos/193916808/large.jpg"},{id:20,nombre:"Gastroboletus valdivianus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/118712082/large.jpg"},{id:21,nombre:"Galiella coffeata",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/130872617/large.jpg"},{id:22,nombre:"Nephroma antarcticum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/23772570/large.jpeg"},{id:23,nombre:"Lengua de Vaca",nombre_cientifico:"Fistulina antarctica",imagen:"https://static.inaturalist.org/photos/184029190/large.jpeg"},{id:24,nombre:"Psilocybe caeruleoannulata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/178377605/large.jpg"},{id:25,nombre:"Gloeosoma decorticans",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/205929297/large.jpg"},{id:26,nombre:"Pedo de Coyote",nombre_cientifico:"Lycoperdon perlatum",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/237728653/large.jpg"},{id:27,nombre:"Escobetillas",nombre_cientifico:"género Ramaria",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/55191337/large.jpeg"},{id:28,nombre:"Mongui",nombre_cientifico:"Psilocybe semilanceata",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/89483267/large.jpg"},{id:29,nombre:"Cola de Pavo",nombre_cientifico:"Trametes versicolor",imagen:"https://static.inaturalist.org/photos/160331967/large.jpg"},{id:30,nombre:"género Leccinum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/59533717/large.jpg"},{id:31,nombre:"género Chlorociboria",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/1260966/large."},{id:32,nombre:"Dedos de Muerto",nombre_cientifico:"género Xylaria",imagen:"https://static.inaturalist.org/photos/20492429/large.jpeg"},{id:33,nombre:"Daedalea quercina",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11107369/large.jpg"},{id:34,nombre:"género Lepiota",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/53449439/large.jpeg"},{id:35,nombre:"Hongo de Gorro Naranja",nombre_cientifico:"Mycena acicula",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/150830173/large.jpg"},{id:36,nombre:"Mycena haematopus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/162166136/large.jpeg"},{id:37,nombre:"Digüeñe",nombre_cientifico:"Cyttaria espinosae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196049709/large.jpeg"},{id:38,nombre:"Suillus lakei",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/4160083/large."},{id:39,nombre:"Hongos Nido de Pájaro",nombre_cientifico:"Familia Nidulariaceae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/432412/large.jpg"},{id:40,nombre:"Enchilado",nombre_cientifico:"Lactarius deliciosus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/38110289/large.jpg"},{id:41,nombre:"Hygrocybe miniata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/137593315/large.jpeg"},{id:42,nombre:"Lachnum virgineum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1336843/large.jpg"},{id:43,nombre:"Panaeolus acuminatus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/2615525/large.jpg"},{id:44,nombre:"género Neoclitocybe",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/139665918/large.jpeg"},{id:45,nombre:"Gymnopilus purpuratus",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/1257491/large."},{id:46,nombre:"Deconica merdaria",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/10215067/large.jpeg"},{id:47,nombre:"Roridomyces austrororidus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/19397475/large.jpeg"},{id:48,nombre:"Marasmius bulliardii",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/212859090/large.jpeg"},{id:49,nombre:"género Calathella",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/194904904/large.jpeg"},{id:50,nombre:"Amanita toxica",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/23067888/large.jpeg"},{id:51,nombre:"Entoloma cyanulum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/123319157/large.jpeg"},{id:52,nombre:"Cortinarius lebre",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/41357787/large.jpeg"},{id:53,nombre:"Anthracophyllum discolor",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/147413422/large.jpeg"},{id:54,nombre:"Xylodon paradoxus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/12970924/large.jpeg"},{id:55,nombre:"Llao Llao",nombre_cientifico:"Cyttaria hariotii",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/23782493/large.jpg"},{id:56,nombre:"Entoloma necopinatum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/28941608/large.jpg"},{id:57,nombre:"Austrobasidium pehueldeni",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/240666707/large.jpg"},{id:58,nombre:"Mycena subulifera",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/85582206/large.jpg"},{id:59,nombre:"Fuscoporia senex",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/202011383/large.jpeg"},{id:60,nombre:"Panza de Borrego",nombre_cientifico:"Sección Distantes",imagen:"https://static.inaturalist.org/photos/65818405/large.jpg"},{id:61,nombre:"Russula nothofaginea",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/67976146/large.jpeg"},{id:62,nombre:"Grifola gargal",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/68154873/large.jpg"},{id:63,nombre:"Marasmius nothomyrciae",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/75082112/large.jpeg"},{id:64,nombre:"Amanita diemii",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/140319086/large.jpeg"},{id:65,nombre:"subfamilia Parmelioideae",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/76536882/large.jpg"},{id:66,nombre:"Mycena chusqueophila",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/128655888/large.jpg"},{id:67,nombre:"Chlorovibrissea chilensis",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/208655480/large.jpeg"},{id:68,nombre:"Artomyces nothofagi",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196892812/large.jpeg"},{id:69,nombre:"Sección Disseminati",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/47099157/large.jpeg"},{id:70,nombre:"Cortinarius stephanopus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/278168242/large.jpg"},{id:71,nombre:"Amanita galactica",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/212821766/large.jpg"},{id:72,nombre:"Cortinarius vaginatus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/227243345/large.jpg"},{id:73,nombre:"Mycena tenerrima",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1671291/large.jpg"},{id:74,nombre:"Tolypocladium valdiviae",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/253565175/large.jpeg"}],ZE=F.div`
+`,YE=({tema:e})=>{const[t,n]=$.useState(null),[r,i]=$.useState(!1),o=l=>{n(l),i(!0)},a=()=>{n(null),i(!1)};return j.jsxs(VE,{tema:e,children:[j.jsx(qE,{tema:e,children:j.jsx("h2",{children:"Aves avistadas en Valdivia"})}),BE.map(l=>j.jsxs(HE,{tema:e,onClick:()=>o(l),children:[j.jsx(GE,{children:j.jsx(KE,{src:l.imagen,alt:l.nombre})}),j.jsxs(WE,{tema:e,children:[j.jsx("h3",{children:l.nombre}),j.jsxs("p",{children:["(",l.nombre_cientifico,")"]})]})]},l.id)),j.jsx(id,{tema:e}),r&&j.jsx(XE,{tema:e,show:r,onClick:a,children:j.jsxs(ZE,{tema:e,children:[j.jsx("h3",{children:t.nombre}),j.jsx(QE,{src:t.imagen,alt:t.imagen}),j.jsx("p",{children:t.nombre_cientifico})]})})]})},XE=F.div`
+  background-color: rgba(0, 0, 0, 0.764);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: ${e=>e.show?"block":"none"};
+`,ZE=F.div`
+  background: linear-gradient(
+    -45deg,
+    #0b0b0b 20%,
+    #273647 60%,
+    #151d27 80%,
+    #0b0b0b 100%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 700% 100%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  position: fixed;
+  top: 50%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--borderDark);
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  img {
+    border-radius: 3px;
+  }
+
+  span {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+`,QE=F.img`
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+`,JE=[{id:1,nombre:"Plectania chilensis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/92508849/large.jpg"},{id:2,nombre:"Hongo Matamoscas",nombre_cientifico:"Amanita muscaria",imagen:"https://static.inaturalist.org/photos/26555709/large.jpg"},{id:3,nombre:"Sombrero Violeta",nombre_cientifico:"Cortinarius magellanicus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/141717206/large.jpg"},{id:4,nombre:"Bondarzewia guaitecasensis",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196376424/large.jpeg"},{id:5,nombre:"Podoserpula aliweni",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/88487391/large.jpg"},{id:6,nombre:"Leotia lubrica",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/254164000/large.jpg"},{id:7,nombre:"género Phellodon",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1103125/large.jpg"},{id:8,nombre:"Mycena cyanocephala",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/140319766/large.jpeg"},{id:9,nombre:"Pichiloyo",nombre_cientifico:"Boletus loyita",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/114471007/large.jpeg"},{id:10,nombre:"Stereum greslebiniae",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/48300737/large.jpeg"},{id:11,nombre:"Amanita aurantiovelata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/285087883/large.jpg"},{id:12,nombre:"Loyo",nombre_cientifico:"Butyriboletus loyo",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/141102480/large.jpeg"},{id:13,nombre:"Hericium coralloides",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/38854175/large.jpg"},{id:14,nombre:"Hongo de la Risa",nombre_cientifico:"Gymnopilus junonius",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/63859016/large.jpeg"},{id:15,nombre:"Gomita del Bosque",nombre_cientifico:"Guepiniopsis alpina",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/40184816/large.jpg"},{id:16,nombre:"Hongo Gelatina Blanca",nombre_cientifico:"Ductifera pululahuana",imagen:"https://static.inaturalist.org/photos/19331789/large.jpg"},{id:17,nombre:"Laternea pusilla",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/452486/large.jpg"},{id:18,nombre:"Hongos Laminares",nombre_cientifico:"género Cora",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/29494116/large.jpg"},{id:19,nombre:"Oreja Gelatinosa",nombre_cientifico:"Aleurodiscus vitellinus",imagen:"https://static.inaturalist.org/photos/193916808/large.jpg"},{id:20,nombre:"Gastroboletus valdivianus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/118712082/large.jpg"},{id:21,nombre:"Galiella coffeata",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/130872617/large.jpg"},{id:22,nombre:"Nephroma antarcticum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/23772570/large.jpeg"},{id:23,nombre:"Lengua de Vaca",nombre_cientifico:"Fistulina antarctica",imagen:"https://static.inaturalist.org/photos/184029190/large.jpeg"},{id:24,nombre:"Psilocybe caeruleoannulata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/178377605/large.jpg"},{id:25,nombre:"Gloeosoma decorticans",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/205929297/large.jpg"},{id:26,nombre:"Pedo de Coyote",nombre_cientifico:"Lycoperdon perlatum",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/237728653/large.jpg"},{id:27,nombre:"Escobetillas",nombre_cientifico:"género Ramaria",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/55191337/large.jpeg"},{id:28,nombre:"Mongui",nombre_cientifico:"Psilocybe semilanceata",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/89483267/large.jpg"},{id:29,nombre:"Cola de Pavo",nombre_cientifico:"Trametes versicolor",imagen:"https://static.inaturalist.org/photos/160331967/large.jpg"},{id:30,nombre:"género Leccinum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/59533717/large.jpg"},{id:31,nombre:"género Chlorociboria",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/1260966/large."},{id:32,nombre:"Dedos de Muerto",nombre_cientifico:"género Xylaria",imagen:"https://static.inaturalist.org/photos/20492429/large.jpeg"},{id:33,nombre:"Daedalea quercina",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11107369/large.jpg"},{id:34,nombre:"género Lepiota",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/53449439/large.jpeg"},{id:35,nombre:"Hongo de Gorro Naranja",nombre_cientifico:"Mycena acicula",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/150830173/large.jpg"},{id:36,nombre:"Mycena haematopus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/162166136/large.jpeg"},{id:37,nombre:"Digüeñe",nombre_cientifico:"Cyttaria espinosae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196049709/large.jpeg"},{id:38,nombre:"Suillus lakei",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/4160083/large."},{id:39,nombre:"Hongos Nido de Pájaro",nombre_cientifico:"Familia Nidulariaceae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/432412/large.jpg"},{id:40,nombre:"Enchilado",nombre_cientifico:"Lactarius deliciosus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/38110289/large.jpg"},{id:41,nombre:"Hygrocybe miniata",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/137593315/large.jpeg"},{id:42,nombre:"Lachnum virgineum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1336843/large.jpg"},{id:43,nombre:"Panaeolus acuminatus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/2615525/large.jpg"},{id:44,nombre:"género Neoclitocybe",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/139665918/large.jpeg"},{id:45,nombre:"Gymnopilus purpuratus",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/1257491/large."},{id:46,nombre:"Deconica merdaria",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/10215067/large.jpeg"},{id:47,nombre:"Roridomyces austrororidus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/19397475/large.jpeg"},{id:48,nombre:"Marasmius bulliardii",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/212859090/large.jpeg"},{id:49,nombre:"género Calathella",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/194904904/large.jpeg"},{id:50,nombre:"Amanita toxica",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/23067888/large.jpeg"},{id:51,nombre:"Entoloma cyanulum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/123319157/large.jpeg"},{id:52,nombre:"Cortinarius lebre",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/41357787/large.jpeg"},{id:53,nombre:"Anthracophyllum discolor",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/147413422/large.jpeg"},{id:54,nombre:"Xylodon paradoxus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/12970924/large.jpeg"},{id:55,nombre:"Llao Llao",nombre_cientifico:"Cyttaria hariotii",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/23782493/large.jpg"},{id:56,nombre:"Entoloma necopinatum",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/28941608/large.jpg"},{id:57,nombre:"Austrobasidium pehueldeni",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/240666707/large.jpg"},{id:58,nombre:"Mycena subulifera",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/85582206/large.jpg"},{id:59,nombre:"Fuscoporia senex",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/202011383/large.jpeg"},{id:60,nombre:"Panza de Borrego",nombre_cientifico:"Sección Distantes",imagen:"https://static.inaturalist.org/photos/65818405/large.jpg"},{id:61,nombre:"Russula nothofaginea",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/67976146/large.jpeg"},{id:62,nombre:"Grifola gargal",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/68154873/large.jpg"},{id:63,nombre:"Marasmius nothomyrciae",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/75082112/large.jpeg"},{id:64,nombre:"Amanita diemii",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/140319086/large.jpeg"},{id:65,nombre:"subfamilia Parmelioideae",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/76536882/large.jpg"},{id:66,nombre:"Mycena chusqueophila",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/128655888/large.jpg"},{id:67,nombre:"Chlorovibrissea chilensis",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/208655480/large.jpeg"},{id:68,nombre:"Artomyces nothofagi",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/196892812/large.jpeg"},{id:69,nombre:"Sección Disseminati",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/47099157/large.jpeg"},{id:70,nombre:"Cortinarius stephanopus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/278168242/large.jpg"},{id:71,nombre:"Amanita galactica",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/212821766/large.jpg"},{id:72,nombre:"Cortinarius vaginatus",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/227243345/large.jpg"},{id:73,nombre:"Mycena tenerrima",nombre_cientifico:"",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1671291/large.jpg"},{id:74,nombre:"Tolypocladium valdiviae",nombre_cientifico:"",imagen:"https://static.inaturalist.org/photos/253565175/large.jpeg"}],eO=F.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 0 1.2rem 2rem 1.2rem;
+
   padding-top: 9rem;
   gap: 20px;
 
@@ -1107,7 +1177,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,QE=F.div`
+`,tO=F.div`
   width: calc(50% - 10px);
   height: 14rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -1117,17 +1187,17 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border-radius: 10px;
   overflow: hidden;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
-`,JE=F.div`
+`,nO=F.div`
   width: 100%;
   height: 80%;
   overflow: hidden;
-`,eO=F.img`
+`,rO=F.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`,tO=F.div`
+`,iO=F.div`
   width: 100%;
-`,nO=F.div`
+`,oO=F.div`
   display: flex;
   flex-direction: column;
   padding: 10px 10px 10px 10px;
@@ -1146,7 +1216,76 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: 600;
     color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
   }
-`,rO=({tema:e})=>j.jsxs(ZE,{tema:e,children:[j.jsx(tO,{tema:e,children:j.jsx("h2",{children:"Hongos en Valdivia"})}),XE.map(t=>j.jsxs(QE,{tema:e,children:[j.jsx(JE,{children:j.jsx(eO,{src:t.imagen,alt:t.nombre})}),j.jsxs(nO,{tema:e,children:[j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]})]},t.id)),j.jsx(id,{tema:e})]}),iO=[{id:1,nombre:"Lobo Marino de Un Pelo",nombre_cientifico:"Otaria byronia",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/240442909/large.jpg"},{id:2,nombre:"Zorro Chilla",nombre_cientifico:"Lycalopex griseus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/18171675/large.jpg"},{id:3,nombre:"Visón Americano",nombre_cientifico:"Neogale vison",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/13832871/large.jpeg"},{id:4,nombre:"Chungungo",nombre_cientifico:"Lontra felina",imagen:"https://static.inaturalist.org/photos/32718009/large.jpg"},{id:5,nombre:"Huillin",nombre_cientifico:"Lontra provocax",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11993570/large.jpg"},{id:6,nombre:"Coipo",nombre_cientifico:"Myocastor coypus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/121202333/large.jpg"},{id:7,nombre:"Delfín Chileno",nombre_cientifico:"Cephalorhynchus eutropia",imagen:"https://static.inaturalist.org/photos/30779621/large.jpeg"},{id:8,nombre:"Pudu Sureño",nombre_cientifico:"Pudu puda",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/263624688/large.jpg"},{id:9,nombre:"Liebre Europea",nombre_cientifico:"Lepus europaeus",imagen:"https://static.inaturalist.org/photos/3849124/large.jpg"},{id:10,nombre:"Orca",nombre_cientifico:"Orcinus orca",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/153239969/large.jpg"},{id:11,nombre:"Ballena Jorobada",nombre_cientifico:"Megaptera novaeangliae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255461843/large.jpg"},{id:12,nombre:"Ballena Azul",nombre_cientifico:"Balaenoptera musculus",imagen:"https://static.inaturalist.org/photos/194385336/large.jpg"},{id:13,nombre:"Guiña",nombre_cientifico:"Leopardus guigna",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1131248/large.jpeg"},{id:14,nombre:"Chingue",nombre_cientifico:"Conepatus chinga",imagen:"https://static.inaturalist.org/photos/28292846/large.jpg"},{id:15,nombre:"Delfín Austral",nombre_cientifico:"Sagmatias australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/15484881/large.jpg"},{id:16,nombre:"Ballena de Aleta",nombre_cientifico:"Balaenoptera physalus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/512278/large.jpg"},{id:17,nombre:"Puma",nombre_cientifico:"Puma concolor",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/9834553/large.jpg"},{id:18,nombre:"Ratón Topo Pardo",nombre_cientifico:"Geoxus valdivianus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/176309905/large.jpg"},{id:19,nombre:"Zorro Culpeo",nombre_cientifico:"Lycalopex culpaeus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/65227355/large.jpeg"},{id:20,nombre:"Ballena Franca Austral",nombre_cientifico:"Eubalaena australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/30314878/large.jpeg"},{id:21,nombre:"Elefante Marino del Sur",nombre_cientifico:"Mirounga leonina",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/115875057/large.jpg"},{id:22,nombre:"Guanaco",nombre_cientifico:"Lama guanicoe",imagen:"https://static.inaturalist.org/photos/181831578/large.jpg"},{id:23,nombre:"Rata Negra",nombre_cientifico:"Rattus rattus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/103883559/large.jpeg"},{id:24,nombre:"Ratón Oliváceo",nombre_cientifico:"Abrothrix olivacea",imagen:"https://static.inaturalist.org/photos/44134986/large.jpeg"},{id:25,nombre:"Murciélago de Cola Libre",nombre_cientifico:"Tadarida brasiliensis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/52281124/large.jpg"},{id:26,nombre:"Calderón Gris",nombre_cientifico:"Grampus griseus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/165727440/large.jpg"},{id:27,nombre:"Lobo Marino de Dos Pelos",nombre_cientifico:"Arctocephalus australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11425624/large.jpg"},{id:28,nombre:"Quique",nombre_cientifico:"Galictis cuja",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/29498119/large.jpeg"},{id:29,nombre:"Monito del Monte",nombre_cientifico:"Dromiciops gliroides",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/265335811/large.jpg"},{id:30,nombre:"Vizcacha de la Patagonia",nombre_cientifico:"Lagidium wolffsohni",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/123639496/large.jpeg"},{id:31,nombre:"Guarén",nombre_cientifico:"Rattus norvegicus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/187198978/large.jpg"},{id:32,nombre:"Ratón Casero Eurasiático",nombre_cientifico:"Mus musculus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/114043454/large.jpg"},{id:33,nombre:"Zorro Chilote",nombre_cientifico:"Lycalopex fulvipes",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/210095315/large.jpg"}],oO=F.div`
+`,aO=({tema:e})=>{const[t,n]=$.useState(null),[r,i]=$.useState(!1),o=l=>{n(l),i(!0)},a=()=>{n(null),i(!1)};return j.jsxs(eO,{tema:e,children:[j.jsx(iO,{tema:e,children:j.jsx("h2",{children:"Hongos en Valdivia"})}),JE.map(l=>j.jsxs(tO,{tema:e,onClick:()=>o(l),children:[j.jsx(nO,{children:j.jsx(rO,{src:l.imagen,alt:l.nombre})}),j.jsxs(oO,{tema:e,children:[j.jsx("h3",{children:l.nombre}),j.jsxs("p",{children:["(",l.nombre_cientifico,")"]})]})]},l.id)),j.jsx(id,{tema:e}),r&&j.jsx(sO,{tema:e,show:r,onClick:a,children:j.jsxs(lO,{tema:e,children:[j.jsx("h3",{children:t.nombre}),j.jsx(uO,{src:t.imagen,alt:t.imagen}),j.jsx("p",{children:t.nombre_cientifico})]})})]})},sO=F.div`
+  background-color: rgba(0, 0, 0, 0.764);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: ${e=>e.show?"block":"none"};
+`,lO=F.div`
+  background: linear-gradient(
+    -45deg,
+    #0b0b0b 20%,
+    #273647 60%,
+    #151d27 80%,
+    #0b0b0b 100%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 700% 100%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  position: fixed;
+  top: 50%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--borderDark);
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  img {
+    border-radius: 3px;
+  }
+
+  span {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+`,uO=F.img`
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+`,cO=[{id:1,nombre:"Lobo Marino de Un Pelo",nombre_cientifico:"Otaria byronia",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/240442909/large.jpg"},{id:2,nombre:"Zorro Chilla",nombre_cientifico:"Lycalopex griseus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/18171675/large.jpg"},{id:3,nombre:"Visón Americano",nombre_cientifico:"Neogale vison",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/13832871/large.jpeg"},{id:4,nombre:"Chungungo",nombre_cientifico:"Lontra felina",imagen:"https://static.inaturalist.org/photos/32718009/large.jpg"},{id:5,nombre:"Huillin",nombre_cientifico:"Lontra provocax",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11993570/large.jpg"},{id:6,nombre:"Coipo",nombre_cientifico:"Myocastor coypus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/121202333/large.jpg"},{id:7,nombre:"Delfín Chileno",nombre_cientifico:"Cephalorhynchus eutropia",imagen:"https://static.inaturalist.org/photos/30779621/large.jpeg"},{id:8,nombre:"Pudu Sureño",nombre_cientifico:"Pudu puda",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/263624688/large.jpg"},{id:9,nombre:"Liebre Europea",nombre_cientifico:"Lepus europaeus",imagen:"https://static.inaturalist.org/photos/3849124/large.jpg"},{id:10,nombre:"Orca",nombre_cientifico:"Orcinus orca",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/153239969/large.jpg"},{id:11,nombre:"Ballena Jorobada",nombre_cientifico:"Megaptera novaeangliae",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/255461843/large.jpg"},{id:12,nombre:"Ballena Azul",nombre_cientifico:"Balaenoptera musculus",imagen:"https://static.inaturalist.org/photos/194385336/large.jpg"},{id:13,nombre:"Guiña",nombre_cientifico:"Leopardus guigna",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/1131248/large.jpeg"},{id:14,nombre:"Chingue",nombre_cientifico:"Conepatus chinga",imagen:"https://static.inaturalist.org/photos/28292846/large.jpg"},{id:15,nombre:"Delfín Austral",nombre_cientifico:"Sagmatias australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/15484881/large.jpg"},{id:16,nombre:"Ballena de Aleta",nombre_cientifico:"Balaenoptera physalus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/512278/large.jpg"},{id:17,nombre:"Puma",nombre_cientifico:"Puma concolor",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/9834553/large.jpg"},{id:18,nombre:"Ratón Topo Pardo",nombre_cientifico:"Geoxus valdivianus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/176309905/large.jpg"},{id:19,nombre:"Zorro Culpeo",nombre_cientifico:"Lycalopex culpaeus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/65227355/large.jpeg"},{id:20,nombre:"Ballena Franca Austral",nombre_cientifico:"Eubalaena australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/30314878/large.jpeg"},{id:21,nombre:"Elefante Marino del Sur",nombre_cientifico:"Mirounga leonina",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/115875057/large.jpg"},{id:22,nombre:"Guanaco",nombre_cientifico:"Lama guanicoe",imagen:"https://static.inaturalist.org/photos/181831578/large.jpg"},{id:23,nombre:"Rata Negra",nombre_cientifico:"Rattus rattus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/103883559/large.jpeg"},{id:24,nombre:"Ratón Oliváceo",nombre_cientifico:"Abrothrix olivacea",imagen:"https://static.inaturalist.org/photos/44134986/large.jpeg"},{id:25,nombre:"Murciélago de Cola Libre",nombre_cientifico:"Tadarida brasiliensis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/52281124/large.jpg"},{id:26,nombre:"Calderón Gris",nombre_cientifico:"Grampus griseus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/165727440/large.jpg"},{id:27,nombre:"Lobo Marino de Dos Pelos",nombre_cientifico:"Arctocephalus australis",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/11425624/large.jpg"},{id:28,nombre:"Quique",nombre_cientifico:"Galictis cuja",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/29498119/large.jpeg"},{id:29,nombre:"Monito del Monte",nombre_cientifico:"Dromiciops gliroides",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/265335811/large.jpg"},{id:30,nombre:"Vizcacha de la Patagonia",nombre_cientifico:"Lagidium wolffsohni",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/123639496/large.jpeg"},{id:31,nombre:"Guarén",nombre_cientifico:"Rattus norvegicus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/187198978/large.jpg"},{id:32,nombre:"Ratón Casero Eurasiático",nombre_cientifico:"Mus musculus",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/114043454/large.jpg"},{id:33,nombre:"Zorro Chilote",nombre_cientifico:"Lycalopex fulvipes",imagen:"https://inaturalist-open-data.s3.amazonaws.com/photos/210095315/large.jpg"}],dO=F.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1159,7 +1298,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,aO=F.div`
+`,fO=F.div`
   width: calc(50% - 10px);
   margin-bottom: 20px;
   border: 1px solid #dddddd4a;
@@ -1185,16 +1324,16 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-style: italic;
     color: ${e=>e.tema==="dark"?"var(--shadow)":"var(--Item)"};
   }
-`,sO=F.img`
+`,pO=F.img`
   width: 100%;
   height: 12rem;
   object-fit: cover;
   margin-bottom: 10px;
   border-bottom: 1px solid #dddddd4a;
-`,lO=F.div`
+`,hO=F.div`
   width: 100%;
   margin-bottom: 1rem;
-`,uO=({tema:e})=>j.jsxs(oO,{tema:e,children:[j.jsx(lO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),iO.map(t=>j.jsxs(aO,{tema:e,children:[j.jsx(sO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(id,{tema:e})]});const vl=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(cO,{tema:e,children:[j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>u.media_type==="image"&&j.jsx(Ge,{onClick:()=>l(u),className:"slider",tema:e,children:j.jsxs(dO,{tema:e,children:[j.jsx(hO,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,50)," ",u.explanation.length>50&&j.jsxs(gO,{tema:e,children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(yO,{tema:e,show:o,onClick:s,children:j.jsxs(vO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsxs(fO,{children:[j.jsx(mO,{src:r.url,alt:r.title}),j.jsx(pO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})})]}),j.jsx(wO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},cO=F.div`
+`,mO=({tema:e})=>j.jsxs(dO,{tema:e,children:[j.jsx(hO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),cO.map(t=>j.jsxs(fO,{tema:e,children:[j.jsx(pO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(id,{tema:e})]});const vl=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(gO,{tema:e,children:[j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>u.media_type==="image"&&j.jsx(Ge,{onClick:()=>l(u),className:"slider",tema:e,children:j.jsxs(yO,{tema:e,children:[j.jsx(bO,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,50)," ",u.explanation.length>50&&j.jsxs(_O,{tema:e,children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(xO,{tema:e,show:o,onClick:s,children:j.jsxs(PO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsxs(vO,{children:[j.jsx(SO,{src:r.url,alt:r.title}),j.jsx(wO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})})]}),j.jsx(kO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},gO=F.div`
   h1 {
     font-size: 15px;
     font-weight: 500;
@@ -1206,7 +1345,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     padding: 0 1.2rem;
     padding-bottom: 1rem;
   }
-`,dO=F.div`
+`,yO=F.div`
   width: 100%;
   height: 100%;
   margin-top: 15px;
@@ -1241,13 +1380,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     -webkit-line-clamp: 3; // Limita a 3 líneas
     overflow: hidden;
   }
-`,fO=F.div`
+`,vO=F.div`
   width: 100%;
   height: 12rem;
   display: flex;
   justify-content: flex-end;
   align-items: self-start;
-`,pO=F.a`
+`,wO=F.a`
   color: #ffffff;
   padding: 8px;
   border: none;
@@ -1261,15 +1400,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   &:hover {
     opacity: 1;
   }
-`,hO=F.img`
+`,bO=F.img`
   width: 100%;
   height: 8rem;
   object-fit: cover;
-`,mO=F.img`
+`,SO=F.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`,gO=F.button`
+`,_O=F.button`
   background: none;
   border: none;
   font-size: 12px;
@@ -1278,7 +1417,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: var(--Blue);
     font-weight: 700;
   }
-`,yO=F.div`
+`,xO=F.div`
   background-color: rgba(0, 0, 0, 0.764);
   position: fixed;
   top: 0;
@@ -1287,7 +1426,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   height: 100%;
   display: ${e=>e.show?"block":"none"};
-`,vO=F.div`
+`,PO=F.div`
   background: linear-gradient(
     -45deg,
     #0b0b0b 20%,
@@ -1340,11 +1479,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     font-size: 10px;
     opacity: 0.6;
   }
-`,wO=F.div`
+`,kO=F.div`
   width: 100%;
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-`,bO=({tema:e})=>j.jsxs("div",{style:{paddingBottom:"5rem"},children:[j.jsx(kP,{tema:e}),j.jsxs(SO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),SO=F.div`
+`,EO=({tema:e})=>j.jsxs("div",{style:{paddingBottom:"5rem"},children:[j.jsx(kP,{tema:e}),j.jsxs(OO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),OO=F.div`
   height: 2.5rem;
   padding: 6px 1rem;
   width: 100%;
@@ -1456,4 +1595,4 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
       display: none;
     }
   }
-`;function _O(){const[e,t]=$.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=$.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(nb,{children:[j.jsx(y_,{}),j.jsx(ab,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(f_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(X1,{children:[j.jsx(gt,{path:"/",element:j.jsx(IP,{tema:e})}),j.jsx(gt,{path:"/perfil",element:j.jsx(BP,{tema:e})}),j.jsx(gt,{path:"/ubicaciones",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/guardado",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/tienda",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/explorar",element:j.jsx($E,{tema:e})}),j.jsx(gt,{path:"/explorar/aves-en-valdivia",element:j.jsx(YE,{tema:e})}),j.jsx(gt,{path:"/explorar/hongos-en-valdivia",element:j.jsx(rO,{tema:e})}),j.jsx(gt,{path:"/explorar/mamiferos-en-valdivia",element:j.jsx(uO,{tema:e})}),j.jsx(gt,{path:"/explorar/cielo-nocturno",element:j.jsx(bO,{tema:e})})]})]})]})}const xO=Zm(document.getElementById("root"));xO.render(j.jsx(s1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(_O,{})}));
+`;function CO(){const[e,t]=$.useState("dark"),n=()=>{t(e==="dark"?"light":"dark")},[r,i]=$.useState("closed"),o=()=>{i(r==="closed"?"open":"closed")};return j.jsxs(nb,{children:[j.jsx(y_,{}),j.jsx(ab,{tema:e}),j.jsxs(j.Fragment,{children:[j.jsx(f_,{tema:e,handleTemaChange:n,menuOpen:r,handleMenuChange:o}),j.jsxs(X1,{children:[j.jsx(gt,{path:"/",element:j.jsx(IP,{tema:e})}),j.jsx(gt,{path:"/perfil",element:j.jsx(BP,{tema:e})}),j.jsx(gt,{path:"/ubicaciones",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/guardado",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/tienda",element:j.jsx(yl,{tema:e})}),j.jsx(gt,{path:"/explorar",element:j.jsx($E,{tema:e})}),j.jsx(gt,{path:"/explorar/aves-en-valdivia",element:j.jsx(YE,{tema:e})}),j.jsx(gt,{path:"/explorar/hongos-en-valdivia",element:j.jsx(aO,{tema:e})}),j.jsx(gt,{path:"/explorar/mamiferos-en-valdivia",element:j.jsx(mO,{tema:e})}),j.jsx(gt,{path:"/explorar/cielo-nocturno",element:j.jsx(EO,{tema:e})})]})]})]})}const TO=Zm(document.getElementById("root"));TO.render(j.jsx(s1,{domain:"dev-ltnzm3qn0q82ggc4.us.auth0.com",clientId:"21NKDOlQRFBXfNUXdDevCVNjFL6zjfNf",authorizationParams:{redirect_uri:window.location.origin},children:j.jsx(CO,{})}));
