@@ -947,7 +947,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   position: fixed;
   bottom: 0;
   /* border-top: 1px solid var(--borderDark); */
-  height: 4rem;
+  height: 4.5rem;
   box-shadow: 0 -1px 10px -7px var(--boxShadow);
   display: flex;
   align-items: center;
