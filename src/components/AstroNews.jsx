@@ -50,14 +50,19 @@ const News = ({ tema }) => {
       >
         {Array.isArray(newsData) &&
           newsData.map((news) => (
-            <SwiperSlide key={news.id} className="slider" tema={tema}>
+            <SwiperSlide
+              onClick={() => openModal(news)}
+              key={news.id}
+              className="slider"
+              tema={tema}
+            >
               <NewsCard tema={tema}>
                 <NewsImage src={news.url} alt={news.title} />
                 <h3>{news.title}</h3>
                 <p>
                   {news.explanation.slice(0, 50)}{" "}
                   {news.explanation.length > 50 && (
-                    <ReadMoreButton tema={tema} onClick={() => openModal(news)}>
+                    <ReadMoreButton tema={tema}>
                       ... <span>Ver más</span>
                     </ReadMoreButton>
                   )}
