@@ -27,10 +27,8 @@ const CategoriasBuscar = ({ tema }) => {
       <Swiper
         centeredSlides={false}
         spaceBetween={10}
-        slidesPerView={4}
-        freeMode={true}
+        slidesPerView={5}
         navigation={false}
-        modules={[FreeMode]}
         className="mySwiper"
       >
         {CategoriasData.map((categoria) => (
@@ -46,7 +44,7 @@ const CategoriasBuscar = ({ tema }) => {
                 height={categoria.height}
                 className="Icon"
               />
-              <p>{categoria.nombre}</p>
+              {/* <p>{categoria.nombre}</p> */}
             </Categoria>
           </SwiperSlide>
         ))}
@@ -74,7 +72,6 @@ const CategoriasContainer = styled.div`
 
   h2 {
     font-size: 1rem;
-    padding: 0 1.2rem;
     font-weight: 500;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
@@ -83,11 +80,10 @@ const CategoriasContainer = styled.div`
 
 const Categoria = styled.div`
   width: 100%;
-  height: 75px;
+  height: 3rem;
   display: flex;
   overflow: hidden;
-  border-radius: 12px;
-  gap: 5px;
+  border-radius: 5px;
   box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
   justify-content: center;
   align-items: center;
@@ -97,8 +93,9 @@ const Categoria = styled.div`
       : props.tema === "dark"
       ? "var(--Item)"
       : "var(--cardsLight)"};
-  flex-direction: column;
-  padding: 5px;
+  flex-direction: row;
+  padding: 5px 10px;
+  gap: 5px;
   animation: gradient 8s ease infinite;
   background-size: 200% 200%;
 
@@ -118,7 +115,7 @@ const Categoria = styled.div`
     width: 100%;
     font-size: 0.5rem;
     font-weight: 400;
-    text-align: center;
+    flex-wrap: nowrap;
     color: ${(props) =>
       props.id === props.activeCategory
         ? "white"

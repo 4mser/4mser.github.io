@@ -64,7 +64,7 @@ const CategoriasContainer = styled.div`
 const Categoria = styled.div`
   width: 100%;
   height: 75px;
-  border-radius: 12px;
+  border-radius: 10px;
   display: flex;
   gap: 5px;
   justify-content: center;
