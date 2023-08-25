@@ -948,7 +948,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   bottom: 0;
   /* border-top: 1px solid var(--borderDark); */
   height: 4rem;
-  box-shadow: 0 -1px 25px -7px var(--boxShadow);
+  box-shadow: 0 -1px 10px -7px var(--boxShadow);
   display: flex;
   align-items: center;
   background: ${e=>e.tema==="dark"?"var(--bg_dark)":"var(--bg_light)"};
@@ -1094,7 +1094,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.2rem;
-  margin-top: 7.6rem;
+  padding-top: 9rem;
 
   h2 {
     font-size: 1.2rem;
@@ -1185,7 +1185,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 `,iO=V.div`
   width: 100%;
   margin-bottom: 1rem;
-`,oO=({tema:e})=>j.jsxs(tO,{tema:e,children:[j.jsx(iO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),eO.map(t=>j.jsxs(nO,{tema:e,children:[j.jsx(rO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(rd,{tema:e})]});const aO=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(sO,{tema:e,children:[j.jsx("h1",{children:"Random Info"}),j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:1.2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(lO,{tema:e,children:[j.jsx(Dp,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,100)," ",u.explanation.length>100&&j.jsxs(uO,{tema:e,onClick:()=>l(u),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(cO,{tema:e,show:o,onClick:s,children:j.jsxs(dO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsx(Dp,{src:r.url,alt:r.title}),j.jsx(fO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})}),j.jsx(pO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},sO=V.div`
+`,oO=({tema:e})=>j.jsxs(tO,{tema:e,children:[j.jsx(iO,{tema:e,children:j.jsx("h2",{children:"Mamiferos avistados en Valdivia"})}),eO.map(t=>j.jsxs(nO,{tema:e,children:[j.jsx(rO,{src:t.imagen,alt:t.nombre}),j.jsx("h3",{children:t.nombre}),j.jsxs("p",{children:["(",t.nombre_cientifico,")"]})]},t.id)),j.jsx(rd,{tema:e})]});const aO=({tema:e})=>{const[t,n]=$.useState([]),[r,i]=$.useState(null),[o,a]=$.useState(!1);$.useEffect(()=>{(async()=>{try{const g=await(await fetch("https://api.nasa.gov/planetary/apod?api_key=0xCaQOqPvwGlOfIDZggRuRxU3xFMGQnQoJKTeHjS&count=7")).json();n(g)}catch(p){console.error("Error fetching News data:",p)}})()},[]);const l=u=>{i(u),a(!0)},s=()=>{i(null),a(!1)};return j.jsxs(sO,{tema:e,children:[j.jsx("h1",{children:"Random Info"}),j.jsx(Xt,{tema:e,centeredSlides:!1,spaceBetween:15,slidesPerView:2.2,freeMode:!0,navigation:!1,className:"mySwiper",children:Array.isArray(t)&&t.map(u=>j.jsx(Ge,{className:"slider",tema:e,children:j.jsxs(lO,{tema:e,children:[j.jsx(Dp,{src:u.url,alt:u.title}),j.jsx("h3",{children:u.title}),j.jsxs("p",{children:[u.explanation.slice(0,50)," ",u.explanation.length>50&&j.jsxs(uO,{tema:e,onClick:()=>l(u),children:["... ",j.jsx("span",{children:"Ver más"})]})]})]})},u.id))}),o&&j.jsx(cO,{tema:e,show:o,onClick:s,children:j.jsxs(dO,{tema:e,children:[j.jsx("h2",{children:r.title}),j.jsx(Dp,{src:r.url,alt:r.title}),j.jsx(fO,{href:r.url,target:"_blank",download:`${r.title}.jpg`,children:j.jsx(Pe,{icon:"basil:login-outline",height:"25",rotate:1})}),j.jsx(pO,{tema:e,children:j.jsx("p",{children:r.explanation})}),j.jsx("span",{children:r.date})]})})]})},sO=V.div`
   h1 {
     font-size: 15px;
     font-weight: 500;
@@ -1201,11 +1201,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   height: 100%;
   margin-top: 15px;
-  border: 1px solid #dddddd4a;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid #dddddd4a; */
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 5px;
+  background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
+  box-shadow: 0px 2px 10px -4px ${e=>e.tema==="dark"?"var(--boxShadow)":"var(--shadow)"};
 
   h3 {
     font-size: 12px;
@@ -1232,7 +1234,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   }
 `,Dp=V.img`
   width: 100%;
-  height: 12rem;
+  height: 8rem;
   object-fit: cover;
 `,uO=V.button`
   background: none;
