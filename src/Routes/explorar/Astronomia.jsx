@@ -14,6 +14,9 @@ const Astronomia = ({ tema }) => {
         />
         <p>POWERED BY NASA API</p>
       </Nasa>
+      <br />
+      <News tema={tema}></News>
+      <News tema={tema}></News>
       <News tema={tema}></News>
     </div>
   );
