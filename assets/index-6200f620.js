@@ -582,7 +582,7 @@ Error generating stack: `+o.message+`
   margin-top: 20px;
 `,OP=V.div`
   width: 100%;
-  padding-top: 7.6rem;
+  padding-top: 10rem;
 
   .mySwiper {
   }
@@ -594,9 +594,9 @@ Error generating stack: `+o.message+`
   }
 
   .slider {
-    height: 300px;
+    height: 240px;
     display: flex;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 
   .swiper-pagination {
@@ -634,7 +634,7 @@ Error generating stack: `+o.message+`
   }
 `,TP=V.div`
   position: absolute;
-  bottom: 4rem;
+  bottom: 1rem;
   right: 0;
   text-align: end;
   padding: 1rem 1.4rem;
@@ -840,8 +840,9 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     width: calc(50% - 10px);
     height: 17rem;
     flex-grow: 1;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 0;
+    border: 1px solid #dddddd4a;
     overflow: hidden;
     margin: 0;
 
@@ -853,7 +854,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   height: 100%;
   flex-direction: column;
-  border: 1px solid #dddddd4a;
   justify-content: space-between;
   user-select: none;
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
@@ -945,7 +945,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   height: 3rem;
   display: flex;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 12px;
   box-shadow: 0 1px 7px -3px ${e=>e.tema==="dark"?"black":"var(--shadow)"};
   justify-content: center;
   align-items: center;
@@ -1191,7 +1191,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   margin-top: 15px;
   border: 1px solid #dddddd4a;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 10px;
   overflow: hidden;
   padding-bottom: 5px;
 
@@ -1271,7 +1271,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   border: 1px solid var(--borderDark);
   padding: 20px;
   z-index: 1001;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -1318,12 +1318,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
   padding-right: 10px;
-`,gO=({tema:e})=>j.jsxs("div",{children:[j.jsx(kP,{tema:e}),j.jsxs(yO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"Fotos de la semana"})]}),j.jsx(lO,{tema:e})]}),yO=V.div`
+`,gO=({tema:e})=>j.jsxs("div",{children:[j.jsx(kP,{tema:e}),j.jsxs(yO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx(lO,{tema:e})]}),yO=V.div`
   height: 2.5rem;
   padding: 6px 1rem;
   width: 100%;
   overflow: hidden;
-  top: 22rem;
+  top: 7.6rem;
   display: flex;
   position: absolute;
   justify-content: space-between;
