@@ -20,6 +20,7 @@ import Hongos from "./components/Hongos";
 import Mamiferos from "./components/Mamiferos";
 import NasaAPOD from "./components/NasaAPOD";
 import Astronomia from "./Routes/explorar/Astronomia";
+import Menu from "./components/Menu";
 
 function App() {
   //Cambio de tema
@@ -34,10 +35,10 @@ function App() {
   };
 
   //Abrir menu
-  const [MenuOpen, setMenuOpen] = useState("closed");
+  const [menuOpen, setMenuOpen] = useState("closed");
 
   const handleMenuChange = () => {
-    if (MenuOpen === "closed") {
+    if (menuOpen === "closed") {
       setMenuOpen("open");
     } else {
       setMenuOpen("closed");
@@ -52,9 +53,14 @@ function App() {
         <Nav
           tema={tema}
           handleTemaChange={handleTemaChange}
-          menuOpen={MenuOpen}
+          menuOpen={menuOpen}
           handleMenuChange={handleMenuChange}
         ></Nav>
+        {/* <Menu
+          tema={tema}
+          menuOpen={menuOpen}
+          handleMenuChange={handleMenuChange}
+        ></Menu> */}
         <Routes>
           <Route path="/" element={<Home tema={tema}></Home>}></Route>
           <Route path="/perfil" element={<Perfil tema={tema}></Perfil>}></Route>

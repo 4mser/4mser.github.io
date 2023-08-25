@@ -54,6 +54,15 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
           </HelloSection>
         )}
         <HeaderButtons isAuthenticated={isAuthenticated}>
+          {/* <Buttons onClick={handleMenuChange} tema={tema}>
+            <Icon
+              icon="solar:menu-dots-broken"
+              style={{
+                color: tema === "dark" ? "var(--TextLight)" : "var(--btnLight)",
+                fontSize: "2rem",
+              }}
+            />
+          </Buttons> */}
           <Buttons onClick={handleTemaChange} tema={tema}>
             <Icon
               icon={
@@ -70,7 +79,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             />
           </Buttons>
           {isAuthenticated ? (
-            <Buttons tema={tema} onClick={handleMenuChange}>
+            <Buttons tema={tema}>
               <Icon
                 icon="carbon:notification-filled"
                 style={{
@@ -242,7 +251,7 @@ const HeaderButtons = styled.div`
   flex-direction: row;
   user-select: none;
   display: flex;
-  width: ${(props) => (props.isAuthenticated ? "140px" : "85px")};
+  width: ${(props) => (props.isAuthenticated ? "135px" : "85px")};
   justify-content: space-between;
 `;
 

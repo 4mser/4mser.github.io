@@ -31,6 +31,14 @@ const CategoriasData = [
     snippet: "naturaleza",
   },
   {
+    id: 19,
+    nombre: "Entretenimiento",
+    icono: "game-icons:film-projector",
+    descripcion: "",
+    height: "30",
+    snippet: "entretenimiento",
+  },
+  {
     id: 4,
     nombre: "Gastronomía",
     icono: "game-icons:knife-fork",
@@ -56,7 +64,7 @@ const CategoriasData = [
   },
   {
     id: 7,
-    nombre: "Actividades al aire libre",
+    nombre: "Actividades",
     icono: "game-icons:surf-board",
     descripcion: "",
     height: "30",
@@ -149,14 +157,6 @@ const CategoriasData = [
     descripcion: "",
     height: "30",
     snippet: "emprende",
-  },
-  {
-    id: 19,
-    nombre: "Entretenimiento",
-    icono: "game-icons:film-projector",
-    descripcion: "",
-    height: "30",
-    snippet: "entretenimiento",
   },
 ];
 
