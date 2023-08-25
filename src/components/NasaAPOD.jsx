@@ -70,7 +70,7 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 7.6rem;
 
   .mySwiper {
   }

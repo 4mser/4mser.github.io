@@ -5,7 +5,7 @@ import News from "../../components/AstroNews";
 
 const Astronomia = ({ tema }) => {
   return (
-    <div>
+    <div style={{ paddingBottom: "5rem" }}>
       <NasaAPOD tema={tema}></NasaAPOD>
       <Nasa tema={tema}>
         <img
@@ -29,9 +29,9 @@ const Nasa = styled.div`
   padding: 6px 1rem;
   width: 100%;
   overflow: hidden;
-  top: 7.6rem;
+  bottom: 0;
   display: flex;
-  position: absolute;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--borderDark);

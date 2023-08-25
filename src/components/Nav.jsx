@@ -355,7 +355,7 @@ export const ContainerNav = styled.div`
   overflow: hidden;
   user-select: none;
   display: flex;
-  transition: 0.3s ease;
+  transition: 0.1s ease-in;
   user-select: none;
   justify-content: space-between;
   padding: 0 1.2rem;
