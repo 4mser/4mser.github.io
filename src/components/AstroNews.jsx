@@ -43,7 +43,7 @@ const News = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={2.2}
+        slidesPerView={2}
         freeMode={true}
         navigation={false}
         className="mySwiper"
@@ -227,6 +227,7 @@ const ModalContent = styled.div`
   }
 
   img {
+    height: 12rem;
     border-radius: 3px;
   }
 
