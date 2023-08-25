@@ -70,14 +70,16 @@ const News = ({ tema }) => {
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
           <ModalContent tema={tema}>
             <h2>{selectedNews.title}</h2>
-            <NewsImage src={selectedNews.url} alt={selectedNews.title} />
-            <DownloadButton
-              href={selectedNews.url}
-              target="_blank"
-              download={`${selectedNews.title}.jpg`}
-            >
-              <Icon icon="basil:login-outline" height="25" rotate={1} />
-            </DownloadButton>
+            <FotoModal>
+              <NewsImage2 src={selectedNews.url} alt={selectedNews.title} />
+              <DownloadButton
+                href={selectedNews.url}
+                target="_blank"
+                download={`${selectedNews.title}.jpg`}
+              >
+                <Icon icon="basil:login-outline" height="25" rotate={1} />
+              </DownloadButton>
+            </FotoModal>
             <Data tema={tema}>
               <p>{selectedNews.explanation}</p>
             </Data>
@@ -148,9 +150,39 @@ const NewsCard = styled.div`
   }
 `;
 
+const FotoModal = styled.div`
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
+`;
+
+const DownloadButton = styled.a`
+  color: #ffffff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
 const NewsImage = styled.img`
   width: 100%;
   height: 8rem;
+  object-fit: cover;
+`;
+
+const NewsImage2 = styled.img`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 `;
 
@@ -226,32 +258,9 @@ const ModalContent = styled.div`
     text-align: justify;
   }
 
-  img {
-    height: 12rem;
-    border-radius: 3px;
-  }
-
   span {
     font-size: 10px;
     opacity: 0.6;
-  }
-`;
-
-const DownloadButton = styled.a`
-  color: #ffffff;
-  padding: 8px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  right: 1.5rem;
-  top: 13rem;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  opacity: 0.7;
-
-  &:hover {
-    opacity: 1;
   }
 `;
 
