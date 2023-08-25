@@ -177,7 +177,7 @@ Error generating stack: `+o.message+`
   overflow: hidden;
   user-select: none;
   display: flex;
-  transition: 0.3s ease;
+  transition: 0.1s ease-in;
   user-select: none;
   justify-content: space-between;
   padding: 0 1.2rem;
@@ -582,7 +582,7 @@ Error generating stack: `+o.message+`
   margin-top: 20px;
 `,CP=V.div`
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 7.6rem;
 
   .mySwiper {
   }
@@ -1332,14 +1332,14 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-`,hO=({tema:e})=>j.jsxs("div",{children:[j.jsx(EP,{tema:e}),j.jsxs(mO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),mO=V.div`
+`,hO=({tema:e})=>j.jsxs("div",{style:{paddingBottom:"5rem"},children:[j.jsx(EP,{tema:e}),j.jsxs(mO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),mO=V.div`
   height: 2.5rem;
   padding: 6px 1rem;
   width: 100%;
   overflow: hidden;
-  top: 7.6rem;
+  bottom: 0;
   display: flex;
-  position: absolute;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--borderDark);
