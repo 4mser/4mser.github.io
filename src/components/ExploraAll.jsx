@@ -43,7 +43,7 @@ export default ExploraAll;
 
 const CategoriasContainer = styled.div`
   width: 100%;
-  padding: 0rem 1.2rem 5rem 1.2rem;
+  padding: 0rem 1.2rem 6rem 1.2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

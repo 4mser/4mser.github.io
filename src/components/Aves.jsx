@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import AvesData from "../data/AvesData";
 import ScrollToTopButton from "./ScrollToTopButton";
@@ -7,7 +7,7 @@ const AvesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 0 1.2rem 2rem 1.2rem;
   padding-top: 9rem;
   gap: 20px;
 
@@ -73,13 +73,28 @@ const Blog = styled.div`
 `;
 
 const Aves = ({ tema }) => {
+  /* Modals */
+
+  const [selectedNews, setSelectedNews] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = (news) => {
+    setSelectedNews(news);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setSelectedNews(null);
+    setShowModal(false);
+  };
+
   return (
     <AvesContainer tema={tema}>
       <Blog tema={tema}>
         <h2>Aves avistadas en Valdivia</h2>
       </Blog>
       {AvesData.map((ave) => (
-        <AveCard key={ave.id} tema={tema}>
+        <AveCard key={ave.id} tema={tema} onClick={() => openModal(ave)}>
           <ImagenContainer>
             <AveImage src={ave.imagen} alt={ave.nombre} />
           </ImagenContainer>
@@ -90,8 +105,92 @@ const Aves = ({ tema }) => {
         </AveCard>
       ))}
       <ScrollToTopButton tema={tema}></ScrollToTopButton>
+      {showModal && (
+        <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
+          <ModalContent tema={tema}>
+            <h3>{selectedNews.nombre}</h3>
+            <NewsImage src={selectedNews.imagen} alt={selectedNews.imagen} />
+            <p>{selectedNews.nombre_cientifico}</p>
+          </ModalContent>
+        </ModalBackground>
+      )}
     </AvesContainer>
   );
 };
 
 export default Aves;
+
+const ModalBackground = styled.div`
+  background-color: rgba(0, 0, 0, 0.764);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: ${(props) => (props.show ? "block" : "none")};
+`;
+
+const ModalContent = styled.div`
+  background: linear-gradient(
+    -45deg,
+    #0b0b0b 20%,
+    #273647 60%,
+    #151d27 80%,
+    #0b0b0b 100%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 700% 100%;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  position: fixed;
+  top: 50%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--borderDark);
+  padding: 20px;
+  z-index: 1001;
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  img {
+    border-radius: 3px;
+  }
+
+  span {
+    font-size: 10px;
+    opacity: 0.6;
+  }
+`;
+
+const NewsImage = styled.img`
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+`;
