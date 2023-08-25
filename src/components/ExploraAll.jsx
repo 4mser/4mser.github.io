@@ -28,7 +28,7 @@ const ExploraAll = ({ tema, activeCategory }) => {
               </Titulo>
               <Categorias tema={tema}>
                 {explora.iconos.map((icono, index) => (
-                  <Icon key={index} icon={icono} height="25" className="Icon" />
+                  <Icon key={index} icon={icono} height="22" className="Icon" />
                 ))}
               </Categorias>
             </Data>
@@ -51,7 +51,7 @@ const CategoriasContainer = styled.div`
 
   .slider {
     width: calc(50% - 10px);
-    height: 17rem;
+    height: 13rem;
     flex-grow: 1;
     border-radius: 10px;
     padding: 0;
