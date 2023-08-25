@@ -7,9 +7,10 @@ import { Icon } from "@iconify/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 
 const NasaAPOD = ({ tema }) => {
   const { apodData, loading } = useNasaAPI();
@@ -42,6 +43,7 @@ const NasaAPOD = ({ tema }) => {
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
+        effect={"fade"}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -50,7 +52,7 @@ const NasaAPOD = ({ tema }) => {
           clickable: true,
         }}
         navigation={false}
-        modules={[Autoplay, Pagination]}
+        modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper"
       >
         {apodData.map(renderCard)}

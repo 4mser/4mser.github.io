@@ -78,7 +78,9 @@ const News = ({ tema }) => {
             >
               <Icon icon="basil:login-outline" height="25" rotate={1} />
             </DownloadButton>
-            <p>{selectedNews.explanation}</p>
+            <Data tema={tema}>
+              <p>{selectedNews.explanation}</p>
+            </Data>
             <span>{selectedNews.date}</span>
           </ModalContent>
         </ModalBackground>
@@ -247,4 +249,11 @@ const DownloadButton = styled.a`
   &:hover {
     opacity: 1;
   }
+`;
+
+const Data = styled.div`
+  width: 100%;
+  max-height: 60vh; /* Establece la altura máxima que deseas */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+  padding-right: 10px;
 `;
