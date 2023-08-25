@@ -53,8 +53,9 @@ const CategoriasContainer = styled.div`
     width: calc(50% - 10px);
     height: 17rem;
     flex-grow: 1;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 0;
+    border: 1px solid #dddddd4a;
     overflow: hidden;
     margin: 0;
 
@@ -68,7 +69,6 @@ const ExploraCard = styled.div`
   width: 100%;
   height: 100%;
   flex-direction: column;
-  border: 1px solid #dddddd4a;
   justify-content: space-between;
   user-select: none;
   background: ${(props) =>

@@ -114,7 +114,7 @@ const NewsCard = styled.div`
   margin-top: 15px;
   border: 1px solid #dddddd4a;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 10px;
   overflow: hidden;
   padding-bottom: 5px;
 
@@ -205,7 +205,7 @@ const ModalContent = styled.div`
   border: 1px solid var(--borderDark);
   padding: 20px;
   z-index: 1001;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

@@ -12,7 +12,7 @@ const Astronomia = ({ tema }) => {
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
           alt=""
         />
-        <p>Fotos de la semana</p>
+        <p>POWERED BY NASA API</p>
       </Nasa>
       <News tema={tema}></News>
     </div>
@@ -26,7 +26,7 @@ const Nasa = styled.div`
   padding: 6px 1rem;
   width: 100%;
   overflow: hidden;
-  top: 22rem;
+  top: 7.6rem;
   display: flex;
   position: absolute;
   justify-content: space-between;

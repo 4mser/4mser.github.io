@@ -83,7 +83,7 @@ const Categoria = styled.div`
   height: 3rem;
   display: flex;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 12px;
   box-shadow: 0 1px 7px -3px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
   justify-content: center;
   align-items: center;

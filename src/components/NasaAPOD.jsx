@@ -70,7 +70,7 @@ const StyledActivityIndicator = styled.div`
 `;
 export const AvisosContainer = styled.div`
   width: 100%;
-  padding-top: 7.6rem;
+  padding-top: 10rem;
 
   .mySwiper {
   }
@@ -82,9 +82,9 @@ export const AvisosContainer = styled.div`
   }
 
   .slider {
-    height: 300px;
+    height: 240px;
     display: flex;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 
   .swiper-pagination {
@@ -126,7 +126,7 @@ export const AvisosBox = styled.div`
 
 const Info = styled.div`
   position: absolute;
-  bottom: 4rem;
+  bottom: 1rem;
   right: 0;
   text-align: end;
   padding: 1rem 1.4rem;
