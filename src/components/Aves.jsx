@@ -22,7 +22,7 @@ const AvesContainer = styled.div`
 
 const AveCard = styled.div`
   width: calc(50% - 10px);
-  height: 13rem;
+  height: 14rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -31,22 +31,6 @@ const AveCard = styled.div`
   overflow: hidden;
   background: ${(props) =>
     props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
-  /* h3 {
-    font-size: 12px;
-    font-weight: 500;
-    padding-left: 10px;
-    color: ${(props) =>
-    props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
-  }
-
-  p {
-    padding-left: 10px;
-    font-size: 10px;
-    font-weight: 400;
-    font-style: italic;
-    color: ${(props) =>
-    props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
-  } */
 `;
 
 const Data = styled.div`
@@ -72,9 +56,15 @@ const Data = styled.div`
   }
 `;
 
-const AveImage = styled.img`
+const ImagenContainer = styled.div`
   width: 100%;
   height: 80%;
+  overflow: hidden;
+`;
+
+const AveImage = styled.img`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 `;
 
@@ -90,7 +80,9 @@ const Aves = ({ tema }) => {
       </Blog>
       {AvesData.map((ave) => (
         <AveCard key={ave.id} tema={tema}>
-          <AveImage src={ave.imagen} alt={ave.nombre} />
+          <ImagenContainer>
+            <AveImage src={ave.imagen} alt={ave.nombre} />
+          </ImagenContainer>
           <Data tema={tema}>
             <h3>{ave.nombre}</h3>
             <p>({ave.nombre_cientifico})</p>
