@@ -1332,7 +1332,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   width: 100%;
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
-  padding-right: 10px;
 `,hO=({tema:e})=>j.jsxs("div",{children:[j.jsx(EP,{tema:e}),j.jsxs(mO,{tema:e,children:[j.jsx("img",{src:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",alt:""}),j.jsx("p",{children:"POWERED BY NASA API"})]}),j.jsx("br",{}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e}),j.jsx(vl,{tema:e})]}),mO=V.div`
   height: 2.5rem;
   padding: 6px 1rem;
