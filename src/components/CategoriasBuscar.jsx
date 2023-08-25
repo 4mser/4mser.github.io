@@ -85,8 +85,8 @@ const SubNav = styled.div`
   position: fixed;
   bottom: 0;
   /* border-top: 1px solid var(--borderDark); */
-  height: 5rem;
-  box-shadow: 0 -1px 25px -7px var(--boxShadow);
+  height: 4rem;
+  box-shadow: 0 -1px 10px -7px var(--boxShadow);
   display: flex;
   align-items: center;
   background: ${(props) =>

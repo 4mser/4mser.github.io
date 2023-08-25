@@ -8,7 +8,7 @@ const HongosContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.2rem;
-  margin-top: 7.6rem;
+  padding-top: 9rem;
 
   h2 {
     font-size: 1.2rem;

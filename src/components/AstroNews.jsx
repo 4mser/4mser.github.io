@@ -43,7 +43,7 @@ const News = ({ tema }) => {
         tema={tema}
         centeredSlides={false}
         spaceBetween={15}
-        slidesPerView={1.2}
+        slidesPerView={2.2}
         freeMode={true}
         navigation={false}
         className="mySwiper"
@@ -55,8 +55,8 @@ const News = ({ tema }) => {
                 <NewsImage src={news.url} alt={news.title} />
                 <h3>{news.title}</h3>
                 <p>
-                  {news.explanation.slice(0, 100)}{" "}
-                  {news.explanation.length > 100 && (
+                  {news.explanation.slice(0, 50)}{" "}
+                  {news.explanation.length > 50 && (
                     <ReadMoreButton tema={tema} onClick={() => openModal(news)}>
                       ... <span>Ver más</span>
                     </ReadMoreButton>
@@ -112,11 +112,14 @@ const NewsCard = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 15px;
-  border: 1px solid #dddddd4a;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid #dddddd4a; */
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 5px;
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
+  box-shadow: 0px 2px 10px -4px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
 
   h3 {
     font-size: 12px;
@@ -147,7 +150,7 @@ const NewsCard = styled.div`
 
 const NewsImage = styled.img`
   width: 100%;
-  height: 12rem;
+  height: 8rem;
   object-fit: cover;
 `;
 
