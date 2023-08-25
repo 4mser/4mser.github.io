@@ -7,8 +7,9 @@ const AvesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.2rem;
-  margin-top: 7.6rem;
+  padding: 0 1.2rem;
+  padding-top: 9rem;
+  gap: 20px;
 
   h2 {
     font-size: 1.2rem;
@@ -21,22 +22,21 @@ const AvesContainer = styled.div`
 
 const AveCard = styled.div`
   width: calc(50% - 10px);
-  margin-bottom: 20px;
-  border: 1px solid #dddddd4a;
+  height: 13rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-
   flex-direction: column;
-  border-radius: 3px;
+  justify-content: space-between;
+  border-radius: 10px;
   overflow: hidden;
-  padding-bottom: 10px;
-
-  h3 {
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
+  /* h3 {
     font-size: 12px;
     font-weight: 500;
     padding-left: 10px;
     color: ${(props) =>
-      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
+    props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
 
   p {
@@ -45,21 +45,41 @@ const AveCard = styled.div`
     font-weight: 400;
     font-style: italic;
     color: ${(props) =>
-      props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
+    props.tema === "dark" ? "var(--shadow)" : "var(--Item)"};
+  } */
+`;
+
+const Data = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+
+  p {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
+    opacity: 0.7;
+    display: flex;
+  }
+
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
   }
 `;
 
 const AveImage = styled.img`
   width: 100%;
-  height: 12rem;
+  height: 80%;
   object-fit: cover;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #dddddd4a;
 `;
 
 const Blog = styled.div`
   width: 100%;
-  margin-bottom: 1rem;
 `;
 
 const Aves = ({ tema }) => {
@@ -71,8 +91,10 @@ const Aves = ({ tema }) => {
       {AvesData.map((ave) => (
         <AveCard key={ave.id} tema={tema}>
           <AveImage src={ave.imagen} alt={ave.nombre} />
-          <h3>{ave.nombre}</h3>
-          <p>({ave.nombre_cientifico})</p>
+          <Data tema={tema}>
+            <h3>{ave.nombre}</h3>
+            <p>({ave.nombre_cientifico})</p>
+          </Data>
         </AveCard>
       ))}
       <ScrollToTopButton tema={tema}></ScrollToTopButton>
