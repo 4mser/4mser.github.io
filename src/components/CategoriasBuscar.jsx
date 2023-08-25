@@ -24,32 +24,6 @@ const CategoriasBuscar = ({ tema }) => {
 
   return (
     <CategoriasContainer tema={tema}>
-      <Swiper
-        centeredSlides={false}
-        spaceBetween={10}
-        slidesPerView={5}
-        navigation={false}
-        className="mySwiper"
-      >
-        {CategoriasData.map((categoria) => (
-          <SwiperSlide key={categoria.id} tema={tema}>
-            <Categoria
-              tema={tema}
-              id={categoria.snippet}
-              activeCategory={activeCategory}
-              onClick={() => handleCategoryClick(categoria.snippet)}
-            >
-              <Icon
-                icon={categoria.icono}
-                height={categoria.height}
-                className="Icon"
-              />
-              {/* <p>{categoria.nombre}</p> */}
-            </Categoria>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
       {filteredEntries.length === 0 ? (
         <SinContenido tema={tema} />
       ) : (
@@ -59,6 +33,33 @@ const CategoriasBuscar = ({ tema }) => {
           activeCategory={activeCategory}
         />
       )}
+      <SubNav tema={tema}>
+        <Swiper
+          centeredSlides={false}
+          spaceBetween={10}
+          slidesPerView={5}
+          navigation={false}
+          className="mySwiper"
+        >
+          {CategoriasData.map((categoria) => (
+            <SwiperSlide key={categoria.id} tema={tema}>
+              <Categoria
+                tema={tema}
+                id={categoria.snippet}
+                activeCategory={activeCategory}
+                onClick={() => handleCategoryClick(categoria.snippet)}
+              >
+                <Icon
+                  icon={categoria.icono}
+                  height={categoria.height}
+                  className="Icon"
+                />
+                {/* <p>{categoria.nombre}</p> */}
+              </Categoria>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </SubNav>
     </CategoriasContainer>
   );
 };
@@ -76,6 +77,18 @@ const CategoriasContainer = styled.div`
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
   }
+`;
+
+const SubNav = styled.div`
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 4rem;
+  box-shadow: 0 -4px 25px -3px var(--boxShadow);
+  display: flex;
+  align-items: center;
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
 `;
 
 const Categoria = styled.div`
