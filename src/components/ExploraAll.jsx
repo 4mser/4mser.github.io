@@ -52,7 +52,6 @@ const CategoriasContainer = styled.div`
   .slider {
     width: calc(50% - 10px);
     height: 13rem;
-    flex-grow: 1;
     border-radius: 10px;
     padding: 0;
     /* border: 1px solid #dddddd4a; */
