@@ -6,27 +6,27 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/explorar/*': {
+      '/explorar': {
         target: 'https://www.entropia.work',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/explorar/, ''),
       },
-      '/perfil/*': {
+      '/perfil': {
         target: 'https://www.entropia.work',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/perfil/, ''),
       },
-      '/ubicaciones/*': {
+      '/ubicaciones': {
         target: 'https://www.entropia.work',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/ubicaciones/, ''),
       },
-      '/guardado/*': {
+      '/guardado': {
         target: 'https://www.entropia.work',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/guardado/, ''),
       },
-      '/tienda/*': {
+      '/tienda': {
         target: 'https://www.entropia.work',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/tienda/, ''),
