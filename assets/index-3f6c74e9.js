@@ -833,7 +833,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   padding: 0rem 1.2rem 5rem 1.2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between;
 
   .slider {
