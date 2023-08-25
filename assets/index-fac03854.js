@@ -839,7 +839,6 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   .slider {
     width: calc(50% - 10px);
     height: 13rem;
-    flex-grow: 1;
     border-radius: 10px;
     padding: 0;
     /* border: 1px solid #dddddd4a; */
