@@ -8,7 +8,6 @@ import ExploraAll from "../components/ExploraAll";
 const Buscar = ({ tema }) => {
   return (
     <div>
-      <SearchBar tema={tema}></SearchBar>
       <CategoriasBuscar tema={tema}></CategoriasBuscar>
     </div>
   );

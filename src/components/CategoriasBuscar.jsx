@@ -66,6 +66,7 @@ const CategoriasBuscar = ({ tema }) => {
 
 const CategoriasContainer = styled.div`
   width: 100%;
+  padding-top: 9rem;
 
   .mySwiper {
     padding: 0.2rem 1.2rem 3px 1.2rem;
@@ -83,8 +84,9 @@ const SubNav = styled.div`
   width: 100%;
   position: fixed;
   bottom: 0;
-  height: 4rem;
-  box-shadow: 0 -4px 25px -3px var(--boxShadow);
+  /* border-top: 1px solid var(--borderDark); */
+  height: 5rem;
+  box-shadow: 0 -1px 25px -7px var(--boxShadow);
   display: flex;
   align-items: center;
   background: ${(props) =>

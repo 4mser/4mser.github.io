@@ -1,15 +1,35 @@
-import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
-
-// ICONS
+import { Link, useLocation } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
 const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   const { user, isAuthenticated, loginWithRedirect, logout, isLoading } =
     useAuth0();
-
   const location = useLocation();
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [minimizeNav, setMinimizeNav] = useState(false);
+
+  const handleScroll = () => {
+    const currentPosition = window.scrollY;
+
+    if (currentPosition > 0 && !minimizeNav) {
+      setMinimizeNav(true);
+    } else if (currentPosition === 0 && minimizeNav) {
+      setMinimizeNav(false);
+    }
+
+    setScrollPosition(currentPosition);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition, minimizeNav]);
 
   return (
     <NavStyle tema={tema}>
@@ -121,7 +141,10 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         </HeaderButtons>
       </Header>
 
-      <ContainerNav tema={tema}>
+      <ContainerNav
+        tema={tema}
+        style={{ height: minimizeNav ? "0" : "3.3rem" }}
+      >
         <Link to="/" className="link" style={{ textDecoration: "none" }}>
           <Button
             tema={tema}
@@ -244,7 +267,7 @@ const Header = styled.div`
   width: 100%;
   user-select: none;
   justify-content: space-between;
-  padding: 1.2rem 1.2rem 0 1.2rem;
+  padding: 1.2rem 1.2rem 10px 1.2rem;
 `;
 
 const HeaderButtons = styled.div`
@@ -328,11 +351,11 @@ const Buttons = styled.div`
 
 export const ContainerNav = styled.div`
   width: 100%;
-  height: 4rem;
-  bottom: 1rem;
   z-index: 1000;
+  overflow: hidden;
   user-select: none;
   display: flex;
+  transition: 0.3s ease;
   user-select: none;
   justify-content: space-between;
   padding: 0 1.2rem;

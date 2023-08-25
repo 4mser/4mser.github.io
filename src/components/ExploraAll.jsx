@@ -55,9 +55,10 @@ const CategoriasContainer = styled.div`
     flex-grow: 1;
     border-radius: 10px;
     padding: 0;
-    border: 1px solid #dddddd4a;
+    /* border: 1px solid #dddddd4a; */
     overflow: hidden;
     margin: 0;
+    box-shadow: 0px 2px 10px -4px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
 
     &:hover {
       filter: brightness(1.1);
@@ -73,7 +74,7 @@ const ExploraCard = styled.div`
   user-select: none;
   background: ${(props) =>
     props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
-  box-shadow: 0px 2px 10px -4px ${(props) => (props.tema === "dark" ? "var(--boxShadow)" : "var(--shadow)")};
+
   display: flex; /* Aplicamos flex display aquí */
 
   .Icon {
