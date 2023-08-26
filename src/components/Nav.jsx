@@ -33,7 +33,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
 
   return (
     <NavStyle tema={tema}>
-      <Header>
+      <Header style={{ height: minimizeNav ? "4.5rem" : "5.5rem" }}>
         {/* {isAuthenticated ? (
           <HelloSection tema={tema}>
             <h2>Hola, {user.name.split(" ")[0]}!</h2>
@@ -295,11 +295,11 @@ const Header = styled.div`
   flex-direction: row;
   display: flex;
   width: 100%;
-  height: 5.5rem;
   user-select: none;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1.2rem;
+  transition: 0.3s ease;
 `;
 
 const HeaderButtons = styled.div`

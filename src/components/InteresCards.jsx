@@ -49,9 +49,12 @@ const InteresCards = ({ tema, activeCategory }) => {
             tema={tema}
           >
             <Categoria tema={tema}>
-              {/* <div className="degree"></div> */}
-              <img src={item.imagen} alt={item.nombre} />
-              <p>{item.nombre}</p>
+              <ImagenContainer>
+                <img src={item.imagen} alt={item.nombre} />
+              </ImagenContainer>
+              <Data tema={tema}>
+                <h3>{item.nombre}</h3>
+              </Data>
             </Categoria>
           </SwiperSlide>
         ))}
@@ -59,8 +62,8 @@ const InteresCards = ({ tema, activeCategory }) => {
       {showModal && (
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
           <ModalContent tema={tema}>
-            <h3>{selectedNews.nombre}</h3>
             <NewsImage src={selectedNews.imagen} alt={selectedNews.imagen} />
+            <h3>{selectedNews.nombre}</h3>
             <p>{selectedNews.descripcion}</p>
           </ModalContent>
         </ModalBackground>
@@ -80,7 +83,8 @@ const CategoriasContainer = styled.div`
   }
 
   .slider {
-    border-radius: 5px;
+    border-radius: 10px;
+    height: 14rem;
     overflow: hidden;
     user-select: none;
     box-shadow: 0 3px 8px -4px ${(props) => (props.tema === "dark" ? "black" : "var(--shadow)")};
@@ -88,57 +92,55 @@ const CategoriasContainer = styled.div`
       props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
     /* border: 1px solid #dddddd4a; */
   }
-
-  h2 {
-    font-size: 1rem;
-    padding: 0 1.2rem;
-    font-weight: 500;
-
-    color: ${(props) =>
-      props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};
-    margin-bottom: 20px;
-  }
 `;
 
 const Categoria = styled.div`
   width: 100%;
-  height: 100%;
-  user-select: none;
+  height: 14rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  background: ${(props) =>
+    props.tema === "dark" ? "var(--Item)" : "var(--cardsLight)"};
+`;
+
+const ImagenContainer = styled.div`
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+const Data = styled.div`
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+  padding: 0 10px;
+  justify-content: center;
 
   p {
     width: 100%;
     font-size: 10px;
     font-weight: 400;
-    padding: 10px;
-    bottom: 5px;
-    z-index: 2;
     color: ${(props) =>
-      props.tema === "dark" ? "var(--whiteColor)" : "var(--Item)"};
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
+    opacity: 0.7;
+    display: flex;
   }
 
-  img {
-    width: 100%;
-    height: 12rem;
-    transition: 0.3s ease-in-out;
-    /* border-bottom: 1px solid #dddddd4a; */
-    object-fit: cover;
-  }
-
-  .degree {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 46%
-    );
-    border-radius: 5px;
-    position: absolute;
-    z-index: 1;
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: ${(props) =>
+      props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
   }
 `;
 
@@ -181,14 +183,13 @@ const ModalContent = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--borderDark);
-  padding: 20px;
+  padding: 15px;
   z-index: 1001;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  gap: 15px;
 
   h3 {
     font-size: 14px;
@@ -203,6 +204,7 @@ const ModalContent = styled.div`
 
   img {
     border-radius: 3px;
+    margin-bottom: 8px;
   }
 
   span {
@@ -213,6 +215,6 @@ const ModalContent = styled.div`
 
 const NewsImage = styled.img`
   width: 100%;
-  height: 20rem;
+  height: 100%;
   object-fit: cover;
 `;
