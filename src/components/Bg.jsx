@@ -6,7 +6,7 @@ const Bg = ({ tema }) => {
         width: "100%",
         height: "100vh",
         zIndex: "-1",
-        transition: ".3s ease",
+        transition: ".1s ease",
         overflow: "hidden",
         background: tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)",
       }}

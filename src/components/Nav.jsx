@@ -134,12 +134,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             ""
           )}
 
-          <Link
-            to="/perfil"
-            style={{ textDecoration: "none" }}
-            tema={tema}
-            className="link"
-          >
+          <Link to="/perfil" style={{ textDecoration: "none" }} tema={tema}>
             <Buttons tema={tema}>
               {isAuthenticated ? (
                 <img src={user.picture} alt={user.name} />
@@ -174,17 +169,6 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             <Icon icon="basil:home-outline" height="27" className="Icon" />
           </Button>
         </Link>
-
-        {/* <Link to="/buscar" className="link" style={{ textDecoration: "none" }}>
-          <Button
-            tema={tema}
-            style={{
-              color: location.pathname === "/buscar" ? "var(--Blue)" : "",
-            }}
-          >
-            <Icon icon="basil:search-solid" height="27" className="Icon" />
-          </Button>
-        </Link> */}
 
         <Link
           to="/explorar"
@@ -269,6 +253,9 @@ const NavStyle = styled.div`
 
   .link {
     text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: default;
     user-select: none;
     color: ${(props) =>
       props.tema === "dark" ? "var(--textLight)" : "var(--Item)"};

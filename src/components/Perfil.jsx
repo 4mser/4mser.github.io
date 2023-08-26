@@ -153,27 +153,12 @@ const ProfileFoto = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px;
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  background: var(--degree);
-  box-shadow: 0px 2px 5px -3px var(--boxShadow);
-  animation: gradient 5s ease infinite;
-  border: 1px solid var(--borderDark);
-  background-size: 300% 300%;
-
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+  transition: 0.1s ease;
+  border: 5px solid
+    ${(props) => (props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)")};
 
   img {
     width: 100%;
