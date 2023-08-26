@@ -31,20 +31,28 @@ const Perfil = ({ tema }) => {
     <Container>
       {isAuthenticated && (
         <UserProfile tema={tema}>
-          <UserContainer tema={tema}>
-            <img src={user.picture} alt={user.name} />
-          </UserContainer>
-          <NombreUsuario>
-            <h2>{newUsername || user.name}</h2>
-            <Icon
-              icon="lucide:pen-line"
-              height="19"
-              className="icon"
-              tema={tema}
-              onClick={handleChangeUsername}
+          <Portada tema={tema}>
+            <img
+              src="https://apod.nasa.gov/apod/image/1008/Lagoon_ssro900.jpg"
+              alt=""
             />
-          </NombreUsuario>
-          <p>{user.email}</p>
+          </Portada>
+          <PerfilData tema={tema}>
+            <ProfileFoto tema={tema}>
+              <img src={user.picture} alt={user.name} />
+            </ProfileFoto>
+            <NombreUsuario>
+              <h2>{newUsername || user.name}</h2>
+              {/* <Icon
+                icon="lucide:pen-line"
+                height="19"
+                className="icon"
+                tema={tema}
+                onClick={handleChangeUsername}
+              /> */}
+            </NombreUsuario>
+          </PerfilData>
+          {/* <p>{user.email}</p> */}
         </UserProfile>
       )}
       {isAuthenticated ? (
@@ -70,6 +78,10 @@ const NombreUsuario = styled.div`
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 
   .icon {
     :hover {
@@ -79,17 +91,20 @@ const NombreUsuario = styled.div`
 `;
 
 const Container = styled.div`
-  padding-top: 9rem;
+  padding-top: 8.8rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 `;
 
 const Button = styled.div`
-  width: 80%;
-  padding: 10px;
-  border-radius: 10px;
+  width: fit-content;
+  padding: 7px 10px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.2rem;
+  font-size: 10px;
+  border-radius: 5px;
   box-shadow: rgba(99, 99, 99, 0.127) 0px 2px 8px 0px;
   display: flex;
   justify-content: center;
@@ -103,8 +118,6 @@ const Button = styled.div`
 
 const UserProfile = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
 
@@ -116,18 +129,39 @@ const UserProfile = styled.div`
   }
 `;
 
-const UserContainer = styled.div`
-  background: red;
+const Portada = styled.div`
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+const PerfilData = styled.div`
+  width: 100%;
+  padding: 6.9rem 1.2rem 1rem 1.2rem;
+  height: auto;
+`;
+
+const ProfileFoto = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 4px;
   border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  animation: gradient 8s ease infinite;
-  background-size: 400% 400%;
+  width: 6rem;
+  height: 6rem;
+  background: var(--degree);
+  box-shadow: 0px 2px 5px -3px var(--boxShadow);
+  animation: gradient 5s ease infinite;
+  border: 1px solid var(--borderDark);
+  background-size: 300% 300%;
 
   @keyframes gradient {
     0% {
@@ -145,7 +179,6 @@ const UserContainer = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 8px;
     border-radius: 50%;
     transition: 0.3s;
     background: ${(props) =>
