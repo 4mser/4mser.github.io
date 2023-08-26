@@ -378,7 +378,7 @@ export const ContainerNav = styled.div`
   transition: 0.1s ease-in;
   user-select: none;
   justify-content: space-between;
-  padding: 0 1.2rem;
+  padding: 0 7px;
   align-items: center;
   border-bottom: 1px solid
     ${(props) =>
