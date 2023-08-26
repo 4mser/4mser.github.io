@@ -8,11 +8,11 @@ const AvesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0 1.2rem 2rem 1.2rem;
-  padding-top: 9rem;
+  padding-top: 10rem;
   gap: 20px;
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 15px;
     width: 100%;
     font-weight: 500;
     color: ${(props) =>
@@ -91,7 +91,7 @@ const Aves = ({ tema }) => {
   return (
     <AvesContainer tema={tema}>
       <Blog tema={tema}>
-        <h2>Aves avistadas en Valdivia</h2>
+        <h2>Avistadas en Valdivia</h2>
       </Blog>
       {AvesData.map((ave) => (
         <AveCard key={ave.id} tema={tema} onClick={() => openModal(ave)}>
@@ -108,8 +108,8 @@ const Aves = ({ tema }) => {
       {showModal && (
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
           <ModalContent tema={tema}>
-            <h3>{selectedNews.nombre}</h3>
             <NewsImage src={selectedNews.imagen} alt={selectedNews.imagen} />
+            <h3>{selectedNews.nombre}</h3>
             <p>{selectedNews.nombre_cientifico}</p>
           </ModalContent>
         </ModalBackground>
@@ -159,14 +159,13 @@ const ModalContent = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--borderDark);
-  padding: 20px;
+  padding: 15px;
   z-index: 1001;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  gap: 15px;
 
   h3 {
     font-size: 14px;
@@ -180,6 +179,7 @@ const ModalContent = styled.div`
   }
 
   img {
+    margin-bottom: 8px;
     border-radius: 3px;
   }
 
@@ -191,6 +191,6 @@ const ModalContent = styled.div`
 
 const NewsImage = styled.img`
   width: 100%;
-  height: 20rem;
+  height: 100%;
   object-fit: cover;
 `;

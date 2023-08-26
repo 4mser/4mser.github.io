@@ -66,7 +66,7 @@ const CategoriasBuscar = ({ tema }) => {
 
 const CategoriasContainer = styled.div`
   width: 100%;
-  padding-top: 9rem;
+  padding-top: 10rem;
 
   .mySwiper {
     padding: 0.2rem 1.2rem 3px 1.2rem;

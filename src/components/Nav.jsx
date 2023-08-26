@@ -73,7 +73,12 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             </div>
           </HelloSection>
         )} */}
-        <Logo tema={tema}>
+        <Link
+          to="/"
+          style={{ textDecoration: "none" }}
+          tema={tema}
+          className="Logo"
+        >
           <img
             src={
               tema === "dark"
@@ -82,7 +87,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             }
             alt="EOA-LOGO"
           />
-        </Logo>
+        </Link>
         <HeaderButtons isAuthenticated={isAuthenticated}>
           {/* <Buttons onClick={handleMenuChange} tema={tema}>
             <Icon
@@ -269,20 +274,22 @@ const NavStyle = styled.div`
     font-weight: 800;
     user-select: none;
   }
-`;
 
-const Logo = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  img {
-    width: 100%;
+  .Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    object-fit: cover;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 `;
+
+const Logo = styled.div``;
 
 const Header = styled.div`
   flex-direction: row;
