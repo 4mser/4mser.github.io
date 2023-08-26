@@ -75,9 +75,13 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         )} */}
         <Link
           to="/"
-          style={{ textDecoration: "none", userSelect: "none" }}
           tema={tema}
           className="Logo"
+          style={{
+            textDecoration: "none",
+            userSelect: "none",
+            width: minimizeNav ? "5rem" : "7rem",
+          }}
         >
           <img
             src={
@@ -277,17 +281,12 @@ const NavStyle = styled.div`
 
   .Logo {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
+    transition: 0.3s ease;
+    height: auto;
 
     img {
       width: 100%;
       height: 100%;
-      user-select: none;
       object-fit: cover;
     }
   }
