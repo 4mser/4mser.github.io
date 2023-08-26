@@ -4,11 +4,7 @@ const Footer = ({ tema }) => {
   return (
     <Container tema={tema}>
       <img
-        src={
-          tema === "dark"
-            ? "https://app-valdi.s3.amazonaws.com/logos-08.png"
-            : "https://app-valdi.s3.amazonaws.com/logos-09.png"
-        }
+        src="https://appentropia.s3.amazonaws.com/EOA-PNG.png"
         alt="EOA-LOGO"
       />
       <p>©2023 - DESARROLLADO POR ENTROPÍA</p>
@@ -20,7 +16,7 @@ export default Footer;
 
 export const Container = styled.div`
   width: 100%;
-  height: 7rem;
+  height: 4rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -30,8 +26,9 @@ export const Container = styled.div`
   img {
     height: 50%;
     object-fit: cover;
-    opacity: 1;
-    margin-bottom: 10px;
+    opacity: 0.8;
+
+    filter: ${(props) => (props.tema === "dark" ? "" : "invert(1)")};
   }
 
   p {

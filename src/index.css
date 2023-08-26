@@ -35,6 +35,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  /* degrees */
+  --degree:linear-gradient(45deg,  #1b9d63, #38a3ca, #580b74);
+
   /* --bg_light:  linear-gradient(19deg, #fbd4d2 0%, #c9baff 100%); */
   
   /* --bg_dark: rgb(32, 32, 32); */
@@ -75,7 +78,7 @@ html {
   --BorderLight: rgba(0, 0, 0, 0.101);
 
 
-  --Blue: #23a6d5;
+  --Blue: #38a3ca;
 
   --cardsLight: rgba(220, 215, 231, 0.179);
 

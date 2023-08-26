@@ -104,7 +104,7 @@ const Categoria = styled.div`
   align-items: center;
   background: ${(props) =>
     props.id === props.activeCategory
-      ? "linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)"
+      ? "var(--degree)"
       : props.tema === "dark"
       ? "var(--Item)"
       : "var(--cardsLight)"};

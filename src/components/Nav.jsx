@@ -34,7 +34,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   return (
     <NavStyle tema={tema}>
       <Header>
-        {isAuthenticated ? (
+        {/* {isAuthenticated ? (
           <HelloSection tema={tema}>
             <h2>Hola, {user.name.split(" ")[0]}!</h2>
             <div
@@ -72,7 +72,17 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
               <p>Valdivia</p>
             </div>
           </HelloSection>
-        )}
+        )} */}
+        <Logo tema={tema}>
+          <img
+            src={
+              tema === "dark"
+                ? "https://app-valdi.s3.amazonaws.com/logos-08.png"
+                : "https://app-valdi.s3.amazonaws.com/logos-09.png"
+            }
+            alt="EOA-LOGO"
+          />
+        </Logo>
         <HeaderButtons isAuthenticated={isAuthenticated}>
           {/* <Buttons onClick={handleMenuChange} tema={tema}>
             <Icon
@@ -261,13 +271,28 @@ const NavStyle = styled.div`
   }
 `;
 
+const Logo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
 const Header = styled.div`
   flex-direction: row;
   display: flex;
   width: 100%;
+  height: 5.5rem;
   user-select: none;
+  align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 1.2rem 10px 1.2rem;
+  padding: 1rem 1.2rem;
 `;
 
 const HeaderButtons = styled.div`
