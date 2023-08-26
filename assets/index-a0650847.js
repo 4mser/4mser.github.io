@@ -854,7 +854,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   .slider {
     width: calc(50% - 10px);
-    height: 13rem;
+    height: 16rem;
     border-radius: 10px;
     padding: 0;
     /* border: 1px solid #dddddd4a; */
@@ -944,7 +944,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     object-fit: cover;
     border-radius: 10px;
   }
-`,zE=({tema:e})=>{const[t,n]=$.useState("ciencia"),r=$.useMemo(()=>qy.snippet[t.toLowerCase()]||[],[t]),i=o=>{n(o)};return j.jsxs(ME,{tema:e,children:[r.length===0?j.jsx(LE,{tema:e}):j.jsx(kE,{entradas:r,tema:e,activeCategory:t}),j.jsx(DE,{tema:e,children:j.jsx(Xt,{centeredSlides:!1,spaceBetween:10,slidesPerView:5,navigation:!1,className:"mySwiper",children:vy.map(o=>j.jsx(Ge,{tema:e,children:j.jsx(AE,{tema:e,id:o.snippet,activeCategory:t,onClick:()=>i(o.snippet),children:j.jsx(ze,{icon:o.icono,height:o.height,className:"Icon"})})},o.id))})})]})},ME=B.div`
+`,zE=({tema:e})=>{const[t,n]=$.useState("todo"),r=$.useMemo(()=>qy.snippet[t.toLowerCase()]||[],[t]),i=o=>{n(o)};return j.jsxs(ME,{tema:e,children:[r.length===0?j.jsx(LE,{tema:e}):j.jsx(kE,{entradas:r,tema:e,activeCategory:t}),j.jsx(DE,{tema:e,children:j.jsx(Xt,{centeredSlides:!1,spaceBetween:10,slidesPerView:5,navigation:!1,className:"mySwiper",children:vy.map(o=>j.jsx(Ge,{tema:e,children:j.jsx(AE,{tema:e,id:o.snippet,activeCategory:t,onClick:()=>i(o.snippet),children:j.jsx(ze,{icon:o.icono,height:o.height,className:"Icon"})})},o.id))})})]})},ME=B.div`
   width: 100%;
   padding-top: 10rem;
 
