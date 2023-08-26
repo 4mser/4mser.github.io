@@ -6,8 +6,8 @@ const Footer = ({ tema }) => {
       <img
         src={
           tema === "dark"
-            ? "https://app-valdi.s3.amazonaws.com/newlogo-08.png"
-            : "https://app-valdi.s3.amazonaws.com/newlogolight-08.png"
+            ? "https://app-valdi.s3.amazonaws.com/logos-08.png"
+            : "https://app-valdi.s3.amazonaws.com/logos-09.png"
         }
         alt="EOA-LOGO"
       />
