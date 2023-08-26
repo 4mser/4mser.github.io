@@ -418,7 +418,7 @@ Error generating stack: `+o.message+`
   background: ${e=>e.tema==="dark"?"var(--Item)":"var(--cardsLight)"};
 `,hP=B.div`
   width: 100%;
-  height: 80%;
+  height: 85%;
   overflow: hidden;
 
   img {
@@ -428,7 +428,7 @@ Error generating stack: `+o.message+`
   }
 `,mP=B.div`
   display: flex;
-  height: 20%;
+  height: 15%;
   flex-direction: column;
   padding: 0 10px;
   justify-content: center;
@@ -443,8 +443,8 @@ Error generating stack: `+o.message+`
   }
 
   h3 {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--whiteColor)":"var(--fontLight)"};
   }
 `,gP=B.div`
@@ -494,6 +494,7 @@ Error generating stack: `+o.message+`
 
   h3 {
     font-size: 14px;
+    margin-bottom: 3px;
     font-weight: 600;
     color: white;
   }
@@ -850,7 +851,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
 
   .slider {
     width: calc(50% - 10px);
-    height: 16rem;
+    height: 14rem;
     border-radius: 10px;
     padding: 0;
     /* border: 1px solid #dddddd4a; */
@@ -901,7 +902,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   padding: 10px;
 
   p {
@@ -940,7 +941,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     object-fit: cover;
     border-radius: 10px;
   }
-`,DE=({tema:e})=>{const[t,n]=$.useState("todo"),r=$.useMemo(()=>qy.snippet[t.toLowerCase()]||[],[t]),i=o=>{n(o)};return j.jsxs(AE,{tema:e,children:[r.length===0?j.jsx(zE,{tema:e}):j.jsx(OE,{entradas:r,tema:e,activeCategory:t}),j.jsx(NE,{tema:e,children:j.jsx(Xt,{centeredSlides:!1,spaceBetween:10,slidesPerView:5,navigation:!1,className:"mySwiper",children:vy.map(o=>j.jsx(Ge,{tema:e,children:j.jsx($E,{tema:e,id:o.snippet,activeCategory:t,onClick:()=>i(o.snippet),children:j.jsx(ze,{icon:o.icono,height:o.height,className:"Icon"})})},o.id))})})]})},AE=B.div`
+`,DE=({tema:e})=>{const[t,n]=$.useState("todo"),r=$.useMemo(()=>qy.snippet[t.toLowerCase()]||[],[t]),i=o=>{n(o)};return j.jsxs(AE,{tema:e,children:[r.length===0?j.jsx(zE,{tema:e}):j.jsx(OE,{entradas:r,tema:e,activeCategory:t}),j.jsx(NE,{tema:e,children:j.jsx(Xt,{centeredSlides:!1,spaceBetween:10,slidesPerView:4.5,navigation:!1,className:"mySwiper",children:vy.map(o=>j.jsx(Ge,{tema:e,children:j.jsx($E,{tema:e,id:o.snippet,activeCategory:t,onClick:()=>i(o.snippet),children:j.jsx(ze,{icon:o.icono,height:o.height,className:"Icon"})})},o.id))})})]})},AE=B.div`
   width: 100%;
   padding-top: 10rem;
 
