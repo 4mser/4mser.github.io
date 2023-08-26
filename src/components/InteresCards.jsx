@@ -109,7 +109,7 @@ const Categoria = styled.div`
 
 const ImagenContainer = styled.div`
   width: 100%;
-  height: 80%;
+  height: 85%;
   overflow: hidden;
 
   img {
@@ -121,7 +121,7 @@ const ImagenContainer = styled.div`
 
 const Data = styled.div`
   display: flex;
-  height: 20%;
+  height: 15%;
   flex-direction: column;
   padding: 0 10px;
   justify-content: center;
@@ -137,8 +137,8 @@ const Data = styled.div`
   }
 
   h3 {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 10px;
+    font-weight: 500;
     color: ${(props) =>
       props.tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)"};
   }
@@ -193,6 +193,7 @@ const ModalContent = styled.div`
 
   h3 {
     font-size: 14px;
+    margin-bottom: 3px;
     font-weight: 600;
     color: white;
   }

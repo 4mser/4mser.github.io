@@ -51,7 +51,7 @@ const CategoriasContainer = styled.div`
 
   .slider {
     width: calc(50% - 10px);
-    height: 16rem;
+    height: 14rem;
     border-radius: 10px;
     padding: 0;
     /* border: 1px solid #dddddd4a; */
@@ -115,7 +115,7 @@ const Data = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   padding: 10px;
 
   p {

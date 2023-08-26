@@ -280,6 +280,8 @@ const NavStyle = styled.div`
     justify-content: center;
     align-items: center;
     user-select: none;
+    position: relative;
+    overflow: hidden;
     height: 100%;
 
     img {

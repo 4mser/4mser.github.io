@@ -37,7 +37,7 @@ const CategoriasBuscar = ({ tema }) => {
         <Swiper
           centeredSlides={false}
           spaceBetween={10}
-          slidesPerView={5}
+          slidesPerView={4.5}
           navigation={false}
           className="mySwiper"
         >
