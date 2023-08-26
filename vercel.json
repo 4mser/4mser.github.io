@@ -1,5 +1,44 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/"
+        },
+        {
+            "src": "/perfil",
+            "dest": "/"
+        },
+        {
+            "src": "/ubicaciones",
+            "dest": "/"
+        },
+        {
+            "src": "/guardado",
+            "dest": "/"
+        },
+        {
+            "src": "/tienda",
+            "dest": "/"
+        },
+        {
+            "src": "/explorar",
+            "dest": "/"
+        },
+        {
+            "src": "/explorar/aves-en-valdivia",
+            "dest": "/"
+        },
+        {
+            "src": "/explorar/hongos-en-valdivia",
+            "dest": "/"
+        },
+        {
+            "src": "/explorar/mamiferos-en-valdivia",
+            "dest": "/"
+        },
+        {
+            "src": "/explorar/cielo-nocturno",
+            "dest": "/"
+        }
     ]
 }
