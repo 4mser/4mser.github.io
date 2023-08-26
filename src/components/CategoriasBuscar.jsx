@@ -12,7 +12,7 @@ import ExploraAll from "./ExploraAll";
 import SinContenido from "./SinContenido";
 
 const CategoriasBuscar = ({ tema }) => {
-  const [activeCategory, setActiveCategory] = useState("ciencia");
+  const [activeCategory, setActiveCategory] = useState("todo");
 
   const filteredEntries = useMemo(() => {
     return AllExploraData.snippet[activeCategory.toLowerCase()] || [];
