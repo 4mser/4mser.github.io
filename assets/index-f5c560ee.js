@@ -555,7 +555,7 @@ Error generating stack: `+o.message+`
     font-weight: 500;
     color: ${e=>e.tema==="dark"?"var(--textLight)":"var(--Item)"};
   }
-`,SP=({tema:e})=>{const[t,n]=$.useState("Playas");return j.jsxs(bP,{tema:e,children:[j.jsx("h2",{children:"Puntos de Interés"}),j.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:vP.map(r=>j.jsx(Ge,{className:"slider",children:j.jsx(wP,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:j.jsx("p",{children:r.nombre})})},r.id))}),j.jsx(fP,{tema:e,activeCategory:t})]})},_P=({tema:e})=>j.jsxs(xP,{tema:e,children:[j.jsx("img",{src:e==="dark"?"https://app-valdi.s3.amazonaws.com/newlogo-08.png":"https://app-valdi.s3.amazonaws.com/newlogolight-08.png",alt:"EOA-LOGO"}),j.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),xP=F.div`
+`,SP=({tema:e})=>{const[t,n]=$.useState("Playas");return j.jsxs(bP,{tema:e,children:[j.jsx("h2",{children:"Puntos de Interés"}),j.jsx(Xt,{spaceBetween:10,slidesPerView:4.3,freeMode:!0,navigation:!1,className:"mySwiper",children:vP.map(r=>j.jsx(Ge,{className:"slider",children:j.jsx(wP,{tema:e,id:r.nombre,activeCategory:t,onClick:()=>n(r.nombre),children:j.jsx("p",{children:r.nombre})})},r.id))}),j.jsx(fP,{tema:e,activeCategory:t})]})},_P=({tema:e})=>j.jsxs(xP,{tema:e,children:[j.jsx("img",{src:e==="dark"?"https://app-valdi.s3.amazonaws.com/logos-08.png":"https://app-valdi.s3.amazonaws.com/logos-09.png",alt:"EOA-LOGO"}),j.jsx("p",{children:"©2023 - DESARROLLADO POR ENTROPÍA"})]}),xP=F.div`
   width: 100%;
   height: 7rem;
   overflow: hidden;
