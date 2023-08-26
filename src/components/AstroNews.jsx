@@ -78,7 +78,6 @@ const News = ({ tema }) => {
       {showModal && (
         <ModalBackground tema={tema} show={showModal} onClick={closeModal}>
           <ModalContent tema={tema}>
-            <h2>{selectedNews.title}</h2>
             <FotoModal>
               <NewsImage2 src={selectedNews.url} alt={selectedNews.title} />
               <DownloadButton
@@ -89,6 +88,7 @@ const News = ({ tema }) => {
                 <Icon icon="basil:login-outline" height="25" rotate={1} />
               </DownloadButton>
             </FotoModal>
+            <h2>{selectedNews.title}</h2>
             <Data tema={tema}>
               <p>{selectedNews.explanation}</p>
             </Data>
@@ -161,10 +161,13 @@ const NewsCard = styled.div`
 
 const FotoModal = styled.div`
   width: 100%;
-  height: 12rem;
+  height: 100%;
   display: flex;
+  border-radius: 3px;
   justify-content: flex-end;
+  overflow: hidden;
   align-items: self-start;
+  margin-bottom: 10px;
 `;
 
 const DownloadButton = styled.a`
@@ -247,24 +250,25 @@ const ModalContent = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid var(--borderDark);
-  padding: 20px;
+  padding: 15px;
   z-index: 1001;
   border-radius: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  gap: 15px;
 
   h2 {
     font-size: 14px;
     font-weight: 600;
     color: white;
+    margin-bottom: 5px;
   }
 
   p {
     font-size: 12px;
     text-align: justify;
+    margin-right: 4px;
   }
 
   span {
@@ -274,6 +278,7 @@ const ModalContent = styled.div`
 `;
 
 const Data = styled.div`
+  margin-bottom: 5px;
   width: 100%;
   max-height: 60vh; /* Establece la altura máxima que deseas */
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */

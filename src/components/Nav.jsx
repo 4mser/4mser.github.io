@@ -75,7 +75,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
         )} */}
         <Link
           to="/"
-          style={{ textDecoration: "none" }}
+          style={{ textDecoration: "none", userSelect: "none" }}
           tema={tema}
           className="Logo"
         >
@@ -279,17 +279,17 @@ const NavStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
     height: 100%;
 
     img {
       width: 100%;
       height: 100%;
+      user-select: none;
       object-fit: cover;
     }
   }
 `;
-
-const Logo = styled.div``;
 
 const Header = styled.div`
   flex-direction: row;
