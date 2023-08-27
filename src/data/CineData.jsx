@@ -5,7 +5,7 @@ const CineData = [
     nombre: "Interstellar",
     descripcion:
       "Interstellar es una película épica de ciencia ficción dirigida por Christopher Nolan, estrenada en 2014. La película trata sobre un equipo de astronautas que viajan a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, ya que la destrucción de las cosechas en la Tierra ha hecho que la agricultura sea cada vez más difícil y se vea amenazada la supervivencia de la humanidad.",
-    duracion: "2h 49m",
+    duracion: "169 minutos",
     fecha: "2023-09-15",
     hora: "18:00",
     imagen:
