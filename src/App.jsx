@@ -21,6 +21,7 @@ import Mamiferos from "./components/Mamiferos";
 import NasaAPOD from "./components/NasaAPOD";
 import Astronomia from "./Routes/explorar/Astronomia";
 import Menu from "./components/Menu";
+import Cine from "./Routes/explorar/Cine";
 
 function App() {
   //Cambio de tema
@@ -97,6 +98,11 @@ function App() {
           <Route
             path="/explorar/cielo-nocturno"
             element={<Astronomia tema={tema}></Astronomia>}
+          ></Route>
+
+          <Route
+            path="/explorar/cine"
+            element={<Cine tema={tema}></Cine>}
           ></Route>
         </Routes>
       </>

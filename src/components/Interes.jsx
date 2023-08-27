@@ -4,8 +4,9 @@ import styled from "styled-components";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import InteresData from "../data/PuntosDeInteresData"; // Asegúrate de tener la ruta correcta
+
 import InteresCards from "./InteresCards";
+import { FreeMode } from "swiper/modules";
 
 const PuntosInteres = [
   {
@@ -110,6 +111,7 @@ const Interes = ({ tema }) => {
         slidesPerView={4.3}
         freeMode={true}
         navigation={false}
+        modules={[FreeMode]}
         className="mySwiper"
       >
         {PuntosInteres.map((interes) => (

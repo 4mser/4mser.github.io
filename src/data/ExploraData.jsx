@@ -21,7 +21,7 @@ const ExploraData = [
   {
     id: 3,
     nombre: "Emplumados",
-    descripcion: "Descubre las aves avistadas en la zona",
+    descripcion: "guía de campo de las aves",
     imagen:
       "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
     categorias: ["Naturaleza"],
@@ -40,8 +40,8 @@ const ExploraData = [
   },
   {
     id: 5,
-    nombre: "Naturaleza en movimiento",
-    descripcion: "Mamíferos en acción",
+    nombre: "Mamíferos en acción",
+    descripcion: "Guía de campo",
     imagen:
       "https://4.bp.blogspot.com/-FBHzTEOIjEY/VE5IdoRHTeI/AAAAAAAAAAs/KLv1weHEhXw/s1600/flora-fauna-chile-1.jpg",
     categorias: ["Naturaleza"],

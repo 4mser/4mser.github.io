@@ -15,14 +15,6 @@ const CategoriasData = [
     snippet: "ciencia",
   },
   {
-    id: 2,
-    nombre: "Salud & Bienestar",
-    icono: "game-icons:health-capsule",
-    descripcion: "",
-    height: "30",
-    snippet: "salud",
-  },
-  {
     id: 3,
     nombre: "Naturaleza",
     icono: "game-icons:grass-mushroom",
@@ -87,6 +79,22 @@ const CategoriasData = [
     snippet: "mascotas",
   },
   {
+    id: 19,
+    nombre: "Hospedaje",
+    icono: "game-icons:bed",
+    descripcion: "",
+    height: "30",
+    snippet: "hospedaje",
+  },
+  {
+    id: 2,
+    nombre: "Salud & Bienestar",
+    icono: "game-icons:health-capsule",
+    descripcion: "",
+    height: "30",
+    snippet: "salud",
+  },
+  {
     id: 10,
     nombre: "Campings",
     icono: "game-icons:camping-tent",
@@ -136,7 +144,7 @@ const CategoriasData = [
   },
   {
     id: 16,
-    nombre: "Vida Nocturna",
+    nombre: "Bares & Vida Nocturna",
     icono: "game-icons:martini",
     descripcion: "",
     height: "30",

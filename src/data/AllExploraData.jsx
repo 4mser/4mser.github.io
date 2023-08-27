@@ -49,7 +49,7 @@ const AllExploraData = {
       },
       {
         id: 2,
-        nombre: "Astronomía en Valdivia",
+        nombre: "Bajo el cielo nocturno",
         descripcion: "Un encuentro espacial inolvidable",
         imagen:
           "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
@@ -60,7 +60,7 @@ const AllExploraData = {
       {
         id: 3,
         nombre: "Emplumados",
-        descripcion: "Guía de campo",
+        descripcion: "Guía de campo de las aves",
         imagen:
           "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
         categorias: ["Naturaleza"],
@@ -106,11 +106,21 @@ const AllExploraData = {
         iconos: ["game-icons:briefcase"],
         url: "emprendimientos",
       },
+      {
+        id: 8,
+        nombre: "Cine",
+        descripcion: "Revisa nuestra programación",
+        imagen:
+          "https://th.bing.com/th/id/OIP.fd1VO2375Bu7NHTTNA3-IwHaEc?pid=ImgDet&rs=1",
+        categorias: ["Entretenimiento"],
+        iconos: ["game-icons:film-projector"],
+        url: "cine",
+      },
     ],
     ciencia: [
       {
         id: 1,
-        nombre: "Astronomía en Valdivia",
+        nombre: "Bajo el cielo nocturno",
         descripcion: "Un encuentro espacial inolvidable",
         imagen:
           "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
@@ -153,7 +163,7 @@ const AllExploraData = {
       {
         id: 3,
         nombre: "Emplumados",
-        descripcion: "Guía de campo",
+        descripcion: "Guía de campo de las aves",
         imagen:
           "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
         categorias: ["Naturaleza"],
@@ -202,6 +212,18 @@ const AllExploraData = {
         categorias: ["Talentos Locales"],
         iconos: ["game-icons:guitar-head"],
         url: "inspiración",
+      },
+    ],
+    entretenimiento: [
+      {
+        id: 1,
+        nombre: "Cine",
+        descripcion: "Revisa nuestra programación",
+        imagen:
+          "https://th.bing.com/th/id/OIP.fd1VO2375Bu7NHTTNA3-IwHaEc?pid=ImgDet&rs=1",
+        categorias: ["Entretenimiento"],
+        iconos: ["game-icons:film-projector"],
+        url: "cine",
       },
     ],
   },

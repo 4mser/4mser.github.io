@@ -20,7 +20,7 @@ const Explora = ({ tema }) => {
       <VerTodo tema={tema}>
         <h2>Explora</h2>
         <Link
-          to={"/buscar"}
+          to={"/explorar"}
           style={{
             textDecoration: "none",
             color: tema === "dark" ? "var(--whiteColor)" : "var(--fontLight)",

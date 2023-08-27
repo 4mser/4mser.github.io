@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
-import useNasaAPI from "../apis/NasaAPI";
 import { Icon } from "@iconify/react";
 
 // Import Swiper styles
@@ -11,36 +10,19 @@ import "swiper/css/effect-fade";
 
 // import required modules
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
+import CineBanners from "../data/CineBanners";
 
-const NasaAPOD = ({ tema }) => {
-  const { apodData, loading } = useNasaAPI();
-
+const CineBanner = ({ tema }) => {
   const renderCard = (item) => (
-    <SwiperSlide key={item.date} className="slider">
+    <SwiperSlide key={item.id} className="slider">
       <AvisosBox tema={tema}>
-        <img src={item.url} alt={item.title} />
+        <img src={item.imagen} alt={item.nombre} />
         <Info>
-          <h2>{item.title}</h2>
-          <p>{item.date}</p>
+          <h2>{item.nombre}</h2>
         </Info>
-        <DownloadButton
-          href={item.url}
-          target="_blank"
-          download={`${item.title}.jpg`}
-        >
-          <Icon icon="basil:login-outline" height="25" rotate={1} />
-        </DownloadButton>
       </AvisosBox>
     </SwiperSlide>
   );
-
-  if (loading) {
-    return (
-      <StyledActivityIndicator tema={tema}>
-        <h3>Cargando contenido...</h3>
-      </StyledActivityIndicator>
-    );
-  }
 
   return (
     <AvisosContainer tema={tema}>
@@ -59,27 +41,14 @@ const NasaAPOD = ({ tema }) => {
         modules={[EffectFade, Autoplay, Pagination]}
         className="mySwiper"
       >
-        {apodData.map(renderCard)}
+        {CineBanners.map(renderCard)}
       </Swiper>
     </AvisosContainer>
   );
 };
 
-export default NasaAPOD;
+export default CineBanner;
 
-const StyledActivityIndicator = styled.div`
-  text-align: center;
-  position: fixed;
-  font-size: 18px;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  color: ${(props) => (props.tema === "dark" ? "white" : "black")};
-  align-items: center;
-`;
 export const AvisosContainer = styled.div`
   width: 100%;
   padding-top: 8.8rem;
