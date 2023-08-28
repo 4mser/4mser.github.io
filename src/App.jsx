@@ -22,6 +22,7 @@ import NasaAPOD from "./components/NasaAPOD";
 import Astronomia from "./Routes/explorar/Astronomia";
 import Menu from "./components/Menu";
 import Cine from "./Routes/explorar/Cine";
+import Maps from "./components/Maps";
 
 function App() {
   //Cambio de tema
@@ -68,7 +69,7 @@ function App() {
 
           <Route
             path="/ubicaciones"
-            element={<Nada tema={tema}></Nada>}
+            element={<Maps tema={tema}></Maps>}
           ></Route>
 
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>

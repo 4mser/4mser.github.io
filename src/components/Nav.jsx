@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link, useLocation } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import Menu from "./Menu";
 
 const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   const { user, isAuthenticated, loginWithRedirect, logout, isLoading } =
@@ -34,45 +35,6 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   return (
     <NavStyle tema={tema}>
       <Header style={{ height: minimizeNav ? "4.5rem" : "5.5rem" }}>
-        {/* {isAuthenticated ? (
-          <HelloSection tema={tema}>
-            <h2>Hola, {user.name.split(" ")[0]}!</h2>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                gap: "2px",
-              }}
-            >
-              <Icon
-                icon="fluent:location-24-filled"
-                height="15"
-                style={{ color: "var(--Blue)", transform: "translateY(-1px)" }}
-              />
-              <p>Valdivia</p>
-            </div>
-          </HelloSection>
-        ) : (
-          <HelloSection tema={tema}>
-            <h2>Hola!</h2>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                gap: "2px",
-              }}
-            >
-              <Icon
-                icon="fluent:location-24-filled"
-                height="15"
-                style={{ color: "var(--Blue)", transform: "translateY(-1px)" }}
-              />
-              <p>Valdivia</p>
-            </div>
-          </HelloSection>
-        )} */}
         <Link
           to="/"
           tema={tema}
@@ -93,22 +55,12 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
           />
         </Link>
         <HeaderButtons isAuthenticated={isAuthenticated}>
-          {/* <Buttons onClick={handleMenuChange} tema={tema}>
-            <Icon
-              icon="solar:menu-dots-broken"
-              style={{
-                color: tema === "dark" ? "var(--TextLight)" : "var(--btnLight)",
-                fontSize: "2rem",
-              }}
-            />
-          </Buttons> */}
           <Buttons onClick={handleTemaChange} tema={tema}>
             <Icon
               icon={
                 tema === "dark"
                   ? "line-md:sun-rising-filled-loop"
                   : "line-md:moon-loop"
-                /* : "game-icons:star-swirl" */
               }
               className={tema === "dark" ? "btn-tema-sun" : "btn-tema-moon"}
               style={{
@@ -118,7 +70,7 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
             />
           </Buttons>
           {isAuthenticated ? (
-            <Buttons tema={tema}>
+            <Buttons tema={tema} onClick={handleMenuChange}>
               <Icon
                 icon="carbon:notification-filled"
                 style={{
@@ -133,6 +85,12 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
           ) : (
             ""
           )}
+
+          {/* {menuOpen === "open" ? (
+            <Menu tema={tema} menuOpen={menuOpen}></Menu>
+          ) : (
+            ""
+          )} */}
 
           <Link to="/perfil" style={{ textDecoration: "none" }} tema={tema}>
             <Buttons tema={tema}>
