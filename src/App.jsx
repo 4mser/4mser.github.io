@@ -25,6 +25,7 @@ import Cine from "./Routes/explorar/Cine";
 import Maps from "./components/Maps";
 import DatabaseComponent from "./components/DatabaseComponentsRobin";
 import DatabaseComponentRobin from "./components/DatabaseComponentsRobin";
+import BarChart from "./components/BarChart";
 
 function App() {
   //Cambio de tema
@@ -74,14 +75,12 @@ function App() {
             element={<Maps tema={tema}></Maps>}
           ></Route>
 
-          <Route
-            path="/guardado"
-            element={
-              <DatabaseComponentRobin tema={tema}></DatabaseComponentRobin>
-            }
-          ></Route>
+          <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
-          <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
+          <Route
+            path="/tienda"
+            element={<BarChart tema={tema}></BarChart>}
+          ></Route>
 
           <Route
             path="/explorar"
