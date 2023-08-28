@@ -77,10 +77,7 @@ function App() {
 
           <Route path="/guardado" element={<Nada tema={tema}></Nada>}></Route>
 
-          <Route
-            path="/tienda"
-            element={<BarChart tema={tema}></BarChart>}
-          ></Route>
+          <Route path="/tienda" element={<Nada tema={tema}></Nada>}></Route>
 
           <Route
             path="/explorar"
