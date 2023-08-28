@@ -39,6 +39,10 @@
         {
             "src": "/explorar/cielo-nocturno",
             "dest": "/"
+        },
+        {
+            "src": "/explorar/cine",
+            "dest": "/"
         }
     ]
 }
