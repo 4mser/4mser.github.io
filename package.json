@@ -13,6 +13,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.0",
     "@react-google-maps/api": "^2.19.2",
+    "axios": "^1.5.0",
     "css-doodle": "^0.34.9",
     "google-translate-api": "^0.1.1",
     "localforage": "^1.10.0",
@@ -26,6 +27,9 @@
     "readline-sync": "^1.4.10",
     "serve": "^14.2.0",
     "sort-by": "^0.0.2",
+    "sql": "^0.78.0",
+    "sql.js": "^1.8.0",
+    "sqlite3": "^5.1.6",
     "styled-components": "^6.0.5",
     "swiper": "^10.0.4"
   },
