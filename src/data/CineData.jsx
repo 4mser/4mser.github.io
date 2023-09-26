@@ -6,10 +6,10 @@ const CineData = [
     descripcion:
       "Interstellar es una película épica de ciencia ficción dirigida por Christopher Nolan, estrenada en 2014. La película trata sobre un equipo de astronautas que viajan a través de un agujero de gusano en busca de un nuevo hogar para la humanidad, ya que la destrucción de las cosechas en la Tierra ha hecho que la agricultura sea cada vez más difícil y se vea amenazada la supervivencia de la humanidad.",
     duracion: "169 minutos",
-    fecha: "2023-09-15",
+    fecha: "15-09-2023",
     hora: "18:00",
     imagen:
-      "https://www.hdwallpaper.nu/wp-content/uploads/2018/09/interstellar-5.jpg",
+      "https://th.bing.com/th/id/R.ee3a818dbae7119e15dbda886331ce89?rik=ACvAXQotghzy4Q&riu=http%3a%2f%2fwww.nolanfans.com%2fwordpress%2fwp-content%2fuploads%2f2014%2f09%2finterstellar-p5HD.jpg&ehk=19t%2fA4nPb9KT3JwrDGar3Kdh1%2fUwlHhCGGeqiUwXAAU%3d&risl=&pid=ImgRaw&r=0",
     valorEntrada: 2000,
     categorias: ["Estreno", "Aventura", "Ciencia Ficción"],
     director: "Cristopher Nolan",
@@ -30,7 +30,7 @@ const CineData = [
     descripcion:
       "En julio de 1945, en el desierto de Nuevo México, se detona en secreto la primera bomba atómica. En tiempos de guerra, el brillante físico estadounidense Julius Robert Oppenheimer, al frente del proyecto Manhattan, lidera los ensayos nucleares para construir esta arma de destrucción masiva para su país. La película está basada en el libro “American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer”, escrito por Kai Bird y Martin J. Sherwin.",
     duracion: "180 minutos",
-    fecha: "27/08/2023",
+    fecha: "16-09-2023",
     hora: "4:00 pm - 7:30 pm",
     imagen:
       "https://epipoca.com.br/wp-content/uploads/2023/07/cillian-murphy-oppenheimer-1-1110x624.jpg",
@@ -70,7 +70,7 @@ const CineData = [
     descripcion:
       "RRR es una película de acción y drama histórico que se desarrolla en la India de los años 20. La trama sigue a dos revolucionarios legendarios, Alluri Sitarama Raju y Komaram Bheem, que lucharon contra el gobierno colonial inglés. La película cuenta la historia de Bheem, quien viaja a Delhi para rescatar a una niña secuestrada perteneciente a una tribu marginada, y se cruza con Rama Raju, un oficial del Raj que tiene por misión perseguirlo para meterlo a la cárcel",
     duracion: "182 minutos",
-    fecha: "2023-09-17",
+    fecha: "17-09-2023",
     hora: "20:00",
     imagen: "https://wallpapercave.com/wp/wp10944810.jpg",
     valorEntrada: 3000,

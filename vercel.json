@@ -43,6 +43,10 @@
         {
             "src": "/explorar/cine",
             "dest": "/"
+        },
+        {
+            "src": "/explorar/agentesdecambio",
+            "dest": "/"
         }
     ]
 }

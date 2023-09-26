@@ -3,69 +3,13 @@ import { useAuth0 } from "@auth0/auth0-react";
 import JSONPretty from "react-json-pretty";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
-import Login from "../pages/login";
+import Login from "../pages/Login";
 useState;
 
 const Perfil = ({ tema }) => {
-  const { user, isAuthenticated, loginWithRedirect, logout, isLoading } =
-    useAuth0();
-
-  const [newUsername, setNewUsername] = useState("");
-
-  const handleChangeUsername = () => {
-    const updatedUsername = prompt("Ingresa tu nuevo nombre de usuario:");
-    if (updatedUsername) {
-      setNewUsername(updatedUsername);
-    }
-  };
-
-  if (isLoading) {
-    // Mostrar algo mientras se verifica la autenticación
-    return (
-      <Iniciando>
-        <p>Iniciando Sesión</p>
-      </Iniciando>
-    );
-  }
-
   return (
     <Container>
-      {isAuthenticated && (
-        <UserProfile tema={tema}>
-          <Portada tema={tema}>
-            <img
-              src="https://apod.nasa.gov/apod/image/1008/Lagoon_ssro900.jpg"
-              alt=""
-            />
-          </Portada>
-          <PerfilData tema={tema}>
-            <ProfileFoto tema={tema}>
-              <img src={user.picture} alt={user.name} />
-            </ProfileFoto>
-            <NombreUsuario>
-              <h2>{newUsername || user.name}</h2>
-              {/* <Icon
-                icon="lucide:pen-line"
-                height="19"
-                className="icon"
-                tema={tema}
-                onClick={handleChangeUsername}
-              /> */}
-            </NombreUsuario>
-          </PerfilData>
-          {/* <p>{user.email}</p> */}
-        </UserProfile>
-      )}
-      {isAuthenticated ? (
-        <Button tema={tema} onClick={() => logout()}>
-          Cerrar Sesión
-        </Button>
-      ) : (
-        <Button tema={tema} onClick={() => loginWithRedirect()}>
-          Iniciar Sesión
-        </Button>
-      )}
-      {/* <JSONPretty data={user} /> */}
+      <Login></Login>
     </Container>
   );
 };

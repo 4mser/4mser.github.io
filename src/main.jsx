@@ -14,6 +14,7 @@ import { createRoot } from "react-dom/client";
 import { Auth0Provider } from "@auth0/auth0-react";
 import App from "./App";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -25,6 +26,8 @@ root.render(
       redirect_uri: window.location.origin,
     }}
   >
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Auth0Provider>
 );

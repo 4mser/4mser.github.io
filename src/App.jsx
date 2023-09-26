@@ -23,9 +23,8 @@ import Astronomia from "./Routes/explorar/Astronomia";
 import Menu from "./components/Menu";
 import Cine from "./Routes/explorar/Cine";
 import Maps from "./components/Maps";
-import DatabaseComponent from "./components/DatabaseComponentsRobin";
-import DatabaseComponentRobin from "./components/DatabaseComponentsRobin";
-import BarChart from "./components/BarChart";
+import { AuthContextProvider } from "./context/AuthContext";
+import AgentesDeCambio from "./components/agentesDeCambio";
 
 function App() {
   //Cambio de tema
@@ -51,7 +50,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <AuthContextProvider>
       <ScrollToTop></ScrollToTop>
       <Bg tema={tema}></Bg>
       <>
@@ -85,6 +84,11 @@ function App() {
           ></Route>
 
           <Route
+            path="explorar/agentesdecambio"
+            element={<AgentesDeCambio tema={tema}></AgentesDeCambio>}
+          ></Route>
+
+          <Route
             path="/explorar/aves-en-valdivia"
             element={<Aves tema={tema}></Aves>}
           ></Route>
@@ -110,7 +114,7 @@ function App() {
           ></Route>
         </Routes>
       </>
-    </BrowserRouter>
+    </AuthContextProvider>
   );
 }
 

@@ -207,7 +207,7 @@ const NavStyle = styled.div`
 
   background: ${(props) =>
     props.tema === "dark" ? "var(--bg_dark)" : "var(--bg_light)"};
-  z-index: 1000;
+  z-index: 999;
 
   .link {
     text-decoration: none;

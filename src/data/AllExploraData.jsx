@@ -52,7 +52,7 @@ const AllExploraData = {
         nombre: "Bajo el cielo nocturno",
         descripcion: "Un encuentro espacial inolvidable",
         imagen:
-          "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
+          "https://res.cloudinary.com/dcok1xpig/image/upload/v1694994869/sbtpzbaqq9z6pk8ras7v.jpg",
         categorias: ["Ciencia & Tecnología", "Naturaleza"],
         iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
         url: "cielo-nocturno",
@@ -62,7 +62,7 @@ const AllExploraData = {
         nombre: "Emplumados",
         descripcion: "Guía de campo de las aves",
         imagen:
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
+          "https://inaturalist-open-data.s3.amazonaws.com/photos/262787956/large.jpg",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
         url: "aves-en-valdivia",
@@ -123,7 +123,7 @@ const AllExploraData = {
         nombre: "Bajo el cielo nocturno",
         descripcion: "Un encuentro espacial inolvidable",
         imagen:
-          "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
+          "https://res.cloudinary.com/dcok1xpig/image/upload/v1694994869/sbtpzbaqq9z6pk8ras7v.jpg",
         categorias: ["Ciencia & Tecnología", "Naturaleza"],
         iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
         url: "cielo-nocturno",
@@ -155,7 +155,7 @@ const AllExploraData = {
         nombre: "Bajo el cielo nocturno",
         descripcion: "Un encuentro espacial inolvidable",
         imagen:
-          "https://th.bing.com/th/id/R.d948cc8b68b666a6045d03c129edc840?rik=D992OcUW8pBjvQ&pid=ImgRaw&r=0",
+          "https://res.cloudinary.com/dcok1xpig/image/upload/v1694994869/sbtpzbaqq9z6pk8ras7v.jpg",
         categorias: ["Ciencia & Tecnología", "Naturaleza"],
         iconos: ["game-icons:microscope", "game-icons:grass-mushroom"],
         url: "cielo-nocturno",
@@ -165,7 +165,7 @@ const AllExploraData = {
         nombre: "Emplumados",
         descripcion: "Guía de campo de las aves",
         imagen:
-          "https://inaturalist-open-data.s3.amazonaws.com/photos/255647599/large.jpg",
+          "https://inaturalist-open-data.s3.amazonaws.com/photos/262787956/large.jpg",
         categorias: ["Naturaleza"],
         iconos: ["game-icons:grass-mushroom"],
         url: "aves-en-valdivia",
@@ -224,6 +224,18 @@ const AllExploraData = {
         categorias: ["Entretenimiento"],
         iconos: ["game-icons:film-projector"],
         url: "cine",
+      },
+    ],
+    ecologia: [
+      {
+        id: 1,
+        nombre: "Agentes de cambio",
+        descripcion: "Proyecto Sence",
+        imagen:
+          "https://parquesalegres.org/wp-content/uploads/2018/05/natural-cosmetics-environment-friendly-marilou-bio-opt.jpg",
+        categorias: ["Entretenimiento"],
+        iconos: ["game-icons:earth-america"],
+        url: "agentesdecambio",
       },
     ],
   },
