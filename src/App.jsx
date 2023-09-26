@@ -84,8 +84,8 @@ function App() {
           ></Route>
 
           <Route
-            path="explorar/agentesdecambio"
-            element={<AgentesDeCambio tema={tema}></AgentesDeCambio>}
+            path="/explorar/agentesdecambio"
+            element={<AgentesDeCambio></AgentesDeCambio>}
           ></Route>
 
           <Route
