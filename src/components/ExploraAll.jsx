@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
 import AllExploraData from "../data/AllExploraData"; // Importar el objeto de entradas y categorías
@@ -6,6 +6,29 @@ import { Link } from "react-router-dom";
 
 const ExploraAll = ({ tema, activeCategory }) => {
   const categoryData = AllExploraData.snippet[activeCategory] || [];
+  const [imagesLoaded, setImagesLoaded] = useState(0);
+
+  useEffect(() => {
+    const imageCount = categoryData.length;
+
+    const handleImageLoad = () => {
+      setImagesLoaded((prevCount) => prevCount + 1);
+    };
+
+    if (imageCount > 0) {
+      setImagesLoaded(0);
+
+      categoryData.forEach((explora) => {
+        const img = new Image();
+        img.src = explora.imagen;
+        img.onload = handleImageLoad;
+      });
+    }
+
+    return () => {
+      // Cleanup event listeners (if necessary)
+    };
+  }, [categoryData]);
 
   return (
     <CategoriasContainer tema={tema}>
@@ -19,7 +42,11 @@ const ExploraAll = ({ tema, activeCategory }) => {
         >
           <ExploraCard tema={tema}>
             <ImagenExplora>
-              <img src={explora.imagen} alt="" />
+              <img
+                src={explora.imagen}
+                alt=""
+                onLoad={() => handleImageLoad(explora)}
+              />
             </ImagenExplora>
             <Data tema={tema}>
               <Titulo>
@@ -40,6 +67,8 @@ const ExploraAll = ({ tema, activeCategory }) => {
 };
 
 export default ExploraAll;
+
+// Resto del código sin cambios
 
 const CategoriasContainer = styled.div`
   width: 100%;
