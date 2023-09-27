@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Icon } from "@iconify/react";
 
 // Import Swiper styles
 import "swiper/css";

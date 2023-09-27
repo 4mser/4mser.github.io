@@ -3,9 +3,7 @@ import Avisos from "../components/Avisos";
 import Categorias from "../components/Categorias";
 import Explora from "../components/Explora";
 import Interes from "../components/Interes";
-import InteresCards from "../components/InteresCards";
 import Footer from "../components/Footer";
-import NasaAPOD from "../components/NasaAPOD";
 
 const Home = ({ tema }) => {
   return (

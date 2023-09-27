@@ -79,7 +79,7 @@ const CategoriasData = [
     snippet: "mascotas",
   },
   {
-    id: 19,
+    id: 20,
     nombre: "Hospedaje",
     icono: "game-icons:bed",
     descripcion: "",

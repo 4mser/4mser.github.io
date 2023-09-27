@@ -24,7 +24,7 @@ import Menu from "./components/Menu";
 import Cine from "./Routes/explorar/Cine";
 import Maps from "./components/Maps";
 import { AuthContextProvider } from "./context/AuthContext";
-import AgentesDeCambio from "./components/agentesDeCambio";
+import AgentesDeCambio from "./components/AgentesDeCambio";
 
 function App() {
   //Cambio de tema

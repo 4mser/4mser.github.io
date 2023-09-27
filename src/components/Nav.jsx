@@ -16,9 +16,11 @@ const Nav = ({ handleTemaChange, tema, handleMenuChange, menuOpen }) => {
   const handleScroll = () => {
     const currentPosition = window.scrollY;
 
-    if (currentPosition > 0 && !minimizeNav) {
+    if (currentPosition > scrollPosition && !minimizeNav) {
+      // Scrolling down, minimize the navigation
       setMinimizeNav(true);
-    } else if (currentPosition === 0 && minimizeNav) {
+    } else if (currentPosition < scrollPosition && minimizeNav) {
+      // Scrolling up, restore the navigation
       setMinimizeNav(false);
     }
 

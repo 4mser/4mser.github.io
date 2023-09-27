@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Icon } from "@iconify/react";
 import CineData from "../data/CineData";
 
 const Cartelera = ({ tema }) => {

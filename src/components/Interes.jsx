@@ -44,7 +44,7 @@ const Categoria = styled.div`
   align-items: center;
   user-select: none;
   background: ${(props) =>
-    props.id === props.activeCategory
+    props.id === props.activecategory
       ? "var(--degree)"
       : props.tema === "dark"
       ? "var(--Item)"
@@ -74,7 +74,7 @@ const Categoria = styled.div`
     font-weight: 400;
     text-align: center;
     color: ${(props) =>
-      props.id === props.activeCategory
+      props.id === props.activecategory
         ? "white"
         : props.tema === "dark"
         ? "var(--whiteColor)"
@@ -119,7 +119,7 @@ const Interes = ({ tema }) => {
             <Categoria
               tema={tema}
               id={interes.nombre}
-              activeCategory={activeCategory}
+              activecategory={activeCategory}
               onClick={() => setActiveCategory(interes.nombre)}
             >
               <p>{interes.nombre}</p>
@@ -127,7 +127,7 @@ const Interes = ({ tema }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <InteresCards tema={tema} activeCategory={activeCategory} />
+      <InteresCards tema={tema} activecategory={activeCategory} />
     </InteresContainer>
   );
 };

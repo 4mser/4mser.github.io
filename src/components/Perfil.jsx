@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import JSONPretty from "react-json-pretty";
 import { styled } from "styled-components";
-import { Icon } from "@iconify/react";
-import Login from "../pages/login";
 useState;
 
 const Perfil = ({ tema }) => {

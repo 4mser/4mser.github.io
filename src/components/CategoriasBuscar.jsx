@@ -5,7 +5,6 @@ import { Icon } from "@iconify/react";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import { FreeMode } from "swiper/modules";
 import CategoriasData from "../data/CategoriasData";
 import AllExploraData from "../data/AllExploraData";
 import ExploraAll from "./ExploraAll";
@@ -46,7 +45,7 @@ const CategoriasBuscar = ({ tema }) => {
               <Categoria
                 tema={tema}
                 id={categoria.snippet}
-                activeCategory={activeCategory}
+                activecategory={activeCategory}
                 onClick={() => handleCategoryClick(categoria.snippet)}
               >
                 <Icon
@@ -63,6 +62,8 @@ const CategoriasBuscar = ({ tema }) => {
     </CategoriasContainer>
   );
 };
+
+export default CategoriasBuscar;
 
 const CategoriasContainer = styled.div`
   width: 100%;
@@ -103,7 +104,7 @@ const Categoria = styled.div`
   justify-content: center;
   align-items: center;
   background: ${(props) =>
-    props.id === props.activeCategory
+    props.id === props.activecategory
       ? "var(--degree)"
       : props.tema === "dark"
       ? "var(--Item)"
@@ -132,7 +133,7 @@ const Categoria = styled.div`
     font-weight: 400;
     flex-wrap: nowrap;
     color: ${(props) =>
-      props.id === props.activeCategory
+      props.id === props.activecategory
         ? "white"
         : props.tema === "dark"
         ? "var(--whiteColor)"
@@ -141,12 +142,10 @@ const Categoria = styled.div`
 
   .Icon {
     color: ${(props) =>
-      props.id === props.activeCategory
+      props.id === props.activecategory
         ? "white"
         : props.tema === "dark"
         ? "var(--whiteColor)"
         : "var(--Item)"};
   }
 `;
-
-export default CategoriasBuscar;
