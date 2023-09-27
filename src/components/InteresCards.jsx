@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { styled } from "styled-components";
 import { Icon } from "@iconify/react";
@@ -17,7 +17,6 @@ const InteresCards = ({ tema, activeCategory }) => {
 
   const [selectedNews, setSelectedNews] = useState(null);
   const [showModal, setShowModal] = useState(false);
-  const [imagesLoaded, setImagesLoaded] = useState(0);
 
   const openModal = (news) => {
     setSelectedNews(news);
@@ -28,28 +27,6 @@ const InteresCards = ({ tema, activeCategory }) => {
     setSelectedNews(null);
     setShowModal(false);
   };
-
-  useEffect(() => {
-    const imageCount = categoryData.length;
-
-    const handleImageLoad = () => {
-      setImagesLoaded((prevCount) => prevCount + 1);
-    };
-
-    if (imageCount > 0) {
-      setImagesLoaded(0);
-
-      categoryData.forEach((item) => {
-        const img = new Image();
-        img.src = item.imagen;
-        img.onload = handleImageLoad;
-      });
-    }
-
-    return () => {
-      // Cleanup event listeners (if necessary)
-    };
-  }, [categoryData]);
 
   /* End Modals */
 
@@ -73,11 +50,7 @@ const InteresCards = ({ tema, activeCategory }) => {
           >
             <Categoria tema={tema}>
               <ImagenContainer>
-                <img
-                  src={item.imagen}
-                  alt={item.nombre}
-                  onLoad={() => handleImageLoad(item)}
-                />
+                <img src={item.imagen} alt={item.nombre} />
               </ImagenContainer>
               <Data tema={tema}>
                 <h3>{item.nombre}</h3>
@@ -100,8 +73,6 @@ const InteresCards = ({ tema, activeCategory }) => {
 };
 
 export default InteresCards;
-
-// Resto del código sin cambios
 
 const CategoriasContainer = styled.div`
   width: 100%;

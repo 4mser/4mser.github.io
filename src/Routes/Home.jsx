@@ -4,6 +4,7 @@ import Categorias from "../components/Categorias";
 import Explora from "../components/Explora";
 import Interes from "../components/Interes";
 import Footer from "../components/Footer";
+import SpeciesList from "../components/SpeciesList";
 
 const Home = ({ tema }) => {
   return (
@@ -13,6 +14,7 @@ const Home = ({ tema }) => {
       {/* <NasaAPOD></NasaAPOD> */}
       <Explora tema={tema}></Explora>
       <Interes tema={tema}></Interes>
+      <SpeciesList></SpeciesList>
       <Footer tema={tema}></Footer>
     </div>
   );
